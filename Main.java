@@ -8,6 +8,9 @@ public class Main {
 
 
         Biblioteca c2 = new Biblioteca("asd","asd","asd",0,0,0);
+        System.out.println("___________________________________________");
+		System.out.println("               > CADASTRO <   ");
+		System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
         System.out.println("Choose a language|| Escolha um idioma: ");
         System.out.println(" ");
         System.out.println("(1)  English     ||    (2) Portugues");
