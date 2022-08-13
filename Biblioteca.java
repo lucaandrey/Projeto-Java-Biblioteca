@@ -305,11 +305,12 @@ else if(a==6) {
 		this.genero = input.nextInt();
 		System.out.println("Faca um deposito inicial: ");
 		this.saldo += input.nextInt();
-<<<<<<< HEAD
+		System.out.println("CADASTRO REALIZADO COM SUCESSO!! EFETUE O LOGIN PARA CONTNUAR!");
+		login();
 		
 		menu();
-		
-	}public void visualizar(){
+		}
+		public void visualizar(){
 
 		System.out.println("*************************************************************");
 		System.out.println("\t           SEJA BEM-VINDO "+nome);
@@ -328,11 +329,5 @@ else if(a==6) {
 
 
 		}
-=======
-		System.out.println("CADASTRO REALIZADO COM SUCESSO!! EFETUE O LOGIN PARA CONTNUAR!");
-		login();
-	}
-
-	
->>>>>>> ed401dfb143f2833f3696a9f6e17823b4815b977
 }
+
