@@ -41,22 +41,24 @@ public class Biblioteca {
 	}
 	public void menu() {
 		int op =0;
-		
-		System.out.println("GENEROS: ");
-		System.out.println("(1)Romance");
-		System.out.println("(2)Ficcao");
-		System.out.println("(3)Terror");
-		System.out.println("(4)Comedia");
-		System.out.println("(5)Auto-Ajuda");
-		System.out.println("(6)Aventura");
-		System.out.println("(7)Infantil");
-		System.out.println("Escolha uma opcao: ");
+		visualizar();
+		visualizar2();
+		System.out.println("\nGENEROS: ");
+		System.out.println("\n\tEscolha uma opcao: ");
+		System.out.println("\n\t(1) Romance");
+		System.out.println("\n\t(2) Ficcao");
+		System.out.println("\n\t(3) Terror");
+		System.out.println("\n\t(4) Comedia");
+		System.out.println("\n\t(5) Auto-Ajuda");
+		System.out.println("\n\t(6) Aventura");
+		System.out.println("\n\t(7) Infantil");
 		op = input.nextInt();
 		int a = 0;
 		switch(op) {
 		
-		case 1: System.out.println("Escolha uma opcao: ");
-				System.out.println("ROMANCE: ");
+		case 1: 
+				System.out.println("\t  ROMANCE ");
+				System.out.println("\t¨¨¨¨¨¨¨¨¨¨¨ ");
 				System.out.println("(1)Romeo e Julieta: ");
 				System.out.println("(2)O apanhador no campo de Centeio: ");
 				System.out.println("(3)A peste: ");
@@ -66,11 +68,12 @@ public class Biblioteca {
 				a=input.nextInt();
 		
 		if(a == 1) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("\nO amor apresenta-se à vida de Romeu e Julieta de modo traiçoeiro - "
 					+ "\nambos apaixonam-se instantaneamente, em uma festa - "
 					+ "\num baile de máscaras -, desconhecendo a identidade um do outro."
 					+ "\nEle é filho dos Montéquio, e ela, dos Capuleto, duas das mais poderosas "
-					+ "\nfamílias de Verona, inimigas entre si.");
+					+ "\nfamílias de Verona, inimigas entre si.\n");
 			loja();
 			}
 		else if(a ==2) {
@@ -301,5 +304,23 @@ else if(a==6) {
 		
 		menu();
 		
+	}public void visualizar(){
+
+		System.out.println("*************************************************************");
+		System.out.println("\t           SEJA BEM-VINDO "+nome);
+		System.out.println("\n\t          É um prazer tê-lo aqui!");
+		System.out.println("\n\t     Você possui: "+saldo+" de Saldo. Aproveite! ");
+		System.out.println("*************************************************************");
 	}
+	
+	 public void visualizar2(){
+		
+		System.out.println("                                                          ");
+		System.out.println("\t Além de alimentar seu conhecimento, alimente vidas! \n ");
+		System.out.println("\t\t             CATÁLOGO");
+		}
+		public void visualizar3(){
+
+
+		}
 }

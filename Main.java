@@ -5,10 +5,11 @@ public class Main {
         int a = 0;
         Scanner input = new Scanner(System.in);
         English c1 = new English("asd","asd","asd",0,0,"asd");
+
         Biblioteca c2 = new Biblioteca("asd","asd","asd",0,0,"asd");
         System.out.println("Choose a language|| Escolha um idioma: ");
         System.out.println(" ");
-        System.out.println("(1)  English     ||   1(2) Portugues");
+        System.out.println("(1)  English     ||    (2) Portugues");
         a = input.nextInt();
         if(a  == 1){
             c1.cadastro();
