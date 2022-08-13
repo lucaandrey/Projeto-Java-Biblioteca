@@ -298,6 +298,7 @@ else if(a==6) {
 		this.idade = input.nextInt();
 		System.out.println("Faca um deposito inicial: ");
 		this.saldo += input.nextInt();
+		
 		menu();
 		
 	}
