@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[]args){
         int a = 0;
         Scanner input = new Scanner(System.in);
-        English c1 = new English("asd","asd","asd",0,0,"asd");
+        English c1 = new English("asd","asd","asd",0,0,0);
 
 
         Biblioteca c2 = new Biblioteca("asd","asd","asd",0,0,0);

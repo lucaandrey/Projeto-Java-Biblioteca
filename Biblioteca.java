@@ -24,9 +24,9 @@ public class Biblioteca {
 	
 	public void login() {
 		System.out.println("login: ");
-		this.login = input.next(user);
+		this.login = input.next();
 		System.out.println("senha: ");
-		this.senha =input.next(password);
+		this.senha =input.next();
 		
 		if(user.equals(this.login)&& password.equals(this.senha)) {
 		menu();
@@ -307,8 +307,6 @@ else if(a==6) {
 		this.saldo += input.nextInt();
 		System.out.println("CADASTRO REALIZADO COM SUCESSO!! EFETUE O LOGIN PARA CONTNUAR!");
 		login();
-		
-		menu();
 		}
 		public void visualizar(){
 
