@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.util.Scanner;
 
 
@@ -8,9 +7,9 @@ public class Biblioteca {
 	private String senha;
 	private int saldo;
 	private int idade;
-	private String genero;
+	private int genero;
 	Scanner input = new Scanner(System.in);
-	public Biblioteca(String nome, String login, String senha, int saldo, int idade, String genero) {
+	public Biblioteca(String nome, String login, String senha, int saldo, int idade, int genero) {
 		this.nome = nome;
 		this.login = login;
 		this.senha = senha;
@@ -18,45 +17,43 @@ public class Biblioteca {
 		this.idade = idade;
 		this.genero = genero;
 	}
-
-	double romancePreco [] = {33.25,49.99,19.90,29.99,24.00,55.90};
-
-
 	
-	
+	String user;
+	String password;
 	
 	
 	public void login() {
-		String a,b;
 		System.out.println("login: ");
-		a = input.nextLine();
+		this.login = input.next();
 		System.out.println("senha: ");
-		b = input.nextLine();
+		this.senha =input.next();
 		
-		if(a.equals(this.login) && b.equals(this.login)) {
-		System.out.println("Coloque exibir menu aqui");
+		if(user.equals(this.login)&& password.equals(this.senha)) {
+		menu();
 		}else {
 			System.out.println("Login ou senha incorretos!");
 		}
 	}
 	public void menu() {
 		int op =0;
-		
-		System.out.println("GENEROS: ");
-		System.out.println("(1)Romance");
-		System.out.println("(2)Ficcao");
-		System.out.println("(3)Terror");
-		System.out.println("(4)Comedia");
-		System.out.println("(5)Auto-Ajuda");
-		System.out.println("(6)Aventura");
-		System.out.println("(7)Infantil");
-		System.out.println("Escolha uma opcao: ");
+		visualizar();
+		visualizar2();
+		System.out.println("\nGENEROS: ");
+		System.out.println("\n\tEscolha uma opcao: ");
+		System.out.println("\n\t(1) Romance");
+		System.out.println("\n\t(2) Ficcao");
+		System.out.println("\n\t(3) Terror");
+		System.out.println("\n\t(4) Comedia");
+		System.out.println("\n\t(5) Auto-Ajuda");
+		System.out.println("\n\t(6) Aventura");
+		System.out.println("\n\t(7) Infantil");
 		op = input.nextInt();
 		int a = 0;
 		switch(op) {
 		
-		case 1: System.out.println("Escolha uma opcao: ");
-				System.out.println("ROMANCE: ");
+		case 1: 
+				System.out.println("\t  ROMANCE ");
+				System.out.println("\t¨¨¨¨¨¨¨¨¨¨¨ ");
 				System.out.println("(1)Romeo e Julieta: ");
 				System.out.println("(2)O apanhador no campo de Centeio: ");
 				System.out.println("(3)A peste: ");
@@ -66,11 +63,12 @@ public class Biblioteca {
 				a=input.nextInt();
 		
 		if(a == 1) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("\nO amor apresenta-se à vida de Romeu e Julieta de modo traiçoeiro - "
 					+ "\nambos apaixonam-se instantaneamente, em uma festa - "
 					+ "\num baile de máscaras -, desconhecendo a identidade um do outro."
 					+ "\nEle é filho dos Montéquio, e ela, dos Capuleto, duas das mais poderosas "
-					+ "\nfamílias de Verona, inimigas entre si.");
+					+ "\nfamílias de Verona, inimigas entre si.\n");
 			loja();
 			}
 		else if(a ==2) {
@@ -268,21 +266,28 @@ else if(a==6) {
 		op = input.nextInt();
 		if(op == 1) {
 			int preco = 25;//TESTE DELETAR DEPOIS
+			int decida = 0;
 			System.out.println("O livro custa R$"+preco);
-			if(this.saldo - preco <0) {
+			System.out.println("Deseja prosseguir com a compra? (1)SIM (2)NAO");
+			decida = input.nextInt();
+			if(decida == 1){
+				if(this.saldo - preco <0) {
 				System.out.println("Saldo insuficiente!!");
-			}else {
+			}	else {
 				this.saldo -= preco;
 				System.out.println("Compra realizada com sucesso!!");
+				System.out.println("30% dos nossos lucros sao convertidos em doacoes para a caridade!");
 				System.out.println("Novo saldo: R$"+this.saldo);
 				menu();
 			}
 		}
-		else if(op == 2) {
+			else if(op == 2) {
 			int aluguel = 3;
+			saldo -=aluguel;
 			System.out.println("O aluguel do livro custa: "+aluguel);
 			System.out.println("Seu novo saldo ficou em: "+saldo);
 		}
+	}
 		else {
 			menu();
 		}	
@@ -291,14 +296,36 @@ else if(a==6) {
 		System.out.println("Insira seu nome: ");
 		this.nome = input.nextLine();
 		System.out.println("Escolha um nome de usuario: ");
-		this.login = input.nextLine();
+		user = input.nextLine();
 		System.out.println("Escolha uma senha: ");
-		this.senha = input.nextLine();
+		password = input.nextLine();
 		System.out.println("Qual a sua idade?: ");
 		this.idade = input.nextInt();
+		System.out.println("Informe seu genero (1) Masculino || (2)Feminino || (3) Outres: ");
+		this.genero = input.nextInt();
 		System.out.println("Faca um deposito inicial: ");
 		this.saldo += input.nextInt();
-		menu();
-		
+		System.out.println("CADASTRO REALIZADO COM SUCESSO!! EFETUE O LOGIN PARA CONTNUAR!");
+		login();
+		}
+		public void visualizar(){
+
+		System.out.println("*************************************************************");
+		System.out.println("\t           SEJA BEM-VINDO "+nome);
+		System.out.println("\n\t          É um prazer tê-lo aqui!");
+		System.out.println("\n\t     Você possui: "+saldo+" de Saldo. Aproveite! ");
+		System.out.println("*************************************************************");
 	}
+	
+	 public void visualizar2(){
+		
+		System.out.println("                                                          ");
+		System.out.println("\t Além de alimentar seu conhecimento, alimente vidas! \n ");
+		System.out.println("\t\t             CATÁLOGO");
+		}
+		public void visualizar3(){
+
+
+		}
 }
+
