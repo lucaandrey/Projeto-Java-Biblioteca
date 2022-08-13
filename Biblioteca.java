@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.util.Scanner;
 
 
@@ -8,9 +7,9 @@ public class Biblioteca {
 	private String senha;
 	private int saldo;
 	private int idade;
-	private String genero;
+	private int genero;
 	Scanner input = new Scanner(System.in);
-	public Biblioteca(String nome, String login, String senha, int saldo, int idade, String genero) {
+	public Biblioteca(String nome, String login, String senha, int saldo, int idade, int genero) {
 		this.nome = nome;
 		this.login = login;
 		this.senha = senha;
@@ -18,23 +17,19 @@ public class Biblioteca {
 		this.idade = idade;
 		this.genero = genero;
 	}
-
-	double romancePreco [] = {33.25,49.99,19.90,29.99,24.00,55.90};
-
-
 	
-	
+	String user;
+	String password;
 	
 	
 	public void login() {
-		String a,b;
 		System.out.println("login: ");
-		a = input.nextLine();
+		this.login = input.next(user);
 		System.out.println("senha: ");
-		b = input.nextLine();
+		this.senha =input.next(password);
 		
-		if(a.equals(this.login) && b.equals(this.login)) {
-		System.out.println("Coloque exibir menu aqui");
+		if(user.equals(this.login)&& password.equals(this.senha)) {
+		menu();
 		}else {
 			System.out.println("Login ou senha incorretos!");
 		}
@@ -271,21 +266,28 @@ else if(a==6) {
 		op = input.nextInt();
 		if(op == 1) {
 			int preco = 25;//TESTE DELETAR DEPOIS
+			int decida = 0;
 			System.out.println("O livro custa R$"+preco);
-			if(this.saldo - preco <0) {
+			System.out.println("Deseja prosseguir com a compra? (1)SIM (2)NAO");
+			decida = input.nextInt();
+			if(decida == 1){
+				if(this.saldo - preco <0) {
 				System.out.println("Saldo insuficiente!!");
-			}else {
+			}	else {
 				this.saldo -= preco;
 				System.out.println("Compra realizada com sucesso!!");
+				System.out.println("30% dos nossos lucros sao convertidos em doacoes para a caridade!");
 				System.out.println("Novo saldo: R$"+this.saldo);
 				menu();
 			}
 		}
-		else if(op == 2) {
+			else if(op == 2) {
 			int aluguel = 3;
+			saldo -=aluguel;
 			System.out.println("O aluguel do livro custa: "+aluguel);
 			System.out.println("Seu novo saldo ficou em: "+saldo);
 		}
+	}
 		else {
 			menu();
 		}	
@@ -294,13 +296,16 @@ else if(a==6) {
 		System.out.println("Insira seu nome: ");
 		this.nome = input.nextLine();
 		System.out.println("Escolha um nome de usuario: ");
-		this.login = input.nextLine();
+		user = input.nextLine();
 		System.out.println("Escolha uma senha: ");
-		this.senha = input.nextLine();
+		password = input.nextLine();
 		System.out.println("Qual a sua idade?: ");
 		this.idade = input.nextInt();
+		System.out.println("Informe seu genero (1) Masculino || (2)Feminino || (3) Outres: ");
+		this.genero = input.nextInt();
 		System.out.println("Faca um deposito inicial: ");
 		this.saldo += input.nextInt();
+<<<<<<< HEAD
 		
 		menu();
 		
@@ -323,4 +328,11 @@ else if(a==6) {
 
 
 		}
+=======
+		System.out.println("CADASTRO REALIZADO COM SUCESSO!! EFETUE O LOGIN PARA CONTNUAR!");
+		login();
+	}
+
+	
+>>>>>>> ed401dfb143f2833f3696a9f6e17823b4815b977
 }
