@@ -11,6 +11,7 @@ public class English {
 	private int idade;
 	private String genero;
 	Scanner input = new Scanner(System.in);
+	
 	public English(String nome, String login, String senha, int saldo, int idade, String genero) {
 		this.nome = nome;
 		this.login = login;
@@ -28,8 +29,6 @@ public class English {
 			System.out.println(livro[i]);
 		}
 	}
-	
-	
 	
 	public void login() {
 		String a,b;
