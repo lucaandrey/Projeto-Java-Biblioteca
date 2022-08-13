@@ -23,21 +23,35 @@ public class Biblioteca {
 	
 	
 	public void login() {
+<<<<<<< HEAD
 		System.out.println("login: ");
 		this.login = input.next();
 		System.out.println("senha: ");
+=======
+		System.out.println("Login: ");
+		this.login = input.next();
+		System.out.println("Senha: ");
+>>>>>>> Vinicius
 		this.senha =input.next();
 		
 		if(user.equals(this.login)&& password.equals(this.senha)) {
-		menu();
+			visualizar();
+			menu();
 		}else {
+<<<<<<< HEAD
 			System.out.println("Login ou senha incorretos!");
+=======
+			System.out.println("\nLogin ou senha incorretos!");
+			System.out.println("\nTente novamente.\n");
+
+>>>>>>> Vinicius
 			login();
 		}
+
 	}
 	public void menu() {
 		int op =0;
-		visualizar();
+		
 		visualizar2();
 		System.out.println("\nGENEROS: ");
 		System.out.println("\n\tEscolha uma opcao: ");
@@ -277,7 +291,7 @@ else if(a==6) {
 			}	else {
 				this.saldo -= preco;
 				System.out.println("Compra realizada com sucesso!!");
-				System.out.println("30% dos nossos lucros sao convertidos em doacoes para a caridade!");
+				System.out.println("                                    ");
 				System.out.println("Novo saldo: R$"+this.saldo);
 				menu();
 			}
@@ -294,20 +308,26 @@ else if(a==6) {
 		}	
 	}
 	public void cadastro() {
-		System.out.println("Insira seu nome: ");
+		
+		System.out.println("\nInsira seu nome: ");
 		this.nome = input.nextLine();
-		System.out.println("Escolha um nome de usuario: ");
+		System.out.println("\nEscolha um nome de usuario: ");
 		user = input.nextLine();
-		System.out.println("Escolha uma senha: ");
+		System.out.println("\nEscolha uma senha: ");
 		password = input.nextLine();
-		System.out.println("Qual a sua idade?: ");
+		System.out.println("\nQual a sua idade?: ");
 		this.idade = input.nextInt();
-		System.out.println("Informe seu genero (1) Masculino || (2)Feminino || (3) Outres: ");
+		System.out.println("\nInforme seu genero (1) Masculino || (2)Feminino || (3) Outres: ");
 		this.genero = input.nextInt();
-		System.out.println("Faca um deposito inicial: ");
+		System.out.println("\nFaca um deposito inicial: ");
 		this.saldo += input.nextInt();
 		System.out.println("CADASTRO REALIZADO COM SUCESSO!! EFETUE O LOGIN PARA CONTNUAR!");
 		login();
+<<<<<<< HEAD
+=======
+		
+		
+>>>>>>> Vinicius
 		}
 		public void visualizar(){
 
@@ -319,8 +339,9 @@ else if(a==6) {
 	}
 	
 	 public void visualizar2(){
-		
-		System.out.println("                                                          ");
+		System.out.println("                           MENU                              ");
+		System.out.println("                          ¨¨¨¨¨¨                            ");
+		System.out.println("   30% de nossos lucros são enviados para Instituições de caridade.");
 		System.out.println("\t Além de alimentar seu conhecimento, alimente vidas! \n ");
 		System.out.println("\t\t             CATÁLOGO");
 		}
