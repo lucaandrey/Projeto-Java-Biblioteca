@@ -11,7 +11,12 @@ public class English {
 	private int idade;
 	private int genero;
 	Scanner input = new Scanner(System.in);
+
+
+
+	
 	public English(String nome, String login, String senha, int saldo, int idade, int genero) {
+
 		this.nome = nome;
 		this.login = login;
 		this.senha = senha;
@@ -19,9 +24,21 @@ public class English {
 		this.idade = idade;
 		this.genero = genero;
 	}
+
 	String user;
 	String password;
 	
+
+	Random random = new Random();
+	double[] livro = new double[42];
+	
+	public void gerarPreco() {
+		for(int i=0;i<42;i++) {
+			livro[i] = random.nextInt(30,60);
+			System.out.println(livro[i]);
+		}
+	}
+
 	
 	public void login() {
 		System.out.println("user: ");
