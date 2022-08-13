@@ -115,7 +115,7 @@ public class English {
 		break;
 		case 2: 
 		System.out.println("Choose an option: ");													
-		System.out.println("FICCAO: ");
+		System.out.println("FICTION: ");
 		System.out.println("(1)Outsider: ");
 		System.out.println("(2)Drácula - Dark Edition: ");
 		System.out.println("(3)The Lost Journal of Gravity Falls ");
