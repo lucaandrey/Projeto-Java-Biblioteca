@@ -5,7 +5,7 @@ public class Main {
         int a = 0;
         Scanner input = new Scanner(System.in);
         English c1 = new English("asd","asd","asd",0,0,"asd");
-        Español c3 = new Español("asd","asd","asd",0,0,"asd");
+        Espanol c3 = new Espanol("asd","asd","asd",0,0,"asd");
         Biblioteca c2 = new Biblioteca("asd","asd","asd",0,0,"asd");
         System.out.println("Choose a language|| Escolha um idioma: ");
         System.out.println(" ");

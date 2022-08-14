@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-public class Español {
+public class Espanol {
 	private String nome;
 	private String login;
 	private String senha;
@@ -11,7 +11,7 @@ public class Español {
 	private String genero;
 	Scanner input = new Scanner(System.in);
 	
-	public Español (String nome, String login, String senha, int saldo, int idade, String genero) {
+	public Espanol (String nome, String login, String senha, int saldo, int idade, String genero) {
 		this.nome = nome;
 		this.login = login;
 		this.senha = senha;
