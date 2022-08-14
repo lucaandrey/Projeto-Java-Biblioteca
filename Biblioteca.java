@@ -41,10 +41,6 @@ public class Biblioteca {
 		System.out.println("login: ");
 		this.login = input.next();
 		System.out.println("senha: ");
-
-		System.out.println("Login: ");
-		this.login = input.next();
-		System.out.println("Senha: ");
 		this.senha =input.next();
 		
 		if(user.equals(this.login)&& password.equals(this.senha)) {
@@ -290,14 +286,14 @@ else if(escolha==6) {
 		if(op == 1) {
 			
 			int decida = 0;
-			System.out.println("O livro custa R$"+precoLivro.get(2));
+			System.out.println("O livro custa R$"+precoLivro.get(escolha - 1));
 			System.out.println("Deseja prosseguir com a compra? (1)SIM (2)NAO");
 			decida = input.nextInt();
 			if(decida == 1){
-				if(this.saldo - precoLivro.get(2) <0) {
+				if(this.saldo - precoLivro.get(escolha -1) <0) {
 				System.out.println("Saldo insuficiente!!");
-			}	else if(this.saldo >= precoLivro.get(2)) {
-				this.saldo -= precoLivro.get(2);
+			}	else if(this.saldo >= precoLivro.get(escolha -1)) {
+				this.saldo -= precoLivro.get(escolha -1);
 				System.out.println("Compra realizada com sucesso!!");
 				System.out.println("                                    ");
 				System.out.println("Novo saldo: R$"+this.saldo);
