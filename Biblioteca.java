@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-<<<<<<< HEAD
+
 import java.util.concurrent.TimeUnit;
-=======
+
 
 import javax.swing.plaf.synth.SynthScrollBarUI;
 
->>>>>>> 2889a843e1243a3615bf2346d89ffe806a8de50b
+
 
 public class Biblioteca {
 	private String nome;
@@ -48,26 +48,12 @@ public class Biblioteca {
 		System.out.println("\nLogin: ");
 		this.login = input.next();
 		System.out.println("\nSenha: ");
-		
-
-		System.out.println("Login: ");
-		this.login = input.next();
-		System.out.println("Senha: ");
-
 		this.senha =input.next();
 		
 		if(user.equals(this.login)&& password.equals(this.senha)) {
 			visualizar();
 			menu();
 		}else {
-
-
-			System.out.println("\nLogin ou senha incorretos!");
-
-			System.out.println("\nLogin ou senha incorretos!");
-			System.out.println("\nTente novamente.\n");
-
-
 
 			System.out.println("\nLogin ou senha incorretos!");
 			System.out.println("\nTente novamente.\n");
@@ -89,18 +75,10 @@ public class Biblioteca {
 			e.printStackTrace();
 		}
 		System.out.println("\nGENEROS: ");
-<<<<<<< HEAD
-		System.out.println("\n\tEscolha uma opcao: ");
-		System.out.println("\n\t(0)Faca um deposito");
-		System.out.println("\n\t(1) Romance");
-		System.out.println("\n\t(2) Ficcao");
-		System.out.println("\n\t(3) Terror");
-		System.out.println("\n\t(4) Comedia");
-		System.out.println("\n\t(5) Auto-Ajuda");
-		System.out.println("\n\t(6) Aventura");
-		System.out.println("\n\t(7) Infantil");
-=======
+
+
 		System.out.println("\nEscolha uma opção: ");
+		System.out.println("\n(0) Faca um deposito");
 		System.out.println("\n (1) Romance");
 		System.out.println("\n (2) Ficcao");
 		System.out.println("\n (3) Terror");
@@ -108,7 +86,6 @@ public class Biblioteca {
 		System.out.println("\n (5) Auto-Ajuda");
 		System.out.println("\n (6) Aventura");
 		System.out.println("\n (7) Infantil");
->>>>>>> 2889a843e1243a3615bf2346d89ffe806a8de50b
 		op = input.nextInt();
 		switch(op) {
 		case 0: deposito1(0);
@@ -327,7 +304,7 @@ else if(escolha==6) {
 
 	
 	public void loja() {
-		int op =0;
+		int op = 0;
 		
 		System.out.println("Escolha a opcao desejada: ");
 		System.out.println("(1) COMPRAR");
@@ -336,61 +313,25 @@ else if(escolha==6) {
 		op = input.nextInt();
 		if(op == 1) {
 			
-
-			int preco = 25;//TESTE DELETAR DEPOIS
-
-
-			int decida = 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
+			System.out.println("\nSaldo disponível: "+saldo);
 			System.out.println("O livro custa R$"+precoLivro.get(escolha - 1));
 			System.out.println("Deseja prosseguir com a compra? (1)SIM (2)NAO");
-=======
-			System.out.println("\nO livro custa R$"+precoLivro.get(escolha - 1));
-			System.out.println("\nSaldo disponível: "+saldo);
-			System.out.println("\nDeseja prosseguir com a compra? (1)SIM (2)NAO");
->>>>>>> 2889a843e1243a3615bf2346d89ffe806a8de50b
-			decida = input.nextInt();
+
 			
+
+			int decida = input.nextInt();
 			if(decida == 1){
-
-				if(this.saldo - preco <0) {
-				System.out.println("\nSaldo insuficiente!!");
-				System.out.println("\nDeseja fazer um depósito ? \n ( 1 )SIM ( 2 )NÃO ");
-				
-				}
-				else {
-				this.saldo -= preco;
-				System.out.println("Compra realizada com sucesso!!");
-
 				if(this.saldo - precoLivro.get(escolha -1) <0) {
-				System.out.println("\nSaldo insuficiente!!");
-				System.out.println("\nVocê foi redirecionado para nossa loja.");
-				System.err.println("                                          ");
-				deposito(0);
-			}	else if(this.saldo >= precoLivro.get(escolha -1)) {
-				this.saldo -= precoLivro.get(escolha -1);
-<<<<<<< HEAD
-=======
-			System.out.println("O livro custa R$"+precoLivro.get(escolha-1));
-			System.out.println("Deseja prosseguir com a compra? (1)SIM (2)NAO");
-			decida = input.nextInt();
-			if(decida == 1){
-				if(this.saldo - precoLivro.get(escolha-1) <0) {
-				System.out.println("Saldo insuficiente!!");
-			}	else if(this.saldo >= precoLivro.get(escolha-1)) {
+					System.out.println("\nSaldo insuficiente!");
+					System.out.println("\nVocê foi redirecionado para nossa loja.");
+					System.err.println("                                          ");
+					deposito(0);
+				}else if(this.saldo >= precoLivro.get(escolha-1)) {
 				this.saldo -= precoLivro.get(escolha-1);
->>>>>>> Luca
-				System.out.println("Compra realizada com sucesso!!");
-				System.out.println("                                    ");
-				System.out.println("Novo saldo: R$"+this.saldo);
-=======
->>>>>>> 2889a843e1243a3615bf2346d89ffe806a8de50b
-				
 				try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
-
+					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				
@@ -403,28 +344,32 @@ else if(escolha==6) {
 				System.out.println("   Novo saldo: R$"+this.saldo);
 				System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
 				System.out.println("                             ");
-				
 				try {
-					Thread.sleep(1000);
+					Thread.sleep(2000);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				
-				
 				menu();
 			}
 			else if (decida == 2 ){
 				menu();
 			}
-		}
-		}
+		}		
+	}		
 		else if(op == 2) {
 			int decida = 0;
 			System.out.println("Tem certeza prosseguir com a operação ? (1) SIM (2) NÃO");
 			System.out.println("\nSaldo disponível: "+saldo);
 			decida = input.nextInt();
 			if(decida==1 ){int aluguel = 5;
+				if(saldo - aluguel <0){
+					System.out.println("\nSaldo insuficiente!");
+					System.out.println("\nVocê foi redirecionado para nossa loja.");
+					System.err.println("                                          ");
+					deposito(0);
+				}
+				else if (saldo >= aluguel){
 				saldo -=aluguel;
 				System.out.println("\nO aluguel do livro custa: "+aluguel);
 				System.out.println("\t************************************");
@@ -439,19 +384,19 @@ else if(escolha==6) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				
-				
+
 				menu();
-			}else 
-			menu();
-			
-			
-		}
+				}
+				else{
+					menu();
+				}
+			}
 	
 		else {
 			menu();
-		}	
+		}
 	}
+}
 	public void cadastro() {
 		
 		System.out.println("\nInsira seu nome: ");
@@ -468,14 +413,6 @@ else if(escolha==6) {
 		this.saldo += input.nextInt();
 		System.out.println("CADASTRO REALIZADO COM SUCESSO!! EFETUE O LOGIN PARA CONTNUAR!");
 		login();
-
-
-
-		
-		
-
-
-
 		}
 		public void visualizar(){
 
@@ -508,7 +445,6 @@ else if(escolha==6) {
 			try {
 				Thread.sleep(2000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			menu();
