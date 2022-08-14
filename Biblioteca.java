@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.swing.plaf.synth.SynthScrollBarUI;
+
 
 public class Biblioteca {
 	private String nome;
@@ -23,28 +25,24 @@ public class Biblioteca {
 	
 	
 	public void login() {
-<<<<<<< HEAD
-		System.out.println("login: ");
+
+		System.out.println("\nLogin: ");
 		this.login = input.next();
-		System.out.println("senha: ");
-=======
-		System.out.println("Login: ");
-		this.login = input.next();
-		System.out.println("Senha: ");
->>>>>>> Vinicius
+		System.out.println("\nSenha: ");
+		
 		this.senha =input.next();
 		
 		if(user.equals(this.login)&& password.equals(this.senha)) {
 			visualizar();
 			menu();
 		}else {
-<<<<<<< HEAD
-			System.out.println("Login ou senha incorretos!");
-=======
+
+			System.out.println("\nLogin ou senha incorretos!");
+
 			System.out.println("\nLogin ou senha incorretos!");
 			System.out.println("\nTente novamente.\n");
 
->>>>>>> Vinicius
+
 			login();
 		}
 
@@ -280,15 +278,20 @@ else if(a==6) {
 		System.out.println("(3)RETORNAR AO MENU");
 		op = input.nextInt();
 		if(op == 1) {
+			
 			int preco = 25;//TESTE DELETAR DEPOIS
 			int decida = 0;
 			System.out.println("O livro custa R$"+preco);
 			System.out.println("Deseja prosseguir com a compra? (1)SIM (2)NAO");
 			decida = input.nextInt();
+			
 			if(decida == 1){
 				if(this.saldo - preco <0) {
-				System.out.println("Saldo insuficiente!!");
-			}	else {
+				System.out.println("\nSaldo insuficiente!!");
+				System.out.println("\nDeseja fazer um depósito ? \n ( 1 )SIM ( 2 )NÃO ");
+				
+				}
+				else {
 				this.saldo -= preco;
 				System.out.println("Compra realizada com sucesso!!");
 				System.out.println("                                    ");
@@ -323,11 +326,11 @@ else if(a==6) {
 		this.saldo += input.nextInt();
 		System.out.println("CADASTRO REALIZADO COM SUCESSO!! EFETUE O LOGIN PARA CONTNUAR!");
 		login();
-<<<<<<< HEAD
-=======
+
+
 		
 		
->>>>>>> Vinicius
+
 		}
 		public void visualizar(){
 
