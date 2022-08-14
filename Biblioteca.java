@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -5,11 +6,11 @@ public class Biblioteca {
 	private String nome;
 	private String login;
 	private String senha;
-	private int saldo;
+	private double saldo;
 	private int idade;
 	private int genero;
 	Scanner input = new Scanner(System.in);
-	public Biblioteca(String nome, String login, String senha, int saldo, int idade, int genero) {
+	public Biblioteca(String nome, String login, String senha, double saldo, int idade, int genero) {
 		this.nome = nome;
 		this.login = login;
 		this.senha = senha;
@@ -20,6 +21,19 @@ public class Biblioteca {
 	
 	String user;
 	String password;
+
+	private ArrayList<Double> precoLivro = new ArrayList<Double>();
+	
+	 public void addItems(){
+	precoLivro.add(23.99);
+	precoLivro.add(34.90);
+	precoLivro.add(29.99);
+	precoLivro.add(59.99);
+	precoLivro.add(49.99);
+	precoLivro.add(19.99);
+
+	 }
+	 int escolha = 0;
 	
 	
 	public void login() {
@@ -35,6 +49,7 @@ public class Biblioteca {
 		}
 	}
 	public void menu() {
+		addItems();
 		int op =0;
 		visualizar();
 		visualizar2();
@@ -48,7 +63,6 @@ public class Biblioteca {
 		System.out.println("\n\t(6) Aventura");
 		System.out.println("\n\t(7) Infantil");
 		op = input.nextInt();
-		int a = 0;
 		switch(op) {
 		
 		case 1: 
@@ -60,9 +74,9 @@ public class Biblioteca {
 				System.out.println("(4)O Amor nos tempos do colera: ");
 				System.out.println("(5)Cidade de papel: ");
 				System.out.println("(6)Dom Casmurro: ");
-				a=input.nextInt();
+				escolha=input.nextInt();
 		
-		if(a == 1) {
+		if(escolha == 1) {
 			System.out.println("\t\t\tSINOPSE");
 			System.out.println("\nO amor apresenta-se à vida de Romeu e Julieta de modo traiçoeiro - "
 					+ "\nambos apaixonam-se instantaneamente, em uma festa - "
@@ -71,7 +85,7 @@ public class Biblioteca {
 					+ "\nfamílias de Verona, inimigas entre si.\n");
 			loja();
 			}
-		else if(a ==2) {
+		else if(escolha ==2) {
 			System.out.println("É Natal, e Holden Caulfield conseguiu ser expulso de mais uma escola. Com uns trocados da venda de uma máquina de escrever e "
 					+ "\nportando seu indefectível boné vermelho de caçador, "
 					+ "\no jovem traça um plano incerto: tomar um trem para Nova York e vagar por três dias pela grande cidade,"
@@ -83,7 +97,7 @@ public class Biblioteca {
 					+ "\nentre elas uma questão recorrente: afinal, para onde vão os patos do Central Park no inverno? ");
 			loja();
 		}
-		else if(a == 3) {
+		else if(escolha == 3) {
 			System.out.println("Na manhã de um dia 16 de abril dos anos de 1940, o doutor Bernard Rieux sai do seu "
 					+ "\nconsultório e tropeça num rato morto. "
 					+ "\nEste é o primeiro sinal de uma epidemia de peste que em"
@@ -92,20 +106,20 @@ public class Biblioteca {
 					+ "\nconduzidos até estados de sofrimento, de loucura, mas também de compaixão de proporções desmedidas.");
 			loja();
 		}
-		else if(a == 4) {
+		else if(escolha == 4) {
 			System.out.println("Florentino Ariza nunca esqueceu Fermina, seu primeiro amor. "
 					+ "\nEle esperou quase a vida toda por ela, que se casou com outro. "
 					+ "\nAgora, 51 anos depois, o marido morre, e ele finalmente tem uma chance de reconquistá-la.");
 			loja();
 		}
-		else if(a==5) {
+		else if(escolha==5) {
 			System.out.println("É Natal, e Holden Caulfield conseguiu ser expulso de mais uma escola. Com uns trocados da venda de uma máquina de escrever e"
 					+ " \nnportando seu indefectível boné vermelho de caçador,"
 					+ " \nno jovem traça um plano incerto: tomar um trem para Nova York e vagar por três dias pela grande cidade, "
 					+ "\nadiando a volta à casa dos pais até que eles recebam a notícia da expulsão por alguém da escola.");
 					loja();
 		}
-		else if(a == 6) {
+		else if(escolha == 6) {
 			System.out.println("\nDom Casmurro conta a história de Bento Santiago (Bentinho), "
 					+ "\napelidado de Dom Casmurro por ser calado e introvertido."
 					+ "\nNa adolescência, apaixona-se por Capítu, abandonando o seminário e,"
@@ -122,15 +136,15 @@ public class Biblioteca {
 				System.out.println("(5)Mitologia Nórdica: ");
 				System.out.println("(6)A arte da guerra: ");
 				System.out.println("Escolha uma opcao: ");													
-				a=input.nextInt();
+				escolha=input.nextInt();
 			
-		if(a == 1) {
+		if(escolha == 1) {
 			System.out.println("O corpo de um menino de onze anos é encontrado abandonado no parque de Flint City, brutalmente assassinado. Testemunhas e impressões digitais apontam o criminoso como uma das figuras mais conhecidas da cidade ― Terry Maitland, treinador da Liga Infantil de beisebol, professor de inglês, casado e pai de duas filhas.\r\n"
 					+ "O detetive Ralph Anderson não hesita em ordenar uma prisão rápida e bastante pública, fazendo com que em pouco tempo toda a cidade saiba que o Treinador T é o principal suspeito do crime. Maitland tem um álibi, mas Anderson e o promotor público logo têm amostras de DNA para corroborar a acusação. O caso parece resolvido.\r\n"
 					+ "Mas conforme a investigação se desenrola, a história se transforma em uma montanha-russa, cheia de tensão e suspense. Terry Maitland parece ser uma boa pessoa, mas será que isso não passa de uma máscara? A aterrorizante resposta é o que faz desta uma das histórias mais perturbadoras de Stephen King.");
 					loja();
 		}
-		else if(a == 2) {
+		else if(escolha == 2) {
 			System.out.println("Drácula, um clássico que ainda corre quente na veia de inúmeras gerações de leitores por todo o mundo e a mais celebrada narrativa de vampiros, continua a transcender fronteiras de tempo, espaço, história e memória.Mais de 120 anos após sua primeira publicação, o romance epistolar mobiliza leitores e estudiosos,\r\n"
 					+ " confirmando o vigor perene de uma árvore cujas sólidas raízes respondem pela vitalidade de suas ramificações. Embora o famoso conde não tenha sido o primeiro vampiro literário, certamente é o mais popular, sugado e adaptado para inúmeros universos: teatro, cinema, quadrinhos, séries e brinquedos, o semblante é reconhecido \r\n"
 					+ " até mesmo por aqueles que nunca leram o romance. Ele está em todos os lugares.A obra atemporal de Bram Stoker narra, por meio de fragmentos de cartas, diários e notícias de jornal, a história de humanos lutando para sobreviver às investidas do vampiro Drácula. O grupo formado por Jonathan Harker, Mina Harker, dr. Van Helsing \r\n"
@@ -144,7 +158,7 @@ public class Biblioteca {
 					+ "década após década. Para eternizar a experiência, sempre traz ilustradores convidados e tradutores que respiram e conhecem profundamente as obras originais. De fã para fã. Até o fim.DEIXE ELE ENTRAR PARA A SUA COLEÇÃO E CONHEÇA TAMBÉM A FIRST EDITION");	
 					loja();		
 		}
-		else if(a == 3) {
+		else if(escolha == 3) {
 			System.out.println("Você possui em suas mãos o cobiçado diário do autor da série Gravity Falls, um tesouro de 288 páginas coloridas e sem dono, com segredos nunca antes revelados, monstros e mistérios da pacata cidade do Tivô Stan.\r\n"
 					+ "\r\n"
 					+ "Com ele, você irá aprender a trágica história de Ford, o paradeiro de Blendin, qual é a Dimensão 52 e como atrair um “ornitorrinco xadrez”.\r\n"
@@ -152,13 +166,13 @@ public class Biblioteca {
 					+ "Mas cuidado: este é um livro desejado por muitas forças sombrias, por isso fique alerta se qualquer um quiser tirá-lo de você (especialmente se tiverem olhos amarelos e brilhantes). E, o mais importante, divirta-se. Afinal, não existe um lugar como Gravity Falls. Ou será que existe?");
 					loja();
 		}
-		else if(a == 4) {
+		else if(escolha == 4) {
 			System.out.println("O Livro dos Cinco Anéis é hoje um manual de gente de sucesso que soube aproveitar as lições de Miyamoto Musashi (1584-1645) nas batalhas do dia a dia. Espadachim imbatível desde os 13 anos, o autor resumiu nesta obra clássica a experiência de quem representou o apogeu do Bushido, ou “caminho do guerreiro”, \r\n "
 					+ "o código de conduta e modo de vida para os samurais que inclui equilíbrio, sabedoria e honra. Nos cinco capítulos ou tomos do livro, Terra, Água, Fogo, Vento e Vácuo, Musashi trata de liderança e dos princípios ligados aos conflitos da existência humana para fazer do leitor uma pessoa vencedora. Esta edição da Jardim \r\n"
 					+ " dos Livros tem primorosa tradução, direta do japonês, do professor doutor Wataru Kikuchi, diretor do Centro de Estudos Japoneses da USP. Um caderno de fotos, pinturas do autor e mapas de batalhas do Japão antigo tornam o livro, além de tudo, uma requintada obra de arte, inclui ainda páginas para anotações do leitor.");
 					loja();
 		}
-		else if(a == 5) {
+		else if(escolha == 5) {
 			System.out.println("Uma jornada da origem do universo até o fim do mundo.\r\n"
 					+ "\r\n"
 					+ "Quem, além de Neil Gaiman, poderia se tornar cúmplice dos deuses e usar de sua habilidade com as palavras para recontar as histórias dos mitos nórdicos? Fãs e leitores sabem que a mitologia nórdica sempre teve grande influência na obra do autor. Depois de servirem de inspiração para clássicos como Deuses americanos e \r\n"
@@ -174,7 +188,7 @@ public class Biblioteca {
 					+ "Os mitos nórdicos estão em obras que se tornaram bastante populares, como os livros de J. R. R. Tolkien, a série de TV Game of Thrones, nas HQs e filmes da Marvel. E, em abril, estreia a adaptação de Deuses americanos para a TV.");
 					loja();
 		}
-		else if (a == 6) {
+		else if (escolha == 6) {
 			System.out.println("A guerra é um assunto de importância vital para o Estado; o reino da vida ou da morte; o caminho para a sobrevivência ou a ruína. É indispensável estudá-la profundamente.\" Sun Tzu");
 			loja();
 		}
@@ -187,9 +201,9 @@ public class Biblioteca {
         System.out.println("(4)It - a coisa - Stephen King: ");
         System.out.println("(5)O mistério da casa do lago - Diego Cassiolato: ");
         System.out.println("(6)Condado maldito: Bruxas e Assombrações - Cullen Bunn: ");
-        a=input.nextInt();
+        escolha=input.nextInt();
 
-        if(a==1) {
+        if(escolha==1) {
             System.out.println("As asas de um corvo se misturam à escuridão. "
                     + "A velha casa em ruínas observa com janelas que pareciam olhos."
                     + " Você jura ouvir a voz de alguém que já partiu para o outro lado,"
@@ -198,20 +212,20 @@ public class Biblioteca {
                     + "forma na obra de Edgar Allan Poe.");
             loja();
         }
-        else if(a==2) {
+        else if(escolha==2) {
             System.out.println("Carrie é uma adolescente tímida e solitária. Aos 16 anos, é completamente dominada pela mãe, "
                     + "uma fanática religiosa que reprime todas as vontades "
                     + "e descobertas normais aos jovens de sua idade. Para Carrie, "
                     + "tudo é pecado. Viver é enfrentar todo dia o terrível peso da culpa.");
             loja();
         }
-        else if(a==3) {
+        else if(escolha==3) {
             System.out.println("O brilhante e pouco ortodoxo doutor Victor Frankestein trabalha na criação de um monstro com partes de "
                     + "diferentes corpos humanos. Após ser rejeitada pelo criador,"
                     + "a criatura escapa e passa a agir com uma violenta sede de vingança.");
             loja();
         }
-else if(a==4) {
+else if(escolha==4) {
             System.out.println("Naquele verão, eles enfrentaram pela primeira vez a Coisa, um ser sobrenatural e "
                     + "maligno que deixou terríveis marcas de sangue em Derry. "
                     + "Quase trinta anos depois, os amigos voltam a se encontrar. "
@@ -219,7 +233,7 @@ else if(a==4) {
                     + "e somente eles serão capazes de enfrentar a Coisa. O tempo é curto.");
             loja();
         }
-		else if(a==5) {
+		else if(escolha==5) {
             System.out.println("Jack Campbell, um professor de natação, e sua pequena filha Emily, "
                     + "decidem passar um tempo juntos em uma casa do lago "
                     + "a fim de superarem o luto pela morte de Hannah,"
@@ -234,7 +248,7 @@ else if(a==4) {
                     + "e de perigos inimagináveis que tem que enfrentar.");
             loja();
         }
-else if(a==6) {
+else if(escolha==6) {
             System.out.println("Emmy sempre soube que a floresta ao redor de sua casa estava cheia de fantasmas e monstros. "
                     + "No entanto, na véspera de seu aniversário de dezoito anos ela descobre que está conectada "
                     + "a essas criaturas ― e à própria terra ― de uma maneira que não imaginava ser possível. "
@@ -265,29 +279,33 @@ else if(a==6) {
 		System.out.println("(3)RETORNAR AO MENU");
 		op = input.nextInt();
 		if(op == 1) {
-			int preco = 25;//TESTE DELETAR DEPOIS
+			
 			int decida = 0;
-			System.out.println("O livro custa R$"+preco);
+			System.out.println("O livro custa R$"+precoLivro.get(2));
 			System.out.println("Deseja prosseguir com a compra? (1)SIM (2)NAO");
 			decida = input.nextInt();
 			if(decida == 1){
-				if(this.saldo - preco <0) {
+				if(this.saldo - precoLivro.get(2) <0) {
 				System.out.println("Saldo insuficiente!!");
-			}	else {
-				this.saldo -= preco;
+			}	else if(this.saldo >= precoLivro.get(2)) {
+				this.saldo -= precoLivro.get(2);
 				System.out.println("Compra realizada com sucesso!!");
 				System.out.println("30% dos nossos lucros sao convertidos em doacoes para a caridade!");
 				System.out.println("Novo saldo: R$"+this.saldo);
+				
+			}
+			else if (decida == 2 ){
 				menu();
 			}
 		}
-			else if(op == 2) {
+		}
+		else if(op == 2) {
 			int aluguel = 3;
 			saldo -=aluguel;
 			System.out.println("O aluguel do livro custa: "+aluguel);
 			System.out.println("Seu novo saldo ficou em: "+saldo);
 		}
-	}
+	
 		else {
 			menu();
 		}	
