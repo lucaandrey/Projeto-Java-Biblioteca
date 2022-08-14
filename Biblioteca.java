@@ -346,6 +346,7 @@ else if(escolha==6) {
 			if(decida==1 ){int aluguel = 5;
 				saldo -=aluguel;
 				System.out.println("\nO aluguel do livro custa: "+aluguel);
+				System.out.println("                                         ");
 				System.out.println("\t************************************");
 				System.out.println("\t* Operação realizada com sucesso!! *");
 				System.out.println("\t************************************");
