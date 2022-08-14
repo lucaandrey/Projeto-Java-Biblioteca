@@ -19,8 +19,8 @@ public class Biblioteca {
 		this.genero = genero;
 	}
 	
-	String user;
-	String password;
+	String user ="asd";
+	String password= "asd";
 
 	private ArrayList<Double> precoLivro = new ArrayList<Double>();
 	
@@ -38,9 +38,9 @@ public class Biblioteca {
 	
 	public void login() {
 
-		System.out.println("login: ");
+		System.out.println("Login: ");
 		this.login = input.next();
-		System.out.println("senha: ");
+		System.out.println("Senha: ");
 		this.senha =input.next();
 		
 		if(user.equals(this.login)&& password.equals(this.senha)) {
@@ -59,26 +59,26 @@ public class Biblioteca {
 		
 		visualizar2();
 		System.out.println("\nGENEROS: ");
-		System.out.println("\n\tEscolha uma opcao: ");
-		System.out.println("\n\t(1) Romance");
-		System.out.println("\n\t(2) Ficcao");
-		System.out.println("\n\t(3) Terror");
-		System.out.println("\n\t(4) Comedia");
-		System.out.println("\n\t(5) Auto-Ajuda");
-		System.out.println("\n\t(6) Aventura");
-		System.out.println("\n\t(7) Infantil");
+		System.out.println("\nEscolha uma opção: ");
+		System.out.println("\n (1) Romance");
+		System.out.println("\n (2) Ficcao");
+		System.out.println("\n (3) Terror");
+		System.out.println("\n (4) Comedia");
+		System.out.println("\n (5) Auto-Ajuda");
+		System.out.println("\n (6) Aventura");
+		System.out.println("\n (7) Infantil");
 		op = input.nextInt();
 		switch(op) {
 		
 		case 1: 
 				System.out.println("\t  ROMANCE ");
 				System.out.println("\t¨¨¨¨¨¨¨¨¨¨¨ ");
-				System.out.println("(1)Romeo e Julieta: ");
-				System.out.println("(2)O apanhador no campo de Centeio: ");
-				System.out.println("(3)A peste: ");
-				System.out.println("(4)O Amor nos tempos do colera: ");
-				System.out.println("(5)Cidade de papel: ");
-				System.out.println("(6)Dom Casmurro: ");
+				System.out.println("\n(1) Romeo e Julieta: ");
+				System.out.println("\n(2) O apanhador no campo de Centeio: ");
+				System.out.println("\n(3) A peste: ");
+				System.out.println("\n(4) O Amor nos tempos do colera: ");
+				System.out.println("\n(5) Cidade de papel: ");
+				System.out.println("\n(6) Dom Casmurro: ");
 				escolha=input.nextInt();
 		
 		if(escolha == 1) {
@@ -114,43 +114,43 @@ public class Biblioteca {
 		else if(escolha == 4) {
 			System.out.println("Florentino Ariza nunca esqueceu Fermina, seu primeiro amor. "
 					+ "\nEle esperou quase a vida toda por ela, que se casou com outro. "
-					+ "\nAgora, 51 anos depois, o marido morre, e ele finalmente tem uma chance de reconquistá-la.");
+					+ "\nAgora, 51 anos depois, o marido morre, e ele finalmente tem uma chance de reconquistá-la.\n");
 			loja();
 		}
 		else if(escolha==5) {
-			System.out.println("É Natal, e Holden Caulfield conseguiu ser expulso de mais uma escola. Com uns trocados da venda de uma máquina de escrever e"
+			System.out.println("\nÉ Natal, e Holden Caulfield conseguiu ser expulso de mais uma escola. Com uns trocados da venda de uma máquina de escrever e"
 					+ " \nnportando seu indefectível boné vermelho de caçador,"
 					+ " \nno jovem traça um plano incerto: tomar um trem para Nova York e vagar por três dias pela grande cidade, "
-					+ "\nadiando a volta à casa dos pais até que eles recebam a notícia da expulsão por alguém da escola.");
+					+ "\nadiando a volta à casa dos pais até que eles recebam a notícia da expulsão por alguém da escola.\n");
 					loja();
 		}
 		else if(escolha == 6) {
 			System.out.println("\nDom Casmurro conta a história de Bento Santiago (Bentinho), "
 					+ "\napelidado de Dom Casmurro por ser calado e introvertido."
 					+ "\nNa adolescência, apaixona-se por Capítu, abandonando o seminário e,"
-					+ "\ncom ele, os desígnios traçados por sua mãe, Dona Glória, para que se tornasse padre.");
+					+ "\ncom ele, os desígnios traçados por sua mãe, Dona Glória, para que se tornasse padre.\n");
 			loja();
 		}
 		break;
 		case 2: 
 				System.out.println("FICCAO: ");
-				System.out.println("(1)Outsider: ");
-				System.out.println("(2)Drácula - Dark Edition: ");
-				System.out.println("(3)O diário perdido de gravity falls: ");
-				System.out.println("(4)O livro dos cinco anéis");
-				System.out.println("(5)Mitologia Nórdica: ");
-				System.out.println("(6)A arte da guerra: ");
+				System.out.println("(1) Outsider: ");
+				System.out.println("(2) Drácula - Dark Edition: ");
+				System.out.println("(3) O diário perdido de gravity falls: ");
+				System.out.println("(4) O livro dos cinco anéis");
+				System.out.println("(5) Mitologia Nórdica: ");
+				System.out.println("(6) A arte da guerra: ");
 				System.out.println("Escolha uma opcao: ");													
 				escolha=input.nextInt();
 			
 		if(escolha == 1) {
-			System.out.println("O corpo de um menino de onze anos é encontrado abandonado no parque de Flint City, brutalmente assassinado. Testemunhas e impressões digitais apontam o criminoso como uma das figuras mais conhecidas da cidade ― Terry Maitland, treinador da Liga Infantil de beisebol, professor de inglês, casado e pai de duas filhas.\r\n"
+			System.out.println("\nO corpo de um menino de onze anos é encontrado abandonado no parque de Flint City, brutalmente assassinado. Testemunhas e impressões digitais apontam o criminoso como uma das figuras mais conhecidas da cidade ― Terry Maitland, treinador da Liga Infantil de beisebol, professor de inglês, casado e pai de duas filhas.\r\n"
 					+ "O detetive Ralph Anderson não hesita em ordenar uma prisão rápida e bastante pública, fazendo com que em pouco tempo toda a cidade saiba que o Treinador T é o principal suspeito do crime. Maitland tem um álibi, mas Anderson e o promotor público logo têm amostras de DNA para corroborar a acusação. O caso parece resolvido.\r\n"
-					+ "Mas conforme a investigação se desenrola, a história se transforma em uma montanha-russa, cheia de tensão e suspense. Terry Maitland parece ser uma boa pessoa, mas será que isso não passa de uma máscara? A aterrorizante resposta é o que faz desta uma das histórias mais perturbadoras de Stephen King.");
+					+ "Mas conforme a investigação se desenrola, a história se transforma em uma montanha-russa, cheia de tensão e suspense. Terry Maitland parece ser uma boa pessoa, mas será que isso não passa de uma máscara? A aterrorizante resposta é o que faz desta uma das histórias mais perturbadoras de Stephen King.\n");
 					loja();
 		}
 		else if(escolha == 2) {
-			System.out.println("Drácula, um clássico que ainda corre quente na veia de inúmeras gerações de leitores por todo o mundo e a mais celebrada narrativa de vampiros, continua a transcender fronteiras de tempo, espaço, história e memória.Mais de 120 anos após sua primeira publicação, o romance epistolar mobiliza leitores e estudiosos,\r\n"
+			System.out.println("\nDrácula, um clássico que ainda corre quente na veia de inúmeras gerações de leitores por todo o mundo e a mais celebrada narrativa de vampiros, continua a transcender fronteiras de tempo, espaço, história e memória.Mais de 120 anos após sua primeira publicação, o romance epistolar mobiliza leitores e estudiosos,\r\n"
 					+ " confirmando o vigor perene de uma árvore cujas sólidas raízes respondem pela vitalidade de suas ramificações. Embora o famoso conde não tenha sido o primeiro vampiro literário, certamente é o mais popular, sugado e adaptado para inúmeros universos: teatro, cinema, quadrinhos, séries e brinquedos, o semblante é reconhecido \r\n"
 					+ " até mesmo por aqueles que nunca leram o romance. Ele está em todos os lugares.A obra atemporal de Bram Stoker narra, por meio de fragmentos de cartas, diários e notícias de jornal, a história de humanos lutando para sobreviver às investidas do vampiro Drácula. O grupo formado por Jonathan Harker, Mina Harker, dr. Van Helsing \r\n"
 					+ " e dr. Seward tenta impedir que a vil criatura se alimente de sangue humano na Londres da época vitoriana, no final do século XIX.Um clássico absoluto do terror, Bram Stoker define em Drácula a forma como nós entendemos e pensamos os vampiros atualmente. Mais que isso, ele traz esse monstro para o centro do palco da cultura pop \r\n"
@@ -160,15 +160,15 @@ public class Biblioteca {
 					+ " Carlos Primati e Marcia Heloisa dão suas contribuições para a perpétua criatura. O leitor encontra textos de apoio que contam as relações entre a verdadeira Transilvânia e a aquela eternizada no livro, bem como a influência dos vampiros na cultura pop mundial. E como a DarkSide® Books sabe o que faz o coração dos vivos leitores \r\n"
 					+ " da editora bater mais forte, apresenta também o conto “O Hóspede de Drácula”, que fazia parte do texto de Stoker, mas foi retirado da primeira publicação.Todo esse conteúdo, planejado especialmente para os darksiders que sabem que existe uma razão para as coisas serem como são, é ornamentado com as belas e poderosas \r\n "
 					+ "imagens de Samuel Casal, premiado quadrinista e ilustrador brasileiro, que fez uma releitura deslumbrante de personagens imortais.A coleção Medo Clássico da DarkSide® se consolida a cada mestre que entra em sua casa, fazendo uma homenagem aos grandes nomes da literatura que já causaram pesadelos inenarráveis aos leitores, \r\n"
-					+ "década após década. Para eternizar a experiência, sempre traz ilustradores convidados e tradutores que respiram e conhecem profundamente as obras originais. De fã para fã. Até o fim.DEIXE ELE ENTRAR PARA A SUA COLEÇÃO E CONHEÇA TAMBÉM A FIRST EDITION");	
+					+ "década após década. Para eternizar a experiência, sempre traz ilustradores convidados e tradutores que respiram e conhecem profundamente as obras originais. De fã para fã. Até o fim.DEIXE ELE ENTRAR PARA A SUA COLEÇÃO E CONHEÇA TAMBÉM A FIRST EDITION\n");	
 					loja();		
 		}
 		else if(escolha == 3) {
-			System.out.println("Você possui em suas mãos o cobiçado diário do autor da série Gravity Falls, um tesouro de 288 páginas coloridas e sem dono, com segredos nunca antes revelados, monstros e mistérios da pacata cidade do Tivô Stan.\r\n"
+			System.out.println("\nVocê possui em suas mãos o cobiçado diário do autor da série Gravity Falls, um tesouro de 288 páginas coloridas e sem dono, com segredos nunca antes revelados, monstros e mistérios da pacata cidade do Tivô Stan.\r\n"
 					+ "\r\n"
 					+ "Com ele, você irá aprender a trágica história de Ford, o paradeiro de Blendin, qual é a Dimensão 52 e como atrair um “ornitorrinco xadrez”.\r\n"
 					+ "\r\n"
-					+ "Mas cuidado: este é um livro desejado por muitas forças sombrias, por isso fique alerta se qualquer um quiser tirá-lo de você (especialmente se tiverem olhos amarelos e brilhantes). E, o mais importante, divirta-se. Afinal, não existe um lugar como Gravity Falls. Ou será que existe?");
+					+ "Mas cuidado: este é um livro desejado por muitas forças sombrias, por isso fique alerta se qualquer um quiser tirá-lo de você (especialmente se tiverem olhos amarelos e brilhantes). E, o mais importante, divirta-se. Afinal, não existe um lugar como Gravity Falls. Ou será que existe?\n");
 					loja();
 		}
 		else if(escolha == 4) {
@@ -269,35 +269,69 @@ else if(escolha==6) {
 		 
 		}
 	public void deposito(double depTotal) {
-		System.out.println("Bem vindo a sessao de compras!");
-		System.out.println("Faca um deposito: ");
+		int op = 0;
+		System.out.println("Bem vindo a sessão de compras!");
+		System.out.println("Deseja prosseguir com o depósito ? (1)SIM (2)RETORNAR AO MENU");
+		op = input.nextInt();
+		if (op == 1){
+		System.out.println("Faça um depósito: ");
 		depTotal = input.nextDouble();
 		this.saldo += depTotal;
+		loja();
 	}
+		else menu();
+	}
+
 	
 	public void loja() {
 		int op =0;
 		
 		System.out.println("Escolha a opcao desejada: ");
-		System.out.println("(1)COMPRAR");
-		System.out.println("(2)ALUGAR");
-		System.out.println("(3)RETORNAR AO MENU");
+		System.out.println("(1) COMPRAR");
+		System.out.println("(2) ALUGAR");
+		System.out.println("(3) RETORNAR AO MENU");
 		op = input.nextInt();
 		if(op == 1) {
 			
 			int decida = 0;
-			System.out.println("O livro custa R$"+precoLivro.get(escolha - 1));
-			System.out.println("Deseja prosseguir com a compra? (1)SIM (2)NAO");
+			System.out.println("\nO livro custa R$"+precoLivro.get(escolha - 1));
+			System.out.println("\nSaldo disponível: "+saldo);
+			System.out.println("\nDeseja prosseguir com a compra? (1)SIM (2)NAO");
 			decida = input.nextInt();
 			if(decida == 1){
 				if(this.saldo - precoLivro.get(escolha -1) <0) {
-				System.out.println("Saldo insuficiente!!");
+				System.out.println("\nSaldo insuficiente!!");
+				System.out.println("\nVocê foi redirecionado para nossa loja.");
+				System.err.println("                                          ");
+				deposito(0);
 			}	else if(this.saldo >= precoLivro.get(escolha -1)) {
 				this.saldo -= precoLivro.get(escolha -1);
-				System.out.println("Compra realizada com sucesso!!");
-				System.out.println("                                    ");
-				System.out.println("Novo saldo: R$"+this.saldo);
 				
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+
+					e.printStackTrace();
+				}
+				
+				
+				System.out.println("\t************************************");
+				System.out.println("\t*  Compra realizada com sucesso!!  *");
+				System.out.println("\t************************************");
+				System.out.println("                                    ");
+				System.out.println("   Novo saldo: R$"+this.saldo);
+				System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
+				System.out.println("                             ");
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+				
+				menu();
 			}
 			else if (decida == 2 ){
 				menu();
@@ -305,10 +339,32 @@ else if(escolha==6) {
 		}
 		}
 		else if(op == 2) {
-			int aluguel = 3;
-			saldo -=aluguel;
-			System.out.println("O aluguel do livro custa: "+aluguel);
-			System.out.println("Seu novo saldo ficou em: "+saldo);
+			int decida = 0;
+			System.out.println("Tem certeza prosseguir com a operação ? (1) SIM (2) NÃO");
+			System.out.println("\nSaldo disponível: "+saldo);
+			decida = input.nextInt();
+			if(decida==1 ){int aluguel = 5;
+				saldo -=aluguel;
+				System.out.println("\nO aluguel do livro custa: "+aluguel);
+				System.out.println("\t************************************");
+				System.out.println("\t* Operação realizada com sucesso!! *");
+				System.out.println("\t************************************");
+				System.out.println("\nSeu novo saldo ficou em: "+saldo+"\n");
+				System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
+				System.out.println("                             ");
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+				
+				menu();
+			}else 
+			menu();
+			
+			
 		}
 	
 		else {
@@ -347,8 +403,10 @@ else if(escolha==6) {
 		System.out.println("                          ¨¨¨¨¨¨                            ");
 		System.out.println("   30% de nossos lucros são enviados para Instituições de caridade.");
 		System.out.println("\t Além de alimentar seu conhecimento, alimente vidas! \n ");
-		System.out.println("\t\t             CATÁLOGO");
-		}
+		System.out.println("                        __________         ");
+		System.out.println("                       | CATÁLOGO |        ");
+		System.out.println("                        ¨¨¨¨¨¨¨¨¨¨         ");
+	}
 		public void visualizar3(){
 
 
