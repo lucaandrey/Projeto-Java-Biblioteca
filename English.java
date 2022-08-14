@@ -212,11 +212,11 @@ break;
 		case 3: System.out.println("\n\tChoose an option: ");													
 		System.out.println("\n\tTerror: ");
 		System.out.println("\n\t(1)Fear - Edgar Allan Poe: ");
-		System.out.println("\n\t(2)DrÃ¡cula - Dark Edition: ");
-		System.out.println("\n\t(3)The Lost Journal of Gravity Falls ");
-		System.out.println("\n\t(4)The Book of Five Rings");
-		System.out.println("\n\t(5)Norse mythology: ");
-		System.out.println("\n\t(6)The art of war: ");
+		System.out.println("\n\t(2)Carrie - Stephen King: ");
+		System.out.println("\n\t(3)Frankenstein - Mary Shelley: ");
+		System.out.println("\n\t(4)It - the thing - Stephen King: ");
+		System.out.println("\n\t(5)The Mystery of the Lake House - Diego Cassiolato: ");
+		System.out.println("\n\t(6)Harrow County: Countless Haints - Cullen Bunn: ");
 		escolha=input.nextInt();
 		
 		if(escolha == 1) {
@@ -285,9 +285,9 @@ break;
 		
 if(op == 1) {
 			
-			System.out.println("\nSaldo disponível: "+saldo);
-			System.out.println("O livro custa R$"+precoLivro.get(escolha - 1));
-			System.out.println("Deseja prosseguir com a compra? (1)SIM (2)NAO");
+			System.out.println("\nBalance available: "+saldo);
+			System.out.println("The book costs R$"+precoLivro.get(escolha - 1));
+			System.out.println("Do you want to proceed with the purchase? (1)YES (2)NO");
 
 			
 
