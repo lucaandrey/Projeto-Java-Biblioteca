@@ -11,13 +11,17 @@ public class Main {
 
         Espanol c3 = new Espanol("asd","asd","asd",0,0,1);
        
+<<<<<<< HEAD
 
         System.out.println("___________________________________________");
 		System.out.println("               > CADASTRO <   ");
 		System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
         System.out.println("Choose a language|| Escolha um idioma: ");
+=======
+        System.out.println("Choose a language || Escolha um idioma || Elige un idioma: ");
+>>>>>>> Luca
         System.out.println(" ");
-        System.out.println("(1)  English     ||   (2) Portugues	||	(3) Espa�ol		");
+        System.out.println("(1)  English     ||   (2) Portugues	||	(3) Espanol		");
 
         a = input.nextInt();
         if(a  == 1){

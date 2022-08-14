@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
+import java.util.concurrent.TimeUnit;
 
 public class Biblioteca {
 	private String nome;
@@ -54,12 +54,20 @@ public class Biblioteca {
 
 	}
 	public void menu() {
+		
 		addItems();
 		int op =0;
 		
 		visualizar2();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("\nGENEROS: ");
 		System.out.println("\n\tEscolha uma opcao: ");
+		System.out.println("\n\t(0)Faca um deposito");
 		System.out.println("\n\t(1) Romance");
 		System.out.println("\n\t(2) Ficcao");
 		System.out.println("\n\t(3) Terror");
@@ -69,7 +77,8 @@ public class Biblioteca {
 		System.out.println("\n\t(7) Infantil");
 		op = input.nextInt();
 		switch(op) {
-		
+		case 0: deposito1(0);
+		break;
 		case 1: 
 				System.out.println("\t  ROMANCE ");
 				System.out.println("\t¨¨¨¨¨¨¨¨¨¨¨ ");
@@ -286,6 +295,7 @@ else if(escolha==6) {
 		if(op == 1) {
 			
 			int decida = 0;
+<<<<<<< HEAD
 			System.out.println("O livro custa R$"+precoLivro.get(escolha - 1));
 			System.out.println("Deseja prosseguir com a compra? (1)SIM (2)NAO");
 			decida = input.nextInt();
@@ -294,6 +304,16 @@ else if(escolha==6) {
 				System.out.println("Saldo insuficiente!!");
 			}	else if(this.saldo >= precoLivro.get(escolha -1)) {
 				this.saldo -= precoLivro.get(escolha -1);
+=======
+			System.out.println("O livro custa R$"+precoLivro.get(escolha-1));
+			System.out.println("Deseja prosseguir com a compra? (1)SIM (2)NAO");
+			decida = input.nextInt();
+			if(decida == 1){
+				if(this.saldo - precoLivro.get(escolha-1) <0) {
+				System.out.println("Saldo insuficiente!!");
+			}	else if(this.saldo >= precoLivro.get(escolha-1)) {
+				this.saldo -= precoLivro.get(escolha-1);
+>>>>>>> Luca
 				System.out.println("Compra realizada com sucesso!!");
 				System.out.println("                                    ");
 				System.out.println("Novo saldo: R$"+this.saldo);
@@ -352,6 +372,20 @@ else if(escolha==6) {
 		public void visualizar3(){
 
 
+		}
+		public void deposito1(double depTotal) {
+			System.out.println("Bem vindo a sessao de compras!");
+			System.out.println("Faca um deposito: ");
+			depTotal = input.nextDouble();
+			this.saldo += depTotal;
+			System.out.println("Deposito de R$"+saldo+" realizado com sucesso!");
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			menu();
 		}
 }
 
