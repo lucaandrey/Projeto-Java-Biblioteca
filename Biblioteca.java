@@ -395,16 +395,14 @@ else if(escolha==6) {
 				}
 				
 				
-				menu();
+				
 			}else 
 			menu();
 			
 			
-		}
-	
-		else {
+		} else 
 			menu();
-		}	
+		
 	}
 	public void cadastro() {
 		
@@ -422,14 +420,6 @@ else if(escolha==6) {
 		this.saldo += input.nextInt();
 		System.out.println("CADASTRO REALIZADO COM SUCESSO!! EFETUE O LOGIN PARA CONTNUAR!");
 		login();
-
-
-
-		
-		
-
-
-
 		}
 		public void visualizar(){
 
