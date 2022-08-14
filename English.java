@@ -242,6 +242,7 @@ break;
 			menu();
 		}	
 	}
+	
 	public void cadastro() {
 		System.out.println("Enter your name: ");
 		this.nome = input.nextLine();
