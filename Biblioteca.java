@@ -1,6 +1,12 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import java.util.concurrent.TimeUnit;
+
+
+import javax.swing.plaf.synth.SynthScrollBarUI;
+
+
 
 public class Biblioteca {
 	private String nome;
@@ -38,28 +44,40 @@ public class Biblioteca {
 	
 	public void login() {
 
-		System.out.println("Login: ");
+
+		System.out.println("\nLogin: ");
 		this.login = input.next();
-		System.out.println("Senha: ");
+		System.out.println("\nSenha: ");
 		this.senha =input.next();
 		
 		if(user.equals(this.login)&& password.equals(this.senha)) {
 			visualizar();
 			menu();
 		}else {
+
 			System.out.println("\nLogin ou senha incorretos!");
 			System.out.println("\nTente novamente.\n");
+
 			login();
 		}
 
 	}
 	public void menu() {
+		
 		addItems();
 		int op =0;
 		
 		visualizar2();
-		System.out.println("\nGENEROS: ");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("\nEscolha uma opção: ");
+
+
+		System.out.println("\nGENEROS: ");
 		System.out.println("\n (1) Romance");
 		System.out.println("\n (2) Ficcao");
 		System.out.println("\n (3) Terror");
@@ -67,12 +85,14 @@ public class Biblioteca {
 		System.out.println("\n (5) Auto-Ajuda");
 		System.out.println("\n (6) Aventura");
 		System.out.println("\n (7) Infantil");
+		System.out.println("\n (0) Faça um depósito");
 		op = input.nextInt();
 		switch(op) {
-		
+		case 0: deposito1(0);
+		break;
 		case 1: 
-				System.out.println("\t  ROMANCE ");
-				System.out.println("\t¨¨¨¨¨¨¨¨¨¨¨ ");
+				System.out.println("\t\n          ROMANCE ");
+				System.out.println("\t¨¨¨¨¨¨¨¨¨¨ ");
 				System.out.println("\n(1) Romeo e Julieta: ");
 				System.out.println("\n(2) O apanhador no campo de Centeio: ");
 				System.out.println("\n(3) A peste: ");
@@ -91,6 +111,7 @@ public class Biblioteca {
 			loja();
 			}
 		else if(escolha ==2) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("É Natal, e Holden Caulfield conseguiu ser expulso de mais uma escola. Com uns trocados da venda de uma máquina de escrever e "
 					+ "\nportando seu indefectível boné vermelho de caçador, "
 					+ "\no jovem traça um plano incerto: tomar um trem para Nova York e vagar por três dias pela grande cidade,"
@@ -103,6 +124,7 @@ public class Biblioteca {
 			loja();
 		}
 		else if(escolha == 3) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("Na manhã de um dia 16 de abril dos anos de 1940, o doutor Bernard Rieux sai do seu "
 					+ "\nconsultório e tropeça num rato morto. "
 					+ "\nEste é o primeiro sinal de uma epidemia de peste que em"
@@ -112,12 +134,14 @@ public class Biblioteca {
 			loja();
 		}
 		else if(escolha == 4) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("Florentino Ariza nunca esqueceu Fermina, seu primeiro amor. "
 					+ "\nEle esperou quase a vida toda por ela, que se casou com outro. "
 					+ "\nAgora, 51 anos depois, o marido morre, e ele finalmente tem uma chance de reconquistá-la.\n");
 			loja();
 		}
 		else if(escolha==5) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("\nÉ Natal, e Holden Caulfield conseguiu ser expulso de mais uma escola. Com uns trocados da venda de uma máquina de escrever e"
 					+ " \nnportando seu indefectível boné vermelho de caçador,"
 					+ " \nno jovem traça um plano incerto: tomar um trem para Nova York e vagar por três dias pela grande cidade, "
@@ -125,6 +149,7 @@ public class Biblioteca {
 					loja();
 		}
 		else if(escolha == 6) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("\nDom Casmurro conta a história de Bento Santiago (Bentinho), "
 					+ "\napelidado de Dom Casmurro por ser calado e introvertido."
 					+ "\nNa adolescência, apaixona-se por Capítu, abandonando o seminário e,"
@@ -133,23 +158,26 @@ public class Biblioteca {
 		}
 		break;
 		case 2: 
-				System.out.println("FICCAO: ");
-				System.out.println("(1) Outsider: ");
-				System.out.println("(2) Drácula - Dark Edition: ");
-				System.out.println("(3) O diário perdido de gravity falls: ");
-				System.out.println("(4) O livro dos cinco anéis");
-				System.out.println("(5) Mitologia Nórdica: ");
-				System.out.println("(6) A arte da guerra: ");
+		        System.out.println("\t\n          FICÇÃO ");
+				System.out.println("\t¨¨¨¨¨¨¨¨¨¨ ");
+				System.out.println("\n(1) Outsider: ");
+				System.out.println("\n(2) Drácula - Dark Edition: ");
+				System.out.println("\n(3) O diário perdido de gravity falls: ");
+				System.out.println("\n(4) O livro dos cinco anéis");
+				System.out.println("\n(5) Mitologia Nórdica: ");
+				System.out.println("\n(6) A arte da guerra: ");
 				System.out.println("Escolha uma opcao: ");													
 				escolha=input.nextInt();
 			
 		if(escolha == 1) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("\nO corpo de um menino de onze anos é encontrado abandonado no parque de Flint City, brutalmente assassinado. Testemunhas e impressões digitais apontam o criminoso como uma das figuras mais conhecidas da cidade ― Terry Maitland, treinador da Liga Infantil de beisebol, professor de inglês, casado e pai de duas filhas.\r\n"
 					+ "O detetive Ralph Anderson não hesita em ordenar uma prisão rápida e bastante pública, fazendo com que em pouco tempo toda a cidade saiba que o Treinador T é o principal suspeito do crime. Maitland tem um álibi, mas Anderson e o promotor público logo têm amostras de DNA para corroborar a acusação. O caso parece resolvido.\r\n"
 					+ "Mas conforme a investigação se desenrola, a história se transforma em uma montanha-russa, cheia de tensão e suspense. Terry Maitland parece ser uma boa pessoa, mas será que isso não passa de uma máscara? A aterrorizante resposta é o que faz desta uma das histórias mais perturbadoras de Stephen King.\n");
 					loja();
 		}
 		else if(escolha == 2) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("\nDrácula, um clássico que ainda corre quente na veia de inúmeras gerações de leitores por todo o mundo e a mais celebrada narrativa de vampiros, continua a transcender fronteiras de tempo, espaço, história e memória.Mais de 120 anos após sua primeira publicação, o romance epistolar mobiliza leitores e estudiosos,\r\n"
 					+ " confirmando o vigor perene de uma árvore cujas sólidas raízes respondem pela vitalidade de suas ramificações. Embora o famoso conde não tenha sido o primeiro vampiro literário, certamente é o mais popular, sugado e adaptado para inúmeros universos: teatro, cinema, quadrinhos, séries e brinquedos, o semblante é reconhecido \r\n"
 					+ " até mesmo por aqueles que nunca leram o romance. Ele está em todos os lugares.A obra atemporal de Bram Stoker narra, por meio de fragmentos de cartas, diários e notícias de jornal, a história de humanos lutando para sobreviver às investidas do vampiro Drácula. O grupo formado por Jonathan Harker, Mina Harker, dr. Van Helsing \r\n"
@@ -164,6 +192,7 @@ public class Biblioteca {
 					loja();		
 		}
 		else if(escolha == 3) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("\nVocê possui em suas mãos o cobiçado diário do autor da série Gravity Falls, um tesouro de 288 páginas coloridas e sem dono, com segredos nunca antes revelados, monstros e mistérios da pacata cidade do Tivô Stan.\r\n"
 					+ "\r\n"
 					+ "Com ele, você irá aprender a trágica história de Ford, o paradeiro de Blendin, qual é a Dimensão 52 e como atrair um “ornitorrinco xadrez”.\r\n"
@@ -172,12 +201,14 @@ public class Biblioteca {
 					loja();
 		}
 		else if(escolha == 4) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("O Livro dos Cinco Anéis é hoje um manual de gente de sucesso que soube aproveitar as lições de Miyamoto Musashi (1584-1645) nas batalhas do dia a dia. Espadachim imbatível desde os 13 anos, o autor resumiu nesta obra clássica a experiência de quem representou o apogeu do Bushido, ou “caminho do guerreiro”, \r\n "
 					+ "o código de conduta e modo de vida para os samurais que inclui equilíbrio, sabedoria e honra. Nos cinco capítulos ou tomos do livro, Terra, Água, Fogo, Vento e Vácuo, Musashi trata de liderança e dos princípios ligados aos conflitos da existência humana para fazer do leitor uma pessoa vencedora. Esta edição da Jardim \r\n"
 					+ " dos Livros tem primorosa tradução, direta do japonês, do professor doutor Wataru Kikuchi, diretor do Centro de Estudos Japoneses da USP. Um caderno de fotos, pinturas do autor e mapas de batalhas do Japão antigo tornam o livro, além de tudo, uma requintada obra de arte, inclui ainda páginas para anotações do leitor.");
 					loja();
 		}
 		else if(escolha == 5) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("Uma jornada da origem do universo até o fim do mundo.\r\n"
 					+ "\r\n"
 					+ "Quem, além de Neil Gaiman, poderia se tornar cúmplice dos deuses e usar de sua habilidade com as palavras para recontar as histórias dos mitos nórdicos? Fãs e leitores sabem que a mitologia nórdica sempre teve grande influência na obra do autor. Depois de servirem de inspiração para clássicos como Deuses americanos e \r\n"
@@ -194,6 +225,7 @@ public class Biblioteca {
 					loja();
 		}
 		else if (escolha == 6) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("A guerra é um assunto de importância vital para o Estado; o reino da vida ou da morte; o caminho para a sobrevivência ou a ruína. É indispensável estudá-la profundamente.\" Sun Tzu");
 			loja();
 		}
@@ -209,7 +241,8 @@ public class Biblioteca {
         escolha=input.nextInt();
 
         if(escolha==1) {
-            System.out.println("As asas de um corvo se misturam à escuridão. "
+            System.out.println("\t\t\tSINOPSE");
+			System.out.println("As asas de um corvo se misturam à escuridão. "
                     + "A velha casa em ruínas observa com janelas que pareciam olhos."
                     + " Você jura ouvir a voz de alguém que já partiu para o outro lado,"
                     + " bem na hora em que um gato preto cruza seu caminho. "
@@ -218,20 +251,23 @@ public class Biblioteca {
             loja();
         }
         else if(escolha==2) {
-            System.out.println("Carrie é uma adolescente tímida e solitária. Aos 16 anos, é completamente dominada pela mãe, "
+			System.out.println("\t\t\tSINOPSE");
+			System.out.println("Carrie é uma adolescente tímida e solitária. Aos 16 anos, é completamente dominada pela mãe, "
                     + "uma fanática religiosa que reprime todas as vontades "
                     + "e descobertas normais aos jovens de sua idade. Para Carrie, "
                     + "tudo é pecado. Viver é enfrentar todo dia o terrível peso da culpa.");
             loja();
         }
         else if(escolha==3) {
-            System.out.println("O brilhante e pouco ortodoxo doutor Victor Frankestein trabalha na criação de um monstro com partes de "
+            System.out.println("\t\t\tSINOPSE");
+			System.out.println("O brilhante e pouco ortodoxo doutor Victor Frankestein trabalha na criação de um monstro com partes de "
                     + "diferentes corpos humanos. Após ser rejeitada pelo criador,"
                     + "a criatura escapa e passa a agir com uma violenta sede de vingança.");
             loja();
         }
 else if(escolha==4) {
-            System.out.println("Naquele verão, eles enfrentaram pela primeira vez a Coisa, um ser sobrenatural e "
+	        System.out.println("\t\t\tSINOPSE");
+			System.out.println("Naquele verão, eles enfrentaram pela primeira vez a Coisa, um ser sobrenatural e "
                     + "maligno que deixou terríveis marcas de sangue em Derry. "
                     + "Quase trinta anos depois, os amigos voltam a se encontrar. "
                     + "Uma nova onda de terror tomou a pequena cidade, "
@@ -239,7 +275,8 @@ else if(escolha==4) {
             loja();
         }
 		else if(escolha==5) {
-            System.out.println("Jack Campbell, um professor de natação, e sua pequena filha Emily, "
+            System.out.println("\t\t\tSINOPSE");
+			System.out.println("Jack Campbell, um professor de natação, e sua pequena filha Emily, "
                     + "decidem passar um tempo juntos em uma casa do lago "
                     + "a fim de superarem o luto pela morte de Hannah,"
                     + " ex-esposa de Jack e mãe de Emily. Mas, logo após chegarem à propriedade, "
@@ -254,7 +291,8 @@ else if(escolha==4) {
             loja();
         }
 else if(escolha==6) {
-            System.out.println("Emmy sempre soube que a floresta ao redor de sua casa estava cheia de fantasmas e monstros. "
+			System.out.println("\t\t\tSINOPSE");
+			System.out.println("Emmy sempre soube que a floresta ao redor de sua casa estava cheia de fantasmas e monstros. "
                     + "No entanto, na véspera de seu aniversário de dezoito anos ela descobre que está conectada "
                     + "a essas criaturas ― e à própria terra ― de uma maneira que não imaginava ser possível. "
                     + "Aguarde na sombra do carvalho retorcido e ouça o balido das cabras. Condado Maldito: Bruxas & "
@@ -284,7 +322,7 @@ else if(escolha==6) {
 
 	
 	public void loja() {
-		int op =0;
+		int op = 0;
 		
 		System.out.println("Escolha a opcao desejada: ");
 		System.out.println("(1) COMPRAR");
@@ -293,24 +331,26 @@ else if(escolha==6) {
 		op = input.nextInt();
 		if(op == 1) {
 			
-			int decida = 0;
-			System.out.println("\nO livro custa R$"+precoLivro.get(escolha - 1));
 			System.out.println("\nSaldo disponível: "+saldo);
-			System.out.println("\nDeseja prosseguir com a compra? (1)SIM (2)NAO");
-			decida = input.nextInt();
+			System.out.println("\nO livro custa R$"+precoLivro.get(escolha - 1));
+			System.out.println("\nDeseja prosseguir com a compra? (1) SIM (2) NÃO,QUERO VOLTAR AO MENU.");
+
+			
+
+			int decida = input.nextInt();
 			if(decida == 1){
 				if(this.saldo - precoLivro.get(escolha -1) <0) {
-				System.out.println("\nSaldo insuficiente!!");
-				System.out.println("\nVocê foi redirecionado para nossa loja.");
-				System.err.println("                                          ");
-				deposito(0);
-			}	else if(this.saldo >= precoLivro.get(escolha -1)) {
-				this.saldo -= precoLivro.get(escolha -1);
+					System.out.println("\nSaldo insuficiente!");
+					System.out.println("\nVocê foi redirecionado para nossa loja.");
+					System.err.println("                                          ");
+					deposito1(0);
+				}else if(this.saldo >= precoLivro.get(escolha-1)) {
+				this.saldo -= precoLivro.get(escolha-1);
 				
 				try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
-
+					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				
@@ -318,32 +358,37 @@ else if(escolha==6) {
 				System.out.println("\t************************************");
 				System.out.println("\t*  Compra realizada com sucesso!!  *");
 				System.out.println("\t************************************");
+
 				System.out.println("                                    ");
 				System.out.println("   Novo saldo: R$"+this.saldo);
 				System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
 				System.out.println("                             ");
-				
 				try {
-					Thread.sleep(1000);
+					Thread.sleep(2000);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				
-				
 				menu();
 			}
 			else if (decida == 2 ){
 				menu();
 			}
-		}
-		}
+		}	menu();	
+	}		
 		else if(op == 2) {
 			int decida = 0;
-			System.out.println("Tem certeza prosseguir com a operação ? (1) SIM (2) NÃO");
+			System.out.println("\nTem certeza que deseja prosseguir com a operação ? (1) SIM (2) NÃO,QUERO RETORNAR AO MENU.");
 			System.out.println("\nSaldo disponível: "+saldo);
 			decida = input.nextInt();
 			if(decida==1 ){int aluguel = 5;
+				if(saldo - aluguel <0){
+					System.out.println("\nSaldo insuficiente!");
+					System.out.println("\nVocê foi redirecionado para nossa loja.");
+					System.err.println("                                          ");
+					deposito(0);
+				}
+				else if (saldo >= aluguel){
 				saldo -=aluguel;
 				System.out.println("\nO aluguel do livro custa: "+aluguel);
 				System.out.println("                                         ");
@@ -359,19 +404,19 @@ else if(escolha==6) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				
-				
+
 				menu();
-			}else 
-			menu();
-			
-			
-		}
+				}
+				else{
+					menu();
+				}
+			}
 	
 		else {
 			menu();
-		}	
-	}
+		}
+	}menu();
+}
 	public void cadastro() {
 		
 		System.out.println("\nInsira seu nome: ");
@@ -388,7 +433,6 @@ else if(escolha==6) {
 		this.saldo += input.nextInt();
 		System.out.println("CADASTRO REALIZADO COM SUCESSO!! EFETUE O LOGIN PARA CONTNUAR!");
 		login();
-
 		}
 		public void visualizar(){
 
@@ -407,10 +451,35 @@ else if(escolha==6) {
 		System.out.println("                        __________         ");
 		System.out.println("                       | CATÁLOGO |        ");
 		System.out.println("                        ¨¨¨¨¨¨¨¨¨¨         ");
+		System.out.printf("Saldo:  %.2f",saldo,"");
+		System.out.println("                            ");
 	}
 		public void visualizar3(){
 
 
+		}
+		public void deposito1(double depTotal) {
+		int op = 0;
+		System.out.println("\n      Bem vindo a sessao de compras!"   );
+		System.out.println("     ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨  ");
+		System.out.println("Deseja prosseguir com o depósito ? (1)SIM (2)RETORNAR AO MENU");
+		op = input.nextInt();
+		if (op == 1){
+		System.out.println("\nDigite o valor que deseja depositar:   ");
+		depTotal = input.nextDouble();
+		this.saldo += depTotal;
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("\n     DEPÓSITO DE R$"+depTotal+" REALIZADO COM SUCESSO!");
+		System.out.println("*************************************************");
+		System.out.println("\nSeu novo saldo é de: "+saldo+"\n");
+		loja();
+		
+		}
 		}
 }
 
