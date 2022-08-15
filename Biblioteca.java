@@ -25,18 +25,18 @@ public class Biblioteca {
 		this.genero = genero;
 	}
 	
-	String user ="asd";
-	String password= "asd";
+	String user;
+	String password;
 
 	private ArrayList<Double> precoLivro = new ArrayList<Double>();
 	
 	 public void addItems(){
-	precoLivro.add(23.99);
+	precoLivro.add(23.90);
 	precoLivro.add(34.90);
-	precoLivro.add(29.99);
-	precoLivro.add(59.99);
-	precoLivro.add(49.99);
-	precoLivro.add(19.99);
+	precoLivro.add(29.90);
+	precoLivro.add(59.90);
+	precoLivro.add(49.90);
+	precoLivro.add(19.90);
 
 	 }
 	 int escolha = 0;
@@ -78,7 +78,7 @@ public class Biblioteca {
 
 
 		System.out.println("\nEscolha uma opção: ");
-		System.out.println("\n(0) Faca um deposito");
+		System.out.println("\n (0) Faca um deposito");
 		System.out.println("\n (1) Romance");
 		System.out.println("\n (2) Ficcao");
 		System.out.println("\n (3) Terror");
@@ -86,6 +86,7 @@ public class Biblioteca {
 		System.out.println("\n (5) Auto-Ajuda");
 		System.out.println("\n (6) Aventura");
 		System.out.println("\n (7) Infantil");
+		System.out.println("\n (8) Sair");
 		op = input.nextInt();
 		switch(op) {
 		case 0: deposito1(0);
@@ -285,7 +286,9 @@ else if(escolha==6) {
             loja();
         }
         break;
+		case 8: login();
         }
+
 		 
 		}
 	public void deposito(double depTotal) {
