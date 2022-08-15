@@ -25,18 +25,18 @@ public class Biblioteca {
 		this.genero = genero;
 	}
 	
-	String user ="asd";
-	String password= "asd";
+	String user = "asd";
+	String password = "asd";
 
 	private ArrayList<Double> precoLivro = new ArrayList<Double>();
 	
 	 public void addItems(){
-	precoLivro.add(23.99);
+	precoLivro.add(23.90);
 	precoLivro.add(34.90);
-	precoLivro.add(29.99);
-	precoLivro.add(59.99);
-	precoLivro.add(49.99);
-	precoLivro.add(19.99);
+	precoLivro.add(29.90);
+	precoLivro.add(59.90);
+	precoLivro.add(49.90);
+	precoLivro.add(19.90);
 
 	 }
 	 int escolha = 0;
@@ -74,10 +74,9 @@ public class Biblioteca {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		System.out.println("\n GENEROS: ");
 		System.out.println("\nEscolha uma opção: ");
-
-
-		System.out.println("\nGENEROS: ");
 		System.out.println("\n (1) Romance");
 		System.out.println("\n (2) Ficcao");
 		System.out.println("\n (3) Terror");
@@ -85,7 +84,9 @@ public class Biblioteca {
 		System.out.println("\n (5) Auto-Ajuda");
 		System.out.println("\n (6) Aventura");
 		System.out.println("\n (7) Infantil");
+		System.out.println("\n (8) Sair");
 		System.out.println("\n (0) Faça um depósito");
+		
 		op = input.nextInt();
 		switch(op) {
 		case 0: deposito1(0);
@@ -303,7 +304,9 @@ else if(escolha==6) {
             loja();
         }
         break;
+		case 8: login();
         }
+
 		 
 		}
 	public void deposito(double depTotal) {
@@ -414,19 +417,12 @@ else if(escolha==6) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-<<<<<<< HEAD
+
 				
 				
 				
-			}else 
-			menu();
-			
-			
-		} else 
-			menu();
-		
-	}
-=======
+	
+
 
 				menu();
 				}
@@ -440,7 +436,7 @@ else if(escolha==6) {
 		}
 	}menu();
 }
->>>>>>> Vinicius
+
 	public void cadastro() {
 		
 		System.out.println("\nInsira seu nome: ");

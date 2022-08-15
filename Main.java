@@ -6,40 +6,14 @@ public class Main {
         Scanner input = new Scanner(System.in);
         English c1 = new English("asd","asd","asd",0,0,0);
 
-<<<<<<< HEAD
 
-        Biblioteca c2 = new Biblioteca("asd","asd","asd",0,0,0);
-
-        Biblioteca c2 = new Biblioteca("asd","asd","asd",20,0,0);
-
-
-=======
         Biblioteca c2 = new Biblioteca("asd","asd","asd",4,0,0);
->>>>>>> Vinicius
+
 
         Espanol c3 = new Espanol("asd","asd","asd",0,0,1);
-       
-
-
-       
-
+        
         System.out.println("_________________________________________________________");
-<<<<<<< HEAD
-
-		System.out.println("                      > CADASTRO <   ");
-		System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
-
-        System.out.println("Choose a language|| Escolha um idioma: ");
-
-		System.out.println("                      > CADASTRO <   "                    );
-		System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
-
-        System.out.println("Choose a language || Escolha um idioma || Elige un idioma: ");
-
-        System.out.println(" ");
-        System.out.println("(1)  English     ||   (2) Portugues	||	(3) Espanhol		");
-=======
-		System.out.println("                      | CADASTRO |                      ");
+        System.out.println("                      | CADASTRO |                       ");
 		System.out.println("------------------------¨¨¨¨¨¨¨¨-------------------------");
         System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
 
@@ -47,7 +21,6 @@ public class Main {
         System.out.println("                 ||                   ||                  ");
         
         System.out.println("(1)  English     ||   (2) Portugues   || (3) Espanhol	");
->>>>>>> Vinicius
 
         a = input.nextInt();
         if(a  == 1){
