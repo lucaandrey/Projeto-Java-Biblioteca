@@ -1,13 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import java.util.concurrent.TimeUnit;
-
-
-import javax.swing.plaf.synth.SynthScrollBarUI;
-
-
-
 public class Biblioteca {
 	private String nome;
 	private String login;
@@ -452,7 +445,125 @@ else if(escolha==6) {
 	    loja();
 }
 		break;
+		case 6: System.out.println("Escolha uma opcao: ");													
+		escolha=input.nextInt();
+		System.out.println("Aventura : ");
+		System.out.println("(1)A torre negra: ");
+		System.out.println("(2)A guerra dos mundos: ");
+		System.out.println("(3)O mundo perdido: ");
+		System.out.println("(4)A ilha do tesouro: ");
+		System.out.println("(5)A Máquina do Tempo: ");
+		System.out.println("(6)A batalha do apocalipse: ");
+		
+		if( escolha ==1) {
+		System.out.println("Continuação memorável das fantasias de C. S. Lewis, estas seis histórias revelam mais uma vez o poder e a visão deste importante contador de histórias, um dos nomes centrais da literatura de fantasia universal.\r\n"
+		+ " A Torre Negra é um esboço de um quarto volume que daria continuidade à aclamada série de ficção científica de Lewis conhecida como Trilogia cósmica. Uma história cativante que continua as aventuras de personagens como \r\n"
+		+ " Dr. Elwin Ransom e MacPhee. Na trama, cinco homens se reúnem no escritório de Orfeu, na Universidade de Cambridge, para testemunhar a violação do espaço-tempo por meio do cronoscópio, um telescópio que não olha apenas \r\n"
+		+ " para um outro mundo, mas para outras dimensões. Ao longo das narrativas, seus personagens travam debates brilhantes sobre a matéria, no tempo e no espaço. Para os fãs de Crônicas de Nárnia e da Trilogia cósmica, este é um livro imprescindível.");
+}
+		else if (escolha ==2 ) {
+		System.out.println("Eles vieram do espaço. Eles vieram de Marte. Com tripés biomecânicos gigantes, querem conquistar a Terra e manter os humanos como escravos. Nenhuma tecnologia terrestre parece ser capaz de conter a expansão do terror pelo planeta.\r\n"
+		+ " É o começo da guerra mais importante da história. Como a humanidade poderá resistir à investida de um potencial bélico tão superior? Publicado pela primeira vez em 1898, A guerra dos mundos aterrorizou e divertiu muitas gerações de leitores.\r\n"
+		+ " Esta edição especial contém as ilustrações originais criadas em 1906 por Henrique Alvim Corrêa, brasileiro radicado na Bélgica. Conta também com um prefácio escrito por Braulio Tavares, uma introdução de Brian Aldiss, membro da H. G. Wells Society,\n\r"
+		+ " e uma entrevista com H. G. Wells e o famoso cineasta Orson Welles - responsável pelo sucesso radiofônico de A guerra dos mundos em 1938 -, que fazem desta a edição definitiva para fãs de Wells.");
+}
+		else if (escolha == 3) {
+		System.out.println("O jovem jornalista Ed Malone não tem ideia do que encontrará nesta viagem exploratória a qual acaba de se candidatar: ir até os confins da América do Sul, junto com um estudioso e um caçador para comprovar a veracidade da teoria do excêntrico professor Challenger - que afirma ter encontrado\r\n"
+		+ " criaturas pré-históricas criaturas nessas terras longínquas. Será?");
+	
+} 
+		else if (escolha ==4 ) {
+		System.out.println("A vida de Jim Hawkins nunca mais será a mesma depois de conhecer Billy Jones. O velho lobo do mar possui um mapa que mostra o local onde está escondido um tesouro de pirata. Agora o mapa está com Jim e ele parte em uma expedição sem imaginar o que o aguarda – seja navegando pelo mar ou em terra firme.");
+}
+		else if (escolha == 5) {
+		System.out.println("Publicado em 1895, A Máquina do Tempo é considerado um dos primeiros romances a tratar do conceito de viagem no tempo.\r\n"
+		+ "\r\n"
+		+ "O personagem central, um cientista apresentado na trama apenas como o Viajante do Tempo, constrói uma máquina capaz de viajar pela quarta dimensão.\r\n"
+		+ "\r\n"
+		+ "Ao testá-la, é transportado para o ano de 802.701, em um mundo povoado pelos pacíficos elóis.\r\n"
+		+ "\r\n"
+		+ "Mas os elóis não são os únicos habitantes dessa nova Terra, e o Viajante do Tempo terá de enfrentar os morlocks, seres que vivem nos subterrâneos e guardam um importante segredo sobre o destino da humanidade.");
+}
+    	else if (escolha == 6) {
+		System.out.println("Tudo começou há muitos e muitos anos, há tantos anos quanto o número de estrelas no céu, o Paraíso Celeste foi palco de um terrível levante. Um grupo de anjos guerreiros, amantes da justiça e da liberdade, desafiou a tirania dos poderosos arcanjos, levantando armas contra seus opressores.\r\n"
+			+ " Expulsos, os renegados foram forçados ao exílio, e condenados a vagar pelo mundo dos homens até o dia do Juízo Final.\r\n"
+			+ "\r\n"
+			+ "Mas eis que chega o momento do Apocalipse, o tempo do ajuste de contas, o dia do despertar do Altíssimo. Único sobrevivente do expurgo, o líder dos renegados é convidado por Lúcifer, o Arcanjo Negro, a se juntar às suas legiões na batalha do Armagedon, o embate final entre o Céu e o Inferno, a guerra que decidirá não só o destino do mundo, mas o futuro do universo.\r\n"
+			+ "\r\n"
+			+ "Das ruínas da Babilônia ao esplendor do Império Romano; das vastas planícies da China aos gelados castelos da Inglaterra medieval. A Batalha do Apocalipse não é apenas uma viagem pela história humana, mas é também uma jornada de conhecimento, um épico empolgante, cheio de lutas heroicas, magia, romance e suspense.\r\n"
+			+ "\r\n"
+			+ "A batalha do apocalipse colocará o estreante Eduardo Spohr ao lado dos mais criativos ficcionistas da nossa literatura.");
+}
+        break;
+		case 7: 
+        System.out.println("Infantil: ");
+        System.out.println("(1)O Menino Maluquinho - Ziraldo: ");
+        System.out.println("(2)Muito cansado e bem acordado - Susanne Straber: ");
+        System.out.println("(3)O muro no meio do livro  - Jon Agee: ");
+        System.out.println("(4)Menina bonita do laço de fita - Ana Maria Machado: ");
+        System.out.println("(5)O Monstro que Adorava Ler - Lili Chartrand: ");
+        System.out.println("(6) O grúfalo- Julia Donaldson:");
+        escolha=input.nextInt();
+
+		if(escolha==1) {
+            System.out.println("Um menininho traquinas, diziam. Tinha macaquinhos no sótão," 
+			+" deitava e rolava, fazendo confusão. Um anjinho, um saci? Alegria da casa, liderava a garotada." 
+			+" Namorador, fazia versinhos, compunha canções, inventava brincadeiras. Era sabido, um amigão." 
+			+"“Menino Maluquinho”, diziam sorrindo as pessoas. Não era, não!"
+			+"Só mais tarde descobriram que tinha sido um garotinho muito amado e, por isso mesmo, muito feliz.");
+            loja();
+        }
+
+		if(escolha==2) {
+			System.out.println("O porco-espinho, a raposa, o burrico, o pelicano e o jacaré estão todos dormindo,"
+			+"muito cansados… Mas a foca está bem acordada. E ela não quer saber de ficar na cama! E agora?" 
+			+"O que os outros dorminhocos vão fazer? Este livro, para leitores bem pequenos,"
+			+"torna a hora de dormir um momento mais divertido e gostoso para toda a família.");
+		
+		loja();
+		}
+		
+		if(escolha==3) {
+			System.out.println("À beira de uma floresta encantada, um monstro assustador encontra um estranho objeto,"
+			+"que ele cheira e lambe. Não tem gosto de nada! Com raiva, joga-o no chão. No entanto,"
+			+"esse objeto admirável vai mudar completamente sua vida e seu humor."
+			+"Uma história engraçada, surpreendente e tocante sobre a magia dos livros e o prazer da leitura.");
+		
+			loja();
+		}
+
+		if(escolha==4) {
+			System.out.println("Uma linda menina negra desperta a admiração de um coelho branco,"
+			+"que deseja ter uma filha tão pretinha quanto ela."
+			+"Cada vez que ele lhe pergunta qual o segredo de sua cor, ela inventa uma história."
+			+"O coelho segue todos os “conselhos” da menina, mas continua branco");
+
+			loja();
+		}
+		
+		if(escolha==5) {
+			System.out.println("Uma linda menina negra desperta a admiração de um coelho branco,"
+			+"que deseja ter uma filha tão pretinha quanto ela."
+			+"Cada vez que ele lhe pergunta qual o segredo de sua cor, ela inventa uma história."
+			+"O coelho segue todos os “conselhos” da menina, mas continua branco");
+		
+			loja();
+		}
+
+		if(escolha==6) {
+			System.out.println("Usando de astúcia e imaginação, um ratinho vai criando um monstro terrível e assustador,"
+			+"o Grúfalo, e diverte-se espantando seus predadores."
+			+" Mas qual não é o seu espanto ao ver sua imaginação personificada à sua frente." 
+			+"O Grúfalo, de Julia Donaldson, é uma divertida fábula sobre os poderes da nossa imaginação."
+			+"As bonitas ilustrações, de Axel Scheffler,"
+			+"complementam a graça do texto e convidam a acompanharmos o ratinho em seu passeio pela floresta.");
+		
+			loja();
+		}
+		break;
+
 		case 8: login();
+		break;
         }
 
 		 
