@@ -25,18 +25,18 @@ public class Biblioteca {
 		this.genero = genero;
 	}
 	
-	String user ="asd";
-	String password= "asd";
+	String user = "asd";
+	String password ="asd";
 
 	private ArrayList<Double> precoLivro = new ArrayList<Double>();
 	
 	 public void addItems(){
-	precoLivro.add(23.99);
+	precoLivro.add(23.90);
 	precoLivro.add(34.90);
-	precoLivro.add(29.99);
-	precoLivro.add(59.99);
-	precoLivro.add(49.99);
-	precoLivro.add(19.99);
+	precoLivro.add(29.90);
+	precoLivro.add(59.90);
+	precoLivro.add(49.90);
+	precoLivro.add(19.90);
 
 	 }
 	 int escolha = 0;
@@ -75,8 +75,6 @@ public class Biblioteca {
 			e.printStackTrace();
 		}
 		System.out.println("\nEscolha uma opção: ");
-
-
 		System.out.println("\nGENEROS: ");
 		System.out.println("\n (1) Romance");
 		System.out.println("\n (2) Ficcao");
@@ -86,6 +84,8 @@ public class Biblioteca {
 		System.out.println("\n (6) Aventura");
 		System.out.println("\n (7) Infantil");
 		System.out.println("\n (0) Faça um depósito");
+		System.out.println("\n (8) Sair");
+
 		op = input.nextInt();
 		switch(op) {
 		case 0: deposito1(0);
@@ -202,9 +202,9 @@ public class Biblioteca {
 		}
 		else if(escolha == 4) {
 			System.out.println("\t\t\tSINOPSE");
-			System.out.println("O Livro dos Cinco Anéis é hoje um manual de gente de sucesso que soube aproveitar as lições de Miyamoto Musashi (1584-1645) nas batalhas do dia a dia. Espadachim imbatível desde os 13 anos, o autor resumiu nesta obra clássica a experiência de quem representou o apogeu do Bushido, ou “caminho do guerreiro”, \r\n "
-					+ "o código de conduta e modo de vida para os samurais que inclui equilíbrio, sabedoria e honra. Nos cinco capítulos ou tomos do livro, Terra, Água, Fogo, Vento e Vácuo, Musashi trata de liderança e dos princípios ligados aos conflitos da existência humana para fazer do leitor uma pessoa vencedora. Esta edição da Jardim \r\n"
-					+ " dos Livros tem primorosa tradução, direta do japonês, do professor doutor Wataru Kikuchi, diretor do Centro de Estudos Japoneses da USP. Um caderno de fotos, pinturas do autor e mapas de batalhas do Japão antigo tornam o livro, além de tudo, uma requintada obra de arte, inclui ainda páginas para anotações do leitor.");
+			System.out.println("\nO Livro dos Cinco Anéis é hoje um manual de gente de sucesso que soube aproveitar as lições de Miyamoto Musashi (1584-1645) nas batalhas do dia a dia. Espadachim imbatível desde os 13 anos, o autor resumiu nesta obra clássica a experiência de quem representou o apogeu do Bushido, ou “caminho do guerreiro”, \r\n "
+					+ "\r\no código de conduta e modo de vida para os samurais que inclui equilíbrio, sabedoria e honra. Nos cinco capítulos ou tomos do livro, Terra, Água, Fogo, Vento e Vácuo, Musashi trata de liderança e dos princípios ligados aos conflitos da existência humana para fazer do leitor uma pessoa vencedora. Esta edição da Jardim \r\n"
+					+ " \r\ndos Livros tem primorosa tradução, direta do japonês, do professor doutor Wataru Kikuchi, diretor do Centro de Estudos Japoneses da USP. Um caderno de fotos, pinturas do autor e mapas de batalhas do Japão antigo tornam o livro, além de tudo, uma requintada obra de arte, inclui ainda páginas para anotações do leitor.");
 					loja();
 		}
 		else if(escolha == 5) {
@@ -226,7 +226,8 @@ public class Biblioteca {
 		}
 		else if (escolha == 6) {
 			System.out.println("\t\t\tSINOPSE");
-			System.out.println("A guerra é um assunto de importância vital para o Estado; o reino da vida ou da morte; o caminho para a sobrevivência ou a ruína. É indispensável estudá-la profundamente.\" Sun Tzu");
+			System.out.println("\nA guerra é um assunto de importância vital para o Estado; o reino da vida ou da morte; o caminho para" 
+								+"\r\na sobrevivência ou a ruína. É indispensável estudá-la profundamente.\n");
 			loja();
 		}
 		break;
@@ -242,68 +243,218 @@ public class Biblioteca {
 
         if(escolha==1) {
             System.out.println("\t\t\tSINOPSE");
-			System.out.println("As asas de um corvo se misturam à escuridão. "
-                    + "A velha casa em ruínas observa com janelas que pareciam olhos."
-                    + " Você jura ouvir a voz de alguém que já partiu para o outro lado,"
-                    + " bem na hora em que um gato preto cruza seu caminho. "
-                    + "Tudo o que hoje conhecemos como terror começou a ganhar "
-                    + "forma na obra de Edgar Allan Poe.");
+			System.out.println("\nAs asas de um corvo se misturam à escuridão. "
+                    + "\r\nA velha casa em ruínas observa com janelas que pareciam olhos."
+                    + " \r\nVocê jura ouvir a voz de alguém que já partiu para o outro lado,"
+                    + "\r\nbem na hora em que um gato preto cruza seu caminho. "
+                    + "\r\nTudo o que hoje conhecemos como terror começou a ganhar "
+                    + "\r\nforma na obra de Edgar Allan Poe.\n");
             loja();
         }
         else if(escolha==2) {
 			System.out.println("\t\t\tSINOPSE");
-			System.out.println("Carrie é uma adolescente tímida e solitária. Aos 16 anos, é completamente dominada pela mãe, "
-                    + "uma fanática religiosa que reprime todas as vontades "
-                    + "e descobertas normais aos jovens de sua idade. Para Carrie, "
-                    + "tudo é pecado. Viver é enfrentar todo dia o terrível peso da culpa.");
+			System.out.println("\nCarrie é uma adolescente tímida e solitária. Aos 16 anos, é completamente dominada pela mãe, "
+                    + "\r\numa fanática religiosa que reprime todas as vontades "
+                    + "\r\ne descobertas normais aos jovens de sua idade. Para Carrie, "
+                    + "\r\ntudo é pecado. Viver é enfrentar todo dia o terrível peso da culpa.\n");
             loja();
         }
         else if(escolha==3) {
             System.out.println("\t\t\tSINOPSE");
-			System.out.println("O brilhante e pouco ortodoxo doutor Victor Frankestein trabalha na criação de um monstro com partes de "
-                    + "diferentes corpos humanos. Após ser rejeitada pelo criador,"
-                    + "a criatura escapa e passa a agir com uma violenta sede de vingança.");
+			System.out.println("\nO brilhante e pouco ortodoxo doutor Victor Frankestein trabalha na criação de um monstro com partes de "
+                    + "\r\ndiferentes corpos humanos. Após ser rejeitada pelo criador,"
+                    + "\r\na criatura escapa e passa a agir com uma violenta sede de vingança.\n");
             loja();
         }
 else if(escolha==4) {
 	        System.out.println("\t\t\tSINOPSE");
-			System.out.println("Naquele verão, eles enfrentaram pela primeira vez a Coisa, um ser sobrenatural e "
-                    + "maligno que deixou terríveis marcas de sangue em Derry. "
-                    + "Quase trinta anos depois, os amigos voltam a se encontrar. "
-                    + "Uma nova onda de terror tomou a pequena cidade, "
-                    + "e somente eles serão capazes de enfrentar a Coisa. O tempo é curto.");
+			System.out.println("\nNaquele verão, eles enfrentaram pela primeira vez a Coisa, um ser sobrenatural e "
+                    + "\r\nmaligno que deixou terríveis marcas de sangue em Derry. "
+                    + "\r\nQuase trinta anos depois, os amigos voltam a se encontrar. "
+                    + "\r\nUma nova onda de terror tomou a pequena cidade, "
+                    + "\r\ne somente eles serão capazes de enfrentar a Coisa. O tempo é curto.\n");
             loja();
         }
 		else if(escolha==5) {
             System.out.println("\t\t\tSINOPSE");
-			System.out.println("Jack Campbell, um professor de natação, e sua pequena filha Emily, "
-                    + "decidem passar um tempo juntos em uma casa do lago "
-                    + "a fim de superarem o luto pela morte de Hannah,"
-                    + " ex-esposa de Jack e mãe de Emily. Mas, logo após chegarem à propriedade, "
-                    + "Emily afirma ter visto uma menina misteriosa na floresta e, "
-                    + "no porão da casa, Jack encontra desenhos antigos que parecem ter sido feitos por uma criança. "
-                    + "Os desenhos parecem retratar uma pequena família feliz que sofreu uma grande tragédia.\r\n"
+			System.out.println("\nJack Campbell, um professor de natação, e sua pequena filha Emily, "
+                    + "\r\ndecidem passar um tempo juntos em uma casa do lago "
+                    + "\r\na fim de superarem o luto pela morte de Hannah,"
+                    + "\r\nex-esposa de Jack e mãe de Emily. Mas, logo após chegarem à propriedade, "
+                    + "\r\nEmily afirma ter visto uma menina misteriosa na floresta e, "
+                    + "\r\nno porão da casa, Jack encontra desenhos antigos que parecem ter sido feitos por uma criança. "
+                    + "\r\nOs desenhos parecem retratar uma pequena família feliz que sofreu uma grande tragédia.\r\n"
                     + "\r\n"
-                    + "O que aconteceu com essa família? A menina da floresta é real? Estariam Jack e "
-                    + "Emily ligando-se aos desaparecimentos que ocorreram naquela propriedade muitos anos atrás? "
-                    + "Enquanto tenta descobrir respostas, Jack precisa salvar sua filha de um mundo gélido e sombrio, "
-                    + "e de perigos inimagináveis que tem que enfrentar.");
+                    + "\r\nO que aconteceu com essa família? A menina da floresta é real? Estariam Jack e "
+                    + "\r\nEmily ligando-se aos desaparecimentos que ocorreram naquela propriedade muitos anos atrás? "
+                    + "\r\nEnquanto tenta descobrir respostas, Jack precisa salvar sua filha de um mundo gélido e sombrio, "
+                    + "\r\ne de perigos inimagináveis que tem que enfrentar.\n");
             loja();
         }
 else if(escolha==6) {
 			System.out.println("\t\t\tSINOPSE");
-			System.out.println("Emmy sempre soube que a floresta ao redor de sua casa estava cheia de fantasmas e monstros. "
-                    + "No entanto, na véspera de seu aniversário de dezoito anos ela descobre que está conectada "
-                    + "a essas criaturas ― e à própria terra ― de uma maneira que não imaginava ser possível. "
-                    + "Aguarde na sombra do carvalho retorcido e ouça o balido das cabras. Condado Maldito: Bruxas & "
-                    + "Assombrações é o primeiro de uma série de oito volumes a ser publicada pela "
-                    + "DarkSide Books em parceria com a Macabra Filmes ao longo dos próximos meses, e chega para "
-                    + "os leitores em uma edição assombrosa e com um tratamento especial de tirar o fôlego. "
-                    + "Você está pronto para ver os cordeiros virarem lobos?");
+			System.out.println("\nEmmy sempre soube que a floresta ao redor de sua casa estava cheia de fantasmas e monstros. "
+                    + "\r\nNo entanto, na véspera de seu aniversário de dezoito anos ela descobre que está conectada "
+                    + "\r\na essas criaturas ― e à própria terra ― de uma maneira que não imaginava ser possível. "
+                    + "\r\nAguarde na sombra do carvalho retorcido e ouça o balido das cabras. Condado Maldito: Bruxas & "
+                    + "\r\nAssombrações é o primeiro de uma série de oito volumes a ser publicada pela "
+                    + "\r\nDarkSide Books em parceria com a Macabra Filmes ao longo dos próximos meses, e chega para "
+                    + "\r\nos leitores em uma edição assombrosa e com um tratamento especial de tirar o fôlego. "
+                    + "\r\nVocê está pronto para ver os cordeiros virarem lobos?\n");
             loja();
         }
         break;
+		case 4: System.out.println("Escolha uma opcao: ");
+        System.out.println("Comedia: ");
+        System.out.println("(1)O Diabo Veste Prada - Lauren Weisberger : ");
+        System.out.println("(2)Cadê você Bernadette - Maria Semple: ");
+        System.out.println("(3)A Comedia Divina: Purgatorio - Dante Alighieri: ");
+        System.out.println("(4)O Pau  - Fernanda Young: ");
+        System.out.println("(5)O diario do chaves - : Roberto Gómez Bolaños");
+        System.out.println("(6)Piadas de Nerd: As Melhores Piadas de Fisica - Ivan Baroni: ");
+        escolha=input.nextInt();
+
+		if(escolha==1) {
+            System.out.println("\nLauren Weisberger trabalhou como assistente da todo poderosa amada e odiada editora da revista Vogue,"
+			+"\r\nAnna Wintour. Assim, qualquer semelhança de O diabo veste Prada com a realidade não é mera coincidência."
+			+"\r\nNeste irresistível romance, o leitor irá conhecer Andrea Sachs," 
+			+"\r\numa jovem recém-formada que conquista um emprego que deveria deixar roxas de inveja milhares de garotas:"
+			+"\r\no de assistente de Miranda Priestly, reverenciada editora da revista Runway Magazine," 
+			+"\r\na mais bem-sucedida revista de moda do momento. Logo ela percebe, porém,"
+			+"\r\nque o emprego pelo qual um milhão de meninas dariam a vida para ter pode simplesmente acabar com a dela." 
+			+"\r\nDe uma hora para outra, a jovem jornalista se vê num escritório onde as palavras Prada,"
+			+"\r\nArmani e Versace são lei e começa a conviver de perto com o fascinante mundo da moda. \n");
+            loja();
         }
+		 
+		if(escolha==2) {
+            System.out.println("\nBernadette Fox é notável. Aos olhos de seu marido,"
+			+"\r\nguru tecnológico da Microsoft e rock star do mundo nerd, ela se torna mais maníaca a cada dia;"
+			+"\r\npara as demais mães da Galer Street, escola liberal frequentada pela elite de Seattle,"
+			+"\r\nela só causa desgosto; os especialistas em design ainda a consideram uma gênia da arquitetura sustentável,"
+			+"\r\ne Bee, sua filha de quinze anos, acha que tem a melhor mãe do mundo."
+			+"\r\nAté que Bernadette desaparece do mapa."
+			+"\r\nTudo começa quando Bee mostra seu boletim (impecável) e reivindica a prometida recompensa:"
+			+"\r\numa viagem de família à Antártida. Mas Bernadette tem tal ojeriza a Seattle,"
+			+"\r\ne às pessoas em geral - que evita ao máximo sair de casa," 
+			+"\r\ne contratou uma assistente virtual na Índia para realizar suas tarefas mais básicas.\n");
+			
+			loja();
+		}
+
+		
+		if(escolha==3) {
+            System.out.println("\nNo século XIV período renascentista e dividido em três partes: o Inferno," 
+			+"\r\no Purgatório e o Paraíso. São cem cantos protagonizados pelo próprio Dante em companhia do poeta romano Virgílio,"
+			+"\r\nque percorreu uma jornada espiritual pelos três reinos além-túmulo."
+			+"\r\nO Purgatório é descrito em 33 cantos." 
+			+"\r\nDante descreve nele o encontro com as almas que aguardam para serem avaliadas."
+			+"\r\nO purgatório é formado por sete círculos, que representam os sete pecados capitais:" 
+			+"\r\nOrgulho, Inveja, Ira, Preguiça, Avareza, Gula e Luxúria.\n");
+		
+		loja();
+		}
+
+		
+		if(escolha==4) {
+            System.out.println("\nDiz a crença popular que a vingança é um prato que se come frio."
+			+"\r\nEm O pau, Fernanda Young fala do tema ao contar a história de Adriana," 
+			+"\r\numa bela designer de jóias que descobre sinais da traição do namorado, 14 anos mais novo."
+			+"\r\nAo longo das páginas, a escritora usa o humor ácido que a consagrou como redatora de sucessos," 
+			+"\r\ncomo Os normais para derrubar a teoria freudiana da inveja do pênis.\n");
+
+			loja();
+		}
+		
+		if(escolha==5) {
+            System.out.println("\nA obra é um mergulho no divertido universo que Bolaños desenvolveu para o programa mexicano," 
+			+"\r\ncujas exibições tiveram início em 1972 e se estenderam até meados dos anos 1990," 
+			+"\r\ncom direito à participação de Chiquinha, Quico, Seu Madruga, Dona Florinda, Professor Girafales," 
+			+"\r\nSenhor Barriga, Dona Clotilde e demais personagens," 
+			+"\r\nàs voltas com os bordões e as confusões que tanto caíram nas graças do público brasileiro." 
+			+"\r\nTudo começa quando um menino pobre conhecido apenas como Chaves se oferece para engraxar os sapatos de um homem." 
+			+"\r\nEsse homem é ninguém mais, ninguém menos, que o próprio Bolaños.\n");
+
+			loja();
+		}
+		
+		if(escolha==6) {
+            System.out.println("\nElas vão ajudar a solidificar os conhecimentos," 
+			+"\r\ne ao mesmo tempo liquefazer o preconceito e evaporar a dificuldade de muitos alunos." 
+			+"\r\nEste condensado de piadas de cosmologia, cinemática, eletrônica, termodinâmica e outros termos assustadores," 
+			+"\r\nvai dilatar muitas cabeças e fazê-las encarar a disciplina por uma nova óptica." 
+			+"\r\nAfinal, ao contrário do atrito e da resistência do ar, a física não pode ser desprezada.\n");
+		
+		loja();	
+		}
+		break;
+		case 5: 
+		System.out.println("\t\n          Auto-Ajuda ");
+		System.out.println("\t  ¨¨¨¨¨¨¨¨¨¨ ");
+		System.out.println("\n(1) O Poder do Hábito ");
+		System.out.println("\n(2) Mindset: A Nova Psicologia do Sucesso ");
+		System.out.println("\n(3) Os Sete Hábitos das Pessoas Altamente Eficazes");
+		System.out.println("\n(4) Diário de uma ansiosa ou como parei de me sabotar ");
+		System.out.println("\n(5) Propósito de vida: Um Guia Prático Para Desenvolver o Seu ");
+		System.out.println("\n(6) Sucesso Através de uma Atitude Mental Positiva  ");
+		escolha=input.nextInt();
+
+        if(escolha == 1) {
+	    System.out.println("\t\t\tSINOPSE");
+	    System.out.println("\nO poder do hábito - Charles Duhigg: O Poder do Hábito: por que fazemos o que fazemos\r" 
+							+"\r\nna vida e nos negócios é um livro de Charles Duhigg,\r" 
+							+"\r\nex-repórter do New York Times, publicado em Fevereiro de 2012 pela Random House. Explora\r"
+							+"\r\na ciência por trás da criação e reforma de hábitos.\n" );
+	    loja();
+	    }
+        else if(escolha ==2) {
+	    System.out.println("\t\t\tSINOPSE");
+	    System.out.println("\nCarol S. Dweck, ph.D., professora de psicologia na Universidade Stanford e especialista internacional"
+		 					+"\r\nem sucesso e motivação, desenvolveu, ao longo de décadas de pesquisa, um conceito fundamental: a atitude" 
+							+"\r\nmental com que encaramos a vida, que ela chama de “mindset”, é crucial para o sucesso. Dweck revela de"
+							+"\r\nforma brilhante como o sucesso pode ser alcançado pela maneira como lidamos com nossos objetivos. O mindset" 
+							+"\r\nnão é um mero traço de personalidade, é a explicação de por que somos otimistas ou pessimistas, bem-sucedidos" 
+							+"\r\nou não. Ele define nossa relação com o trabalho e com as pessoas e a maneira como educamos nossos filhos." 
+							+"\r\nÉ um fator decisivo para que todo o nosso potencial seja explorado.\n");
+	    loja();
+}
+        else if(escolha == 3) {
+	    System.out.println("\t\t\tSINOPSE");
+	    System.out.println("\nOs 7 hábitos das pessoas altamente eficazes é uma abordagem holística e integrada à solução dos problemas"
+		+"\r\npessoais e profissionais baseada em princípios. Com mais de 25 milhões de exemplares vendidos e traduzido para 38 idiomas," 
+		+"\r\neste manual revolucionário nos mostra como alcançar a paz de espírito e adquirir confiança por meio dos alicerces do comportamento"
+		+"\r\nhumano no caráter e da compreensão dos princípios, não se detendo apenas a práticas.\n");
+	    loja();
+}
+        else if(escolha == 4) {
+	    System.out.println("\t\t\tSINOPSE");
+	    System.out.println("\nEste livro é repleto de conselhos amigáveis sobre como cuidar de si mesmo, como procurar ajuda (não importa quais"
+		+"\r\nsejam seus problemas) e agarrar-se aquilo que te faz feliz – seja uma banda, seja uma maratona da Netflix. Beth Evans é uma contadora"
+		+"\r\nde histórias supercriativa, e seus desenhos complementam suas palavras com um humor único."
+		+"\r\nDiário de uma ansiosa ou como parei de me sabotar é como um abraço do seu melhor amigo naqueles dias sofríveis. E, como melhor amigo,"
+		+"\r\nestá aqui para dizer: Você consegue!\n");
+	     loja();
+}
+        else if(escolha==5) {
+	    System.out.println("\t\t\tSINOPSE");
+	    System.out.println("\nUm Guia Prático Para Desenvolver o Seu: Um clássico de Napoleon Hill que tem mudado milhões de vidas!"
+		 					+"\r\nSua mente é um talismã secreto. De um lado é dominado pelas letras AMP (Atitude Mental Positiva) e, por outro,"
+							+"\r\npelas letras AMN (Atitude Mental Negativa). Uma atitude positiva irá, naturalmente, atrair sucesso e prosperidade."
+							+"\r\nA atitude negativa vai roubá-lo de tudo que torna a vida digna de ser vivida."
+							+"\r\nSeu sucesso, saúde, felicidade e riqueza dependem de qual lado você irá usar.\n");
+			loja();
+}
+	    else if(escolha == 6) {
+	    System.out.println("\t\t\tSINOPSE");
+	    System.out.println("\nQuando o pioneiro motivacional Napoleon Hill e o CEO milionário W. Clement Stone se uniram para formar uma das"
+		 					+"\r\nparcerias mais notáveis de todos os tempos, o resultado foi Atitude Mental Positiva, o fenômeno editorial que"
+							+"\r\nsugeriu ao mundo que, com a atitude certa, qualquer um pode realizar seus sonhos.\n");
+	    loja();
+}
+		break;
+		case 8: login();
+        }
+
 		 
 		}
 	public void deposito(double depTotal) {
