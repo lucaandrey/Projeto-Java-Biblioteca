@@ -326,7 +326,46 @@ if(op == 1) {
 				menu();
 			}
 		}		
-	}	
+	}
+	else if(op == 2) {
+		int decida = 0;
+		System.out.println("Are you sure to proceed with the operation? (1) YES (2) NO");
+		System.out.println("\nBalance available: "+saldo);
+		decida = input.nextInt();
+		if(decida==1 ){int aluguel = 5;
+			if(saldo - aluguel <0){
+				System.out.println("\nInsufficient balance!");
+				System.out.println("\nYou have been redirected to our store.");
+				System.err.println("                                          ");
+				deposito(0);
+			}
+			else if (saldo >= aluguel){
+			saldo -=aluguel;
+			System.out.println("\nBook rental costs: "+aluguel);
+			System.out.println("\t************************************");
+			System.out.println("\t* Operation performed successfully!!*");
+			System.out.println("\t************************************");
+			System.out.println("\nYour new balance is: "+saldo+"\n");
+			System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
+			System.out.println("                             ");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			menu();
+			}
+			else{
+				menu();
+			}
+		}
+
+	else {
+		menu();
+	}
+}	
 }
 	
 	public void cadastro() {
