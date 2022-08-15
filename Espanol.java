@@ -37,9 +37,9 @@ public class Espanol {
 	 int escolha = 0;
 	
 	public void login() {
-		System.out.println("login: ");
+		System.out.println("Login: ");
 		this.login = input.next();
-		System.out.println("contrasena: ");
+		System.out.println("Contrasena: ");
 		this.senha = input.next();
 		
 		if(user.equals(this.login) && user.equals(this.login)) {
@@ -71,12 +71,14 @@ public class Espanol {
 			System.out.println("\n(5) Autoayuda");
 			System.out.println("\n(6) Aventura");
 			System.out.println("\n(7) Infantil");
+			System.out.println("\n(8) Cerrar sesión");
 			System.out.println("\n(0) hacer un depósito");
+			
 			op = input.nextInt();
 			switch(op) {
 			case 0: deposito1(0);
 			break;
-			case 1: System.out.println(" Elige una opción ");
+			case 1: System.out.println("\nElige una opción ");
 			System.out.println("(1)Romeo y Julieta ");
 			System.out.println("(2)El guardian entre el Centeno ");
 			System.out.println("(3)La peste ");
@@ -136,15 +138,15 @@ public class Espanol {
 			}
 			break; 
 			case 2: 
-				System.out.println("Elige una opcion: ");
+				System.out.println("\nElige una opcion: ");
 				System.out.println("Ciencia Ficcion: ");
-				System.out.println("(1)Outsider: ");
-				System.out.println("(2)Drácula - Dark Edition: ");
-				System.out.println("(3)O diário perdido de gravity falls: ");
-				System.out.println("(4)O livro dos cinco anéis");
-				System.out.println("(5)Mitologia Nórdica: ");
-				System.out.println("(6)A arte da guerra: ");
-				System.out.println("Escolha uma opcao: ");													
+				System.out.println("(1)Forastera: ");
+				System.out.println("(2)Drácula - Edición oscura: ");
+				System.out.println("(3)El diario perdido de Gravity Falls: ");
+				System.out.println("(4)El libro de los cinco anillos");
+				System.out.println("(5)Mitología nórdica: ");
+				System.out.println("(6)El arte de la guerra: ");
+				System.out.println("Elige una opcion: ");													
 				escolha=input.nextInt();
 			
 		if(escolha == 1) {
@@ -266,9 +268,9 @@ public class Espanol {
 			loja();
 		}
 		break;
-			case 3: System.out.println(" Elige una opcion: ");
+			case 3: System.out.println("\nElige una opcion: ");
 			System.out.println("Terror: ");
-			System.out.println("(1):Miedo - Edgar Allan Poe: ");
+			System.out.println("(1)Miedo - Edgar Allan Poe: ");
 			System.out.println("(2)Carrie - Stepen King: ");
 			System.out.println("(3)Frankenstein - Mary Shelley: ");
 			System.out.println("(4)It (eso) - Stephen King: ");
@@ -327,7 +329,7 @@ public class Espanol {
 				loja();
 			}
 			break;
-		
+			case 8: login();
 			}
 		}
 			
@@ -348,8 +350,8 @@ public class Espanol {
 			public void loja() {
 				int op =0;
 				
-				System.out.println("Elige una opcion: ");
-				System.out.println("(1)Comprar");
+				System.out.println("\nElige una opcion: ");
+				System.out.println("\n(1)Comprar");
 				System.out.println("(2)Alquilar");
 				System.out.println("(3)Volver al menu");
 				op = input.nextInt();
@@ -373,9 +375,9 @@ public class Espanol {
 							} catch (InterruptedException e) {
 								e.printStackTrace();
 							}
-							System.out.println("\t********************************************");
-							System.out.println("\t*   Compra realizada con exito!!!");
-							System.out.println("\t********************************************");
+							System.out.println("\t************************************");
+							System.out.println("\t*  Compra realizada con exito!!    *");
+							System.out.println("\t************************************");
 							
 							System.out.println("                                              ");
 							System.out.println("   Nuevo saldo: R$"+this.saldo);
@@ -388,15 +390,16 @@ public class Espanol {
 							}
 							menu();
 						}
-						else if (decida == 2 ){
+						
+						}
+							else if (decida == 2 ){
 							menu();
 						}
-					}
 				}
 						
 			else if(op == 2) {
 				int decida = 0;
-				System.out.println("?Estas seguro de continuar con la operacion? (1)SI (2)NO");
+				System.out.println(" Estas seguro de continuar con la operacion? (1)SI (2)NO");
 				System.out.println("\nSaldo disponible: "+saldo);
 				decida = input.nextInt();
 				if(decida==1 ){int aluguel = 5;
@@ -431,7 +434,7 @@ public class Espanol {
 			else {
 				menu();
 			}
-		}
+		}menu();
 	}
 			public void cadastro() {
 				
@@ -439,9 +442,9 @@ public class Espanol {
 				this.nome = input.nextLine();
 				System.out.println("\nElija un nombre de usuario: ");
 				user = input.nextLine();
-				System.out.println("\nElina una contrasena: ");
+				System.out.println("\nElija una contrasena: ");
 				password = input.nextLine();
-				System.out.println("\n?Cuantos anos tiene usted?: ");
+				System.out.println("\n?Cuantos anos tiene usted ? ");
 				this.idade = input.nextInt();
 				System.out.println("\nInforma su genero (1) Masculino || (2)Femenino || (3) Otres: ");
 				this.genero = input.nextInt();
@@ -466,7 +469,7 @@ public class Espanol {
 				System.out.println("\t Ademas de alimentar tus conocimientos, !alimenta vidas! \n ");
 				System.out.println("                        __________         ");
 				System.out.println("                       | CATALOGO |        ");
-				System.out.println("                       	________         ");
+				System.out.println("                        ¨¨¨¨¨¨¨¨¨¨         ");
 			}
 				public void visualizar3(){
 

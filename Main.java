@@ -24,13 +24,13 @@ public class Main {
 
         a = input.nextInt();
         if(a  == 1){
-            c1.cadastro();
+            c1.login();
         }
         else if(a == 2){
             c2.login();
         }
         else if(a == 3) {
-        	c3.cadastro();
+        	c3.login();
         }
 
     }
