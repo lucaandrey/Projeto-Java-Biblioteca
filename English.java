@@ -74,28 +74,29 @@ public class English {
 		}  catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println(" \n\tGENEROUS: ");
-		System.out.println("\n\t(1)Romance");
-		System.out.println("\n\t(2)Fiction");
-		System.out.println("\n\t(3)Terror");
-		System.out.println("\n\t(4)Comedy");
-		System.out.println("\n\t(5)Self Help");
-		System.out.println("\n\t(6)Adventure");
-		System.out.println("\n\t(7)Children");
-		System.out.println("\n\tChoose an option: ");
+		System.out.println(" \nGENEROUS: ");
+		System.out.println("\nChoose an option: ");
+		System.out.println("\n(1) Romance");
+		System.out.println("\n(2) Fiction");
+		System.out.println("\n(3) Terror");
+		System.out.println("\n(4) Comedy");
+		System.out.println("\n(5) Self Help");
+		System.out.println("\n(6) Adventure");
+		System.out.println("\n(7) Children");
+		System.out.println("\n(8) Logout");
+		System.out.println("\n(0) Make a deposit");
 		op = input.nextInt();
 		switch(op) {
-		case 0: deposito(0);
+		case 0: deposito1(0);
 		break;
-		
-		case 1: System.out.println("\n\tChoose an option: ");
-				System.out.println("\n\tROMANCE: ");
-				System.out.println("\n\t(1)Romeo and Juliet: ");
-				System.out.println("\n\t(2)The Catcher In The Rye: ");
-				System.out.println("\n\t(3)The Plague: ");
-				System.out.println("\n\t(4) Love In The Time Of Cholera: ");
-				System.out.println("\n\t(5)Paper Cities: ");
-				System.out.println("\n\t(6)Dom Casmurro: ");
+		case 1: System.out.println("\nChoose an option: ");
+				System.out.println("\nROMANCE: ");
+				System.out.println("\n(1)Romeo and Juliet: ");
+				System.out.println("\n(2)The Catcher In The Rye: ");
+				System.out.println("\n(3)The Plague: ");
+				System.out.println("\n(4) Love In The Time Of Cholera: ");
+				System.out.println("\n(5)Paper Cities: ");
+				System.out.println("\n(6)Dom Casmurro: ");
 				escolha=input.nextInt();
 		
 		if(escolha == 1) {
@@ -397,5 +398,18 @@ if(op == 1) {
 			System.out.println("\n\t          It's a pleasure have you here!");
 			System.out.println("\n\t    Your balance is: "+saldo+" Enjoy! ");
 			System.out.println("*************************************************************");
+		}
+		public void deposito1(double depTotal) {
+			System.out.println("Welcome to the buy section!");
+			System.out.println("Make a deposit: ");
+			depTotal = input.nextDouble();
+			this.saldo += depTotal;
+			System.out.println("Deposit of R$"+saldo+" made successfully!");
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			menu();
 		}
 }
