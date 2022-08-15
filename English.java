@@ -1,6 +1,5 @@
 
 import java.util.ArrayList;
-import java.util.Random;
 import java.util.Scanner;
 
 
@@ -74,28 +73,30 @@ public class English {
 		}  catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println(" \n\tGENEROUS: ");
-		System.out.println("\n\t(1)Romance");
-		System.out.println("\n\t(2)Fiction");
-		System.out.println("\n\t(3)Terror");
-		System.out.println("\n\t(4)Comedy");
-		System.out.println("\n\t(5)Self Help");
-		System.out.println("\n\t(6)Adventure");
-		System.out.println("\n\t(7)Children");
-		System.out.println("\n\tChoose an option: ");
+		System.out.println(" \nGENEROUS: ");
+		System.out.println("\nChoose an option: ");
+		System.out.println("\n(1) Romance");
+		System.out.println("\n(2) Fiction");
+		System.out.println("\n(3) Terror");
+		System.out.println("\n(4) Comedy");
+		System.out.println("\n(5) Self Help");
+		System.out.println("\n(6) Adventure");
+		System.out.println("\n(7) Children");
+		System.out.println("\n(8) Logout");
+		System.out.println("\n(0) Make a deposit");
+
 		op = input.nextInt();
 		switch(op) {
-		case 0: deposito(0);
+		case 0: deposito1(0);
 		break;
-		
-		case 1: System.out.println("\n\tChoose an option: ");
-				System.out.println("\n\tROMANCE: ");
-				System.out.println("\n\t(1)Romeo and Juliet: ");
-				System.out.println("\n\t(2)The Catcher In The Rye: ");
-				System.out.println("\n\t(3)The Plague: ");
-				System.out.println("\n\t(4) Love In The Time Of Cholera: ");
-				System.out.println("\n\t(5)Paper Cities: ");
-				System.out.println("\n\t(6)Dom Casmurro: ");
+		case 1: System.out.println("\nChoose an option: ");
+				System.out.println("\nROMANCE: ");
+				System.out.println("\n(1)Romeo and Juliet: ");
+				System.out.println("\n(2)The Catcher In The Rye: ");
+				System.out.println("\n(3)The Plague: ");
+				System.out.println("\n(4) Love In The Time Of Cholera: ");
+				System.out.println("\n(5)Paper Cities: ");
+				System.out.println("\n(6)Dom Casmurro: ");
 				escolha=input.nextInt();
 		
 		if(escolha == 1) {
@@ -149,29 +150,29 @@ public class English {
 		}
 		break;
 		case 2: 
-		System.out.println("\n\tChoose an option: ");													
-		System.out.println("\n\tFICTION: ");
-		System.out.println("\n\t(1)Outsider: ");
-		System.out.println("\n\t(2)DrÃ¡cula - Dark Edition: ");
-		System.out.println("\n\t(3)The Lost Journal of Gravity Falls ");
-		System.out.println("\n\t(4)The Book of Five Rings");
-		System.out.println("\n\t(5)Norse mythology: ");
-		System.out.println("\n\t(6)The art of war: ");
+		System.out.println("\nChoose an option: ");													
+		System.out.println("\nFICTION: ");
+		System.out.println("\n(1)Outsider: ");
+		System.out.println("\n(2)DrÃ¡cula - Dark Edition: ");
+		System.out.println("\n(3ost Journal of Gravity Falls ");
+		System.out.println("\n(4)The Book of Five Rings");
+		System.out.println("\n(5)Norse mythology: ");
+		System.out.println("\n(6)The art of war: ");
 		escolha=input.nextInt();
 	
 if(escolha == 1) {
-	System.out.println("\n\t\n\tThe body of an eleven-year-old boy is found abandoned in Flint City Park, brutally murdered. \n\t\n\tWitnesses and fingerprints point to the criminal as one of the city's most recognizable figures â€• Terry Maitland, \n\t\n\tLittle League baseball coach, English teacher, married and father of two.\r\n"
-	+ "\n\t\n\tDetective Ralph Anderson doesn't hesitate to order a quick and very public arrest, letting the entire town soon \n\t\n\tknow that Coach T is the prime suspect in the crime. Maitland has an alibi, but Anderson and the district attorney \n\t\n\tsoon have DNA samples to support the charge. The case appears to be resolved.\r\n"
-	+ "\n\t\n\tBut as the investigation unfolds, the story turns into a roller coaster, full of tension and suspense. Terry \n\t\n\tMaitland seems like a good person, but is that just a mask? The terrifying response is what makes this one of \n\t\n\tStephen King's most disturbing stories.");
+	System.out.println("\nThe body of an eleven-year-old boy is found abandoned in Flint City Park, brutally murdered. \nWitnesses and fingerprints point to theriminal as one of the city's most recognizable figures â€• Terry Maitland, \nLittle League baseball coach, English teacher, married and father of two.\r\n"
+	+ "\nDetective Ralph Anderson doesn't hesitate to order a quick and very public arrest, letting the entire town soon \nknow that Coach T is the prime suspect in the crime. Maitland has an alibi, but Anderson and the district attorney \nsoon have DNA samples to support the charge. The case appears to be resolved.\r\n"
+	+ "\nBut as the investigation unfolds, the story turns into a roller coaster, full of tension and suspense. Terry \nMaitland seems like a good person, but is that just a mask? The terrifying response is what makes this one of \nStephen King's most disturbing stories.");
 			loja();
 }
 else if(escolha == 2) {
-	System.out.println("\n\tDracula, a classic that still runs hot in the veins of countless generations of readers around \n\tthe world and the most celebrated vampire narrative, continues to transcend boundaries of time, space, history and \n\tmemory. epistolary novel mobilizes readers and scholars,\r\n"
-	+ " confirming the perennial vigor of a tree whose solid roots account for the vitality of its ramifications. \n\tAlthough the famous count was not the first literary vampire, he is certainly the most popular, sucked and adapted \n\tto countless universes: theater, cinema, comics, series and toys, the face is recognized \r\n"
-	+ " \n\teven by those who have never read the novel. It is everywhere. Bram Stoker's timeless work narrates, through \n\tfragments of letters, diaries and newspaper reports, the story of humans struggling to survive the onslaughts of \n\tvampire Dracula. The group formed by Jonathan Harker, Mina Harker, Dr. Van Helsing \r\n"
-	+ " \n\tand Dr. Seward tries to stop the vile creature from feeding on human blood in late 19th century Victorian \n\tLondon. An absolute horror classic, Bram Stoker defines in Dracula the way we understand and think about vampires \n\ttoday. . More than that, he brings this monster to the center stage of pop culture \r\n"
-	+ " \n\tof our century and immortalizes the villain of refined manners and bloodthirsty behavior.TWO EDITIONS FOR A \n\tUNIQUE ROMANCE It's not now that readers clamor for an edition of Dracula made by DarkSideÂ® Books to honor the \n\tlegacy of the master Bram Stoker. as great as this one will be published in two versions, \r\n"
-	+ " \n\tfor no vampire to fault: FIRST EDITION, with the iconic yellow cover of the first publication, in 1897, an \n\tunprecedented edition in the Brazilian market that eternalizes the brightness and charm of the sun, something \n\tunattainable in the face of all the pain of eternity; and the DARK EDITION, dedicated to dark-hearted readers. \r\n ");	
+	System.out.println("\nDracula, a classic that still runs hot in the veins of countless generations of readers around \nthe world and the most celebrated vampire narrative, continues to transcend boundaries of time, space, history and \nmemory. epistolary novel mobilizes readers and scholars,\r\n"
+	+ " confirming the perennial vigor of a tree whose solid roots account for the vitality of its ramifications. \nAlthough the famous count was not the first literary vampire, he is certainly the most popular, sucked and adapted \nto countless universes: theater, cinema, comics, series and toys, the face is recognized \r\n"
+	+ " \teven by those who have never read the novel. It is everywhere. Bram Stoker's timeless work narrates, through \nfragments of letters, diaries and newspaper reports, the story of humans struggling to survive the onslaughts of \nvampire Dracula. The group formed by Jonathan Harker, Mina Harker, Dr. Van Helsing \r\n"
+	+ " \nand Dr. Seward tries to stop the vile creature from feeding on human blood in late 19th century Victorian \nLondon. An absolute horror classic, Bram Stoker defines in Dracula the way we understand and think about vampires \ntoday. . More than that, he brings this monster to the center stage of pop culture \r\n"
+	+ " \nof our century and immortalizes the villain of refined manners and bloodthirsty behavior.TWO EDITIONS FOR A \nUNIQUE ROMANCE It's not now that readers clamor for an edition of Dracula made by DarkSideÂ® Books to honor the \nlegacy of the master Bram Stoker. as great as this one will be published in two versions, \r\n"
+	+ " \nfor no vampire to fault: FIRST EDITION, with the iconic yellow cover of the first publication, in 1897, an \nunprecedented edition in the Brazilian market that eternalizes the brightness and charm of the sun, something \nunattainable in the face of all the pain of eternity; and the DARK EDITION, dedicated to dark-hearted readers. \r\n ");	
 			loja();		
 }
 else if(escolha == 3) {
@@ -242,8 +243,8 @@ break;
 			System.out.println("Jack Campbell, a swimming teacher, and his little daughter Emily decide to spend time together at a lake house in order"
 					+ " to overcome the death of Hannah, Jack's ex-wife and Emily's mother. But shortly after arriving at the property, "
 					+ "Emily claims to have seen a mysterious girl in the woods, and in the basement of the house, Jack finds old drawings that appear "
-					+ "to have been made by a child. The drawings seem to depict a happy little family that suffered a great tragedy.\\r\\n\"\r\n"
-					+ "                    + \"\\r\\n\"\r\n"
+					+ "to have been made by a child. The drawings seem to depict a happy little family that suffered a great tragedy.\r\n"
+					+ "                    + \r\n"
 					+ "                    + \"What happened to this family? Is the forest girl real? Are Jack and Emily linking to the disappearances "
 					+ "that took place on that property many years ago? While trying to find answers, Jack must save his daughter from an icy and dark "
 					+ "world, and unimaginable dangers he has to face.");
@@ -384,13 +385,8 @@ if(op == 1) {
 		login();
 		
 	}
-	public void visualizar2(){
-		
-		System.out.println("                                                          ");
-		System.out.println("\t In addition to feeding your knowledge, feed lives! \n ");
-		System.out.println("\t\t             CATALOG");
-		}
 	public void visualizar(){
+
 
 			System.out.println("*************************************************************");
 			System.out.println("\t           WELCOME!! "+nome);
@@ -398,4 +394,31 @@ if(op == 1) {
 			System.out.println("\n\t    Your balance is: "+saldo+" Enjoy! ");
 			System.out.println("*************************************************************");
 		}
+		public void deposito1(double depTotal) {
+			System.out.println("Welcome to the buy section!");
+			System.out.println("Make a deposit: ");
+			depTotal = input.nextDouble();
+			this.saldo += depTotal;
+			System.out.println("Deposit of R$"+saldo+" made successfully!");
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			menu();
+		}
+
+		
+	
+	
+	 public void visualizar2(){
+		System.out.println("                           MENU                              ");
+		System.out.println("                          ¨¨¨¨¨¨                            ");
+		System.out.println("  30% of our profits go to charities.");
+		System.out.println("\t In addition to feeding your knowledge, feed lives! \n ");
+		System.out.println("                        __________         ");
+		System.out.println("                       | CATÁLOGO |        ");
+		System.out.println("                        ¨¨¨¨¨¨¨¨¨¨         ");
+	}
+
 }

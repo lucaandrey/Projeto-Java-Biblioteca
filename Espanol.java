@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Random;
 import java.util.Scanner;
 
 
@@ -40,15 +39,15 @@ public class Espanol {
 	public void login() {
 		System.out.println("login: ");
 		this.login = input.next();
-		System.out.println("contrase�a: ");
-		this.senha = input.nextLine();
+		System.out.println("contrasena: ");
+		this.senha = input.next();
 		
 		if(user.equals(this.login) && user.equals(this.login)) {
 			visualizar();
 		    menu();
 		}else {
-			System.out.println("Login o contrase�a incorrectos!");
-			System.out.println("Int�ntalo de nuevo.");
+			System.out.println("Login o contrasena incorrectos!");
+			System.out.println("Inténtalo de nuevo");
 			login();
 		}
 	}
@@ -64,87 +63,81 @@ public class Espanol {
 				e.printStackTrace();
 			}
 			
-			System.out.println(" G�NEROS: ");
-			System.out.println("(1)Rom�ntica");
-			System.out.println("(2)Ciencia Ficci�n");
-			System.out.println("(3)Terror");
-			System.out.println("(4)Humor");
-			System.out.println("(5)Autoayuda");
-			System.out.println("(6)Aventura");
-			System.out.println("(7)Infantil");
+			System.out.println(" GENEROS: ");
+			System.out.println("\n(1) Romantica");
+			System.out.println("\n(2) Ciencia Ficcion");
+			System.out.println("\n(3) Terror");
+			System.out.println("\n(4) Humor");
+			System.out.println("\n(5) Autoayuda");
+			System.out.println("\n(6) Aventura");
+			System.out.println("\n(7) Infantil");
+			System.out.println("\n(0) hacer un depósito");
 			op = input.nextInt();
 			switch(op) {
 			case 0: deposito1(0);
 			break;
-			case 1: System.out.println("Elige una opci�n: ");
-			System.out.println("Rom�tica: ");
-			System.out.println("(1)Romeo y Julieta: ");
-			System.out.println("(2)El guardian entre el Centeno: ");
-			System.out.println("(3)La peste: ");
-			System.out.println("(4)El amor en los tiempos del c�lera: ");
-			System.out.println("(5)Ciudades de papel: ");
-			System.out.println("(6)Dom Casmurro: ");
+			case 1: System.out.println(" Elige una opción ");
+			System.out.println("(1)Romeo y Julieta ");
+			System.out.println("(2)El guardian entre el Centeno ");
+			System.out.println("(3)La peste ");
+			System.out.println("(4)El amor en los tiempos del cólera ");
+			System.out.println("(5)Ciudades de papel ");
+			System.out.println("(6)Dom Casmurro ");
 			escolha=input.nextInt();
 			
 			if(escolha == 1) {
-				System.out.println("Sinopsis: ");
-				System.out.println("El amor se introduce en la vida de Romeo y Julieta de forma traicionera "
-						+ "los dos se enamoran al instante, en una fiesta "
-						+ "a baile de m�scaras -, sin darse cuenta de las identidades de los dem�s. "
-						+ "�l es hijo de los Montescos, y ella de los Capuletos, dos de los m�s poderosos "
-						+ "Familias Verona, enemigas entre s�. ");
+				System.out.println("\nEl amor se introduce en la vida de Romeo y Julieta de forma traicionera "
+						+ "\nlos dos se enamoran al instante, en una fiesta "
+						+ "\na baile de máscaras -, sin darse cuenta de las identidades de los demás. "
+						+ "\nÉl es hijo de los Montescos, y ella de los Capuletos, dos de los más poderosos "
+						+ "\nFamilias Verona, enemigas entre sí. ");
 				loja();
 				}
 			else if(escolha ==2) {
-				System.out.println("Sinopsis: ");
-				System.out.println("Es Navidad y Holden Caulfield ha logrado que lo echen de otra escuela. Con alg�n cambio de la venta de una m�quina de escribir y \"\r\n"
-						+ "usando su infalible gorra roja de cazador,"
-						+ "el joven elabora un plan incierto: tomar un tren a Nueva York y vagar durante tres d�as por la gran ciudad."
-						+ " Aplazar el regreso a casa de los padres hasta que reciban la noticia de la expulsi�n por parte de alguien del colegio."
-						+ " Tus d�as y noches estar�n marcados por encuentros confusos y, en ocasiones, conmovedores "
-						+ "con extra�os, peleas con los tipos m�s malos, citas con ex novias, visitas con tu hermana Phoebe "
-						+ "la �nica criatura en este mundo que parece entenderlo "
-						+ "por las dudas que te consumir�n durante tu estancia, "
-						+ "entre ellos una pregunta recurrente: despu�s de todo, �ad�nde van los patos de Central Park en invierno? ");
+				System.out.println("\nEs Navidad y Holden Caulfield ha logrado que lo echen de otra escuela. Con algún cambio de la venta de una máquina de escribir y \"\r\n"
+						+ "\nusando su infalible gorra roja de cazador,"
+						+ "\nel joven elabora un plan incierto: tomar un tren a Nueva York y vagar durante tres días por la gran ciudad."
+						+ " \nAplazar el regreso a casa de los padres hasta que reciban la noticia de la expulsión por parte de alguien del colegio."
+						+ " \nTus días y noches estarán marcados por encuentros confusos y, en ocasiones, conmovedores "
+						+ "\ncon extraños, peleas con los tipos más malos, citas con ex novias, visitas con tu hermana Phoebe "
+						+ "\nla única criatura en este mundo que parece entenderlo "
+						+ "\npor las dudas que te consumirán durante tu estancia, "
+						+ "\nentre ellos una pregunta recurrente: después de todo, ¿adónde van los patos de Central Park en invierno? ");
 				loja();
 			}
 			else if(escolha == 3) {
-				System.out.println("Sinopsis: ");
-				System.out.println("En la ma�ana del 16 de abril de 1940, el Dr. Bernard Rieux deja su "
-						+ "oficina y tropieza con un rat�n muerto. "
-						+ "Esta es la primera se�al de una epidemia de peste que en "
-						+ "pronto se apodera de toda la ciudad de Or�n en Argelia."
-						+ " Sujeto a cuarentena, se convierte en un territorio irrespirable y sus habitantes son "
-						+ "impulsado a estados de sufrimiento, de locura, pero tambi�n de compasi�n de proporciones inconmensurables.");
+				System.out.println("\nEn la mañana del 16 de abril de 1940, el Dr. Bernard Rieux deja su "
+						+ "\noficina y tropieza con un ratón muerto. "
+						+ "\nEsta es la primera señal de una epidemia de peste que en "
+						+ "\npronto se apodera de toda la ciudad de Orán en Argelia."
+						+ "\n Sujeto a cuar\nentena, se convierte en un territorio irrespirable y sus habitantes son "
+						+ "\nimpulsado a estados de sufrimiento, de locura, pero también de compasión de proporciones inconmensurables.");
 				loja();
 			}
 			else if(escolha == 4) {
-				System.out.println("Sinopsis: ");
-				System.out.println("Florentino Ariza nunca olvid� a Fermina, su primer amor. "
-						+ "�l esper� casi toda su vida por ella, y ella se cas� con otro."
-						+ " Ahora, 51 a�os despu�s, su esposo muere y finalmente tiene la oportunidad de recuperarla. ");
+				System.out.println("Florentino Ariza nunca olvidó a Fermina, su primer amor. "
+						+ "\nÉl esperó casi toda su vida por ella, y ella se casó con otro."
+						+ "\n\nAhora, 51 años después, su esposo muere y finalmente tiene la oportunidad de recuperarla. ");
 				loja();
 			}
-			else if(escolha ==5) {
-				System.out.println("Sinopsis: ");
-				System.out.println("Es Navidad, y Holden Caulfield se ha hecho expulsar de otra escuela. Con unos cuantos d�lares de la venta de una m�quina de escribir y "
-						+ "llevando tu infalible gorra roja de cazador, "
-						+ "El joven hace un plan incierto: tomar un tren a Nueva York y pasear por la gran ciudad durante tres d�as, "
-						+ "aretrasar el regreso a casa de los padres hasta que reciban la noticia de la expulsi�n por parte de alguien del colegio. ");
+			else if(escolha==5) {
+				System.out.println("\nEs Navidad, y Holden Caulfield se ha hecho expulsar de otra escuela. Con unos cuantos dólares de la venta de una máquina de escribir y "
+						+ "\nllevando tu infalible gorra roja de cazador, "
+						+ "\nEl joven hace un plan incierto: tomar un tren a Nueva York y pasear por la gran ciudad durante tres días, "
+						+ "\naretrasar el regreso \na casa de los padres hasta que reciban la noticia de la expulsión por parte de alguien del colegio. ");
 						loja();
 			}
 			else if(escolha == 6) {
-				System.out.println("Sinopsis: ");
-				System.out.println("Dom Casmurro cuenta la historia de Bento Santiago (Bentinho), "
-						+ "apodado Dom Casmurro por ser callado e introvertido. "
-						+ "Siendo adolescente, se enamora de Capitu, abandona el seminario y,"
-						+ "con �l, los planes trazados por su madre, do�a Gl�ria, para que �l fuera sacerdote. ");
+				System.out.println("\nDom Casmurro cuenta la historia de Bento Santiago (Bentinho), "
+						+ "\napodado Dom Casmurro por ser callado e introvertido. "
+						+ "\nSiendo adolescente, se enamora de Capitu, abandona el seminario y,"
+						+ "\ncon él, los planes trazados por su madre, doña Glória, para que él fuera sacerdote. ");
 				loja();
 			}
 			break; 
 			case 2: 
-				System.out.println("Elige una opci�n: ");
-				System.out.println("Ciencia Ficci�n: ");
+				System.out.println("Elige una opcion: ");
+				System.out.println("Ciencia Ficcion: ");
 				System.out.println("(1)Outsider: ");
 				System.out.println("(2)Drácula - Dark Edition: ");
 				System.out.println("(3)O diário perdido de gravity falls: ");
@@ -273,7 +266,7 @@ public class Espanol {
 			loja();
 		}
 		break;
-			case 3: System.out.println(" Elige una opci�n: ");
+			case 3: System.out.println(" Elige una opcion: ");
 			System.out.println("Terror: ");
 			System.out.println("(1):Miedo - Edgar Allan Poe: ");
 			System.out.println("(2)Carrie - Stepen King: ");
@@ -340,11 +333,11 @@ public class Espanol {
 			
 			public void deposito(double depTotal) {
 				int op = 0;
-				System.out.println("Bienvenido a la secci�n de compras!");
-				System.out.println("�Desea continuar con el dep�sito? (1)S� (2)Volvel al men�");
+				System.out.println("Bienvenido a la seccion de compras!");
+				System.out.println("Desea continuar con el deposito? (1)Si (2)Volvel al menu");
 				op = input.nextInt();
 				if (op == 1){
-					System.out.println("Haga un dep�sito: ");
+					System.out.println("Haga un deposito: ");
 					depTotal = input.nextDouble();
 					this.saldo += depTotal;
 					loja();
@@ -355,16 +348,16 @@ public class Espanol {
 			public void loja() {
 				int op =0;
 				
-				System.out.println("Elige una opci�n: ");
+				System.out.println("Elige una opcion: ");
 				System.out.println("(1)Comprar");
 				System.out.println("(2)Alquilar");
-				System.out.println("(3)Volver al men�");
+				System.out.println("(3)Volver al menu");
 				op = input.nextInt();
 				if(op == 1) {
 					
 					System.out.println("Saldo disponible: "+saldo);
 					System.out.println("El libro cuesta R$"+precoLivro.get(escolha - 1));
-					System.out.println("�Desea continuar con la compra? (1)S� (2)No");
+					System.out.println("Desea continuar con la compra? (1)SI (2)No");
 					
 					int decida = input.nextInt();
 					if(decida == 1) {
@@ -381,12 +374,12 @@ public class Espanol {
 								e.printStackTrace();
 							}
 							System.out.println("\t********************************************");
-							System.out.println("\t*   Compra realizada con �xito!!!");
+							System.out.println("\t*   Compra realizada con exito!!!");
 							System.out.println("\t********************************************");
 							
 							System.out.println("                                              ");
 							System.out.println("   Nuevo saldo: R$"+this.saldo);
-							System.out.println("����������������������������������������������������������������������");
+							System.out.println("******************************************************************");
 							System.out.println("                             ");
 							try {
 								Thread.sleep(2000);
@@ -403,7 +396,7 @@ public class Espanol {
 						
 			else if(op == 2) {
 				int decida = 0;
-				System.out.println("�Est�s seguro de continuar con la operaci�n? (1)S� (2)NO");
+				System.out.println("?Estas seguro de continuar con la operacion? (1)SI (2)NO");
 				System.out.println("\nSaldo disponible: "+saldo);
 				decida = input.nextInt();
 				if(decida==1 ){int aluguel = 5;
@@ -417,10 +410,10 @@ public class Espanol {
 					saldo -=aluguel;
 					System.out.println("\nEl alquiler del libro cuesta: "+aluguel);
 					System.out.println("\t************************************");
-					System.out.println("\t* Operaci�n realizada com �xito!!! *");
+					System.out.println("\t* Operacion realizada com Exito!!! *");
 					System.out.println("\t************************************");
 					System.out.println("\nSu nuevo saldo es: "+saldo+"\n");
-					System.out.println("����������������������������������������������������������������������");
+					System.out.println("*************************************************************************");
 					System.out.println("                             ");
 					try {
 						Thread.sleep(500);
@@ -446,45 +439,45 @@ public class Espanol {
 				this.nome = input.nextLine();
 				System.out.println("\nElija un nombre de usuario: ");
 				user = input.nextLine();
-				System.out.println("\nElina una contrase�a: ");
+				System.out.println("\nElina una contrasena: ");
 				password = input.nextLine();
-				System.out.println("\n�Cu�ntos a�os tiene usted?: ");
+				System.out.println("\n?Cuantos anos tiene usted?: ");
 				this.idade = input.nextInt();
-				System.out.println("\nInforma su g�nero (1) Masculino || (2)Femenino || (3) Otres: ");
+				System.out.println("\nInforma su genero (1) Masculino || (2)Femenino || (3) Otres: ");
 				this.genero = input.nextInt();
-				System.out.println("\nHaga un dep�sito inicial: ");
+				System.out.println("\nHaga un deposito inicial: ");
 				this.saldo += input.nextInt();
-				System.out.println("�REGISTRO COMPLETADO CON �XITO! �POR FAVOR INICIE SESI�N PARA CONTINUAR!");
+				System.out.println("?REGISTRO COMPLETADO CON EXITO! !POR FAVOR INICIE SESION PARA CONTINUAR!");
 				login();
 				}
 				public void visualizar(){
 
 				System.out.println("*************************************************************");
 				System.out.println("\t           BIENVENIDO "+nome);
-				System.out.println("\n\t          �Es un placer tenerlo aqu�!");
-				System.out.println("\n\t     Usted posue: "+saldo+" de Saldo. �Disfrutalo! ");
+				System.out.println("\n\t          !Es un placer tenerlo aqu!");
+				System.out.println("\n\t     Usted posue: "+saldo+" de Saldo. !Disfrutalo! ");
 				System.out.println("*************************************************************");
 			}
 			
 			 public void visualizar2(){
-				System.out.println("                           MEN�                              ");
-				System.out.println("                          ������                            ");
-				System.out.println("  �El 30% de nuestras ganancias van a organizaciones ben�ficas!");
-				System.out.println("\t Adem�s de alimentar tus conocimientos, �alimenta vidas! \n ");
+				System.out.println("                           MENU                             ");
+				System.out.println("                          ---------                          ");
+				System.out.println("  !El 30% de nuestras ganancias van a organizaciones ben�ficas!");
+				System.out.println("\t Ademas de alimentar tus conocimientos, !alimenta vidas! \n ");
 				System.out.println("                        __________         ");
-				System.out.println("                       | CAT�LOGO |        ");
-				System.out.println("                        ����������         ");
+				System.out.println("                       | CATALOGO |        ");
+				System.out.println("                       	________         ");
 			}
 				public void visualizar3(){
 
 
 				}
 				public void deposito1(double depTotal) {
-					System.out.println("�Bienvenido a la sesi�n de compras!");
-					System.out.println("Haga un dep�sito: ");
+					System.out.println("!Bienvenido a la sesion de compras!");
+					System.out.println("Haga un deposito: ");
 					depTotal = input.nextDouble();
 					this.saldo += depTotal;
-					System.out.println("Dep�sito de R$"+saldo+" realizado con �xito!");
+					System.out.println("Deposito de R$"+saldo+" realizado con exito!");
 					try {
 						Thread.sleep(2000);
 					} catch (InterruptedException e) {
