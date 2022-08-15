@@ -7,12 +7,12 @@ public class Espanol {
 	private String nome;
 	private String login;
 	private String senha;
-	private int saldo;
+	private double saldo;
 	private int idade;
 	private int genero;
 	Scanner input = new Scanner(System.in);
 	
-	public Espanol (String nome, String login, String senha, int saldo, int idade, int genero) {
+	public Espanol (String nome, String login, String senha, double saldo, int idade, int genero) {
 		this.nome = nome;
 		this.login = login;
 		this.senha = senha;
@@ -38,18 +38,17 @@ public class Espanol {
 	 int escolha = 0;
 	
 	public void login() {
-		String a,b;
 		System.out.println("login: ");
-		a = input.nextLine();
-		System.out.println("contraseña: ");
-		b = input.nextLine();
+		this.login = input.next();
+		System.out.println("contraseï¿½a: ");
+		this.senha = input.nextLine();
 		
-		if(a.equals(this.login) && b.equals(this.login)) {
+		if(user.equals(this.login) && user.equals(this.login)) {
 			visualizar();
 		    menu();
 		}else {
-			System.out.println("Login o contraseña incorrectos!");
-			System.out.println("Inténtalo de nuevo.");
+			System.out.println("Login o contraseï¿½a incorrectos!");
+			System.out.println("Intï¿½ntalo de nuevo.");
 			login();
 		}
 	}
@@ -78,7 +77,7 @@ public class Espanol {
 			case 0: deposito1(0);
 			break;
 			case 1: System.out.println("Elige una opciï¿½n: ");
-			System.out.println("Romática: ");
+			System.out.println("Romï¿½tica: ");
 			System.out.println("(1)Romeo y Julieta: ");
 			System.out.println("(2)El guardian entre el Centeno: ");
 			System.out.println("(3)La peste: ");
@@ -144,8 +143,8 @@ public class Espanol {
 			}
 			break; 
 			case 2: 
-				System.out.println("Elige una opción: ");
-				System.out.println("Ciencia Ficción: ");
+				System.out.println("Elige una opciï¿½n: ");
+				System.out.println("Ciencia Ficciï¿½n: ");
 				System.out.println("(1)Outsider: ");
 				System.out.println("(2)DrÃ¡cula - Dark Edition: ");
 				System.out.println("(3)O diÃ¡rio perdido de gravity falls: ");
@@ -157,114 +156,114 @@ public class Espanol {
 			
 		if(escolha == 1) {
 			System.out.println("Sinopsis: ");
-			System.out.println("Un crimen indescriptible. Una investigación inexplicable. Una de las historias de Stephen King más "
-					+ "inquietantes de los últimos tiempos. "
-					+ "El cuerpo de un niño de once años se encuentra abandonado en Flint City Park, brutalmente asesinado. "
-					+ "Los testigos y las huellas dactilares señalan al delincuente como una de las figuras más conocidas de "
-					+ "la ciudad: Terry Maitland, entrenador de béisbol de las ligas menores, profesor de inglés, casado y padre de dos hijos. "
-					+ "El detective Ralph Anderson no duda en ordenar un arresto rápido y muy público, dejando que todo el "
+			System.out.println("Un crimen indescriptible. Una investigaciï¿½n inexplicable. Una de las historias de Stephen King mï¿½s "
+					+ "inquietantes de los ï¿½ltimos tiempos. "
+					+ "El cuerpo de un niï¿½o de once aï¿½os se encuentra abandonado en Flint City Park, brutalmente asesinado. "
+					+ "Los testigos y las huellas dactilares seï¿½alan al delincuente como una de las figuras mï¿½s conocidas de "
+					+ "la ciudad: Terry Maitland, entrenador de bï¿½isbol de las ligas menores, profesor de inglï¿½s, casado y padre de dos hijos. "
+					+ "El detective Ralph Anderson no duda en ordenar un arresto rï¿½pido y muy pï¿½blico, dejando que todo el "
 					+ "pueblo sepa en poco tiempo que el Entrenador T es el principal sospechoso del crimen. Maitland tiene una coartada, "
 					+ "pero Anderson y el fiscal de distrito pronto tienen muestras de ADN para respaldar el cargo. El caso parece resuelto. "
-					+ "Pero a medida que avanza la investigación, la historia se convierte en una montaña rusa, llena de tensión y suspenso. "
-					+ "Terry Maitland parece una buena persona, pero ¿eso es solo una máscara? la respuesta aterradora es "
-					+ "lo que hace de esta una de las historias más inquietantes de Stephen King.\r\n"
+					+ "Pero a medida que avanza la investigaciï¿½n, la historia se convierte en una montaï¿½a rusa, llena de tensiï¿½n y suspenso. "
+					+ "Terry Maitland parece una buena persona, pero ï¿½eso es solo una mï¿½scara? la respuesta aterradora es "
+					+ "lo que hace de esta una de las historias mï¿½s inquietantes de Stephen King.\r\n"
 					+ "");
 					loja();
 		}
 		else if(escolha == 2) {
 			System.out.println("Sinopsis: ");
-			System.out.println("Drácula, un clásico que aún corre caliente en las venas de innumerables generaciones"
-					+ " de lectores en todo el mundo y la narrativa vampírica más célebre, continúa trascendiendo "
+			System.out.println("Drï¿½cula, un clï¿½sico que aï¿½n corre caliente en las venas de innumerables generaciones"
+					+ " de lectores en todo el mundo y la narrativa vampï¿½rica mï¿½s cï¿½lebre, continï¿½a trascendiendo "
 					+ "las fronteras del tiempo, el espacio, la historia y la memoria.La novela epistolar "
-					+ "moviliza a lectores y estudiosos, confirmando el vigor perenne. de un árbol cuyas sólidas raíces dan cuenta "
+					+ "moviliza a lectores y estudiosos, confirmando el vigor perenne. de un ï¿½rbol cuyas sï¿½lidas raï¿½ces dan cuenta "
 					+ "de la vitalidad de sus ramificaciones."
-					+ " Aunque el famoso conde no fue el primer vampiro literario, sin duda es el más popular, aspirado y adaptado a "
+					+ " Aunque el famoso conde no fue el primer vampiro literario, sin duda es el mï¿½s popular, aspirado y adaptado a "
 					+ "infinidad de universos: "
-					+ "teatro, cine, historietas, series y juguetes, el semblante es reconocido incluso por quienes nunca han leído la novela. "
-					+ "Está en todas partes. "
-					+ "La obra atemporal de Bram Stoker narra, a través de fragmentos de cartas, diarios y reportajes periodísticos, "
+					+ "teatro, cine, historietas, series y juguetes, el semblante es reconocido incluso por quienes nunca han leï¿½do la novela. "
+					+ "Estï¿½ en todas partes. "
+					+ "La obra atemporal de Bram Stoker narra, a travï¿½s de fragmentos de cartas, diarios y reportajes periodï¿½sticos, "
 					+ "la historia de humanos "
-					+ "que luchan por sobrevivir a las embestidas del vampiro Drácula. El grupo formado por Jonathan Harker, "
+					+ "que luchan por sobrevivir a las embestidas del vampiro Drï¿½cula. El grupo formado por Jonathan Harker, "
 					+ "Mina Harker, Dr. Van Helsing y el Dr. Seward "
 					+ "intenta evitar que la vil criatura se alimente de sangre humana en el Londres victoriano, a finales del siglo 19. "
-					+ "Un clásico absoluto del terror,"
-					+ " Bram Stoker define en Drácula la forma en que entendemos y pensamos sobre los vampiros en la actualidad."
-					+ " Más que eso, lleva a este monstruo "
+					+ "Un clï¿½sico absoluto del terror,"
+					+ " Bram Stoker define en Drï¿½cula la forma en que entendemos y pensamos sobre los vampiros en la actualidad."
+					+ " Mï¿½s que eso, lleva a este monstruo "
 					+ "al centro del escenario de la cultura pop de nuestro siglo e inmortaliza al villano de maneras refinadas y comportamiento "
 					+ "sanguinario. "
-					+ "DOS EDICIONES PARA UN ROMANCE ÚNICO No es ahora que los lectores claman por una edición de Dracula by the DarkSide. ® "
+					+ "DOS EDICIONES PARA UN ROMANCE ï¿½NICO No es ahora que los lectores claman por una ediciï¿½n de Dracula by the DarkSide. ï¿½ "
 					+ "Libros para honrar"
-					+ " el legado del Maestro Bram Stoker. Una obra tan grande como esta se publicará en dos versiones, para que ningún vampiro pueda"
-					+ " criticarla: PRIMERA EDICIÓN, con la icónica tapa amarilla de la primera publicación, en 1897, una edición inédita en el"
-					+ " mercado brasileño que inmortaliza el brillo y encanto del sol, algo inalcanzable frente a todo el dolor de la eternidad;"
-					+ " y la EDICIÓN OSCURA, dedicada a lectores de corazón oscuro, de corazón oscuro. En su interior llevan "
-					+ "el mismo contenido sanguinolento; por fuera demuestran la vida y la belleza de un clásico inmortal Para hacer temblar a los "
+					+ " el legado del Maestro Bram Stoker. Una obra tan grande como esta se publicarï¿½ en dos versiones, para que ningï¿½n vampiro pueda"
+					+ " criticarla: PRIMERA EDICIï¿½N, con la icï¿½nica tapa amarilla de la primera publicaciï¿½n, en 1897, una ediciï¿½n inï¿½dita en el"
+					+ " mercado brasileï¿½o que inmortaliza el brillo y encanto del sol, algo inalcanzable frente a todo el dolor de la eternidad;"
+					+ " y la EDICIï¿½N OSCURA, dedicada a lectores de corazï¿½n oscuro, de corazï¿½n oscuro. En su interior llevan "
+					+ "el mismo contenido sanguinolento; por fuera demuestran la vida y la belleza de un clï¿½sico inmortal Para hacer temblar a los "
 					+ "lectores, "
-					+ "Marcia Heloisa firma la traducción y la introducción de Drácula. Y como la sangre tiene poder, el descendiente directo del autor, "
-					+ "Dacre Stoker, escribe la preciosa presentación de esta edición Carlos Primati y Marcia Heloisa dan sus aportes a la criatura perpetua. "
-					+ "El lector encontrará textos de apoyo que relatan la relación entre la Transilvania real y la inmortalizada en el libro, "
-					+ "así como la influencia de los vampiros en la cultura pop mundial. Y como DarkSide® Books sabe lo que hace latir más rápido "
-					+ "el corazón de los lectores vivos de la editorial, también presenta el cuento “Dracula's Guest”, que formaba parte del texto de Stoker, "
-					+ "pero fue eliminado de la primera publicación, diseñado especialmente para darksiders que"
-					+ " sepa que hay una razón para que las cosas sean como son, está adornada con las bellas y poderosas imágenes de Samuel Casal, "
-					+ "el galardonado dibujante e ilustrador brasileño, que ha realizado una impresionante reinterpretación de personajes inmortales. "
+					+ "Marcia Heloisa firma la traducciï¿½n y la introducciï¿½n de Drï¿½cula. Y como la sangre tiene poder, el descendiente directo del autor, "
+					+ "Dacre Stoker, escribe la preciosa presentaciï¿½n de esta ediciï¿½n Carlos Primati y Marcia Heloisa dan sus aportes a la criatura perpetua. "
+					+ "El lector encontrarï¿½ textos de apoyo que relatan la relaciï¿½n entre la Transilvania real y la inmortalizada en el libro, "
+					+ "asï¿½ como la influencia de los vampiros en la cultura pop mundial. Y como DarkSideï¿½ Books sabe lo que hace latir mï¿½s rï¿½pido "
+					+ "el corazï¿½n de los lectores vivos de la editorial, tambiï¿½n presenta el cuento ï¿½Dracula's Guestï¿½, que formaba parte del texto de Stoker, "
+					+ "pero fue eliminado de la primera publicaciï¿½n, diseï¿½ado especialmente para darksiders que"
+					+ " sepa que hay una razï¿½n para que las cosas sean como son, estï¿½ adornada con las bellas y poderosas imï¿½genes de Samuel Casal, "
+					+ "el galardonado dibujante e ilustrador brasileï¿½o, que ha realizado una impresionante reinterpretaciï¿½n de personajes inmortales. "
 					+ "consolida con cada maestro que entra en su casa, rindiendo homenaje a "
-					+ "los grandes nombres de la literatura que han provocado indecibles pesadillas a los lectores, década tras década. "
+					+ "los grandes nombres de la literatura que han provocado indecibles pesadillas a los lectores, dï¿½cada tras dï¿½cada. "
 					+ "Para perpetuar la experiencia, siempre trae ilustradores y traductores invitados que respiran y conocen profundamente las obras originales. "
-					+ "De hincha a hincha. Hasta el final DÉJALO ENTRAR EN TU COLECCIÓN Y CONOCE LA PRIMERA EDICIÓN");	
+					+ "De hincha a hincha. Hasta el final Dï¿½JALO ENTRAR EN TU COLECCIï¿½N Y CONOCE LA PRIMERA EDICIï¿½N");	
 					loja();		
 		}
 		else if(escolha == 3) {
 			System.out.println("Sinopsis: ");
 			System.out.println("Tienes en tus manos el codiciado diario del autor de la serie Gravity Falls, "
-					+ "un tesoro sin dueño de 288 páginas a todo color de secretos, "
+					+ "un tesoro sin dueï¿½o de 288 pï¿½ginas a todo color de secretos, "
 					+ "monstruos y misterios nunca antes revelados de la tranquila ciudad del abuelo Stan.\r\n"
 					+ "\r\n"
-					+ "Con él conocerás la trágica historia de Ford, el paradero de Blendin, qué es Dimension 52 y "
-					+ "cómo atraer a un \"ornitorrinco de ajedrez\"."
+					+ "Con ï¿½l conocerï¿½s la trï¿½gica historia de Ford, el paradero de Blendin, quï¿½ es Dimension 52 y "
+					+ "cï¿½mo atraer a un \"ornitorrinco de ajedrez\"."
 					+ "\r\n"
 					+ "Pero cuidado: este es un libro deseado por muchas fuerzas oscuras, "
-					+ "así que estate alerta si alguien quiere quitártelo (especialmente si tiene ojos amarillos brillantes). "
-					+ "Y lo más importante diviértanse."
-					+ " Después de todo, no existe un lugar como Gravity Falls. ¿O existe?");
+					+ "asï¿½ que estate alerta si alguien quiere quitï¿½rtelo (especialmente si tiene ojos amarillos brillantes). "
+					+ "Y lo mï¿½s importante diviï¿½rtanse."
+					+ " Despuï¿½s de todo, no existe un lugar como Gravity Falls. ï¿½O existe?");
 					loja();
 		}
 		else if(escolha == 4) {
 			System.out.println("Sinopsis: ");
 			System.out.println("El Libro de los Cinco Anillos es hoy un manual para personas exitosas que supieron utilizar las lecciones de "
-					+ "Miyamoto Musashi (1584-1645) en las batallas cotidianas. Espadachín "
-					+ "imbatible desde los 13 años, el autor resumió en esta obra clásica la experiencia de quienes representaron "
-					+ "el apogeo del Bushido, o “camino del guerrero”, el código de conducta y modo de vida de los samuráis que incluye el equilibrio,"
-					+ " la sabiduría y honor En los cinco capítulos o tomos del libro Tierra, Agua, Fuego, Viento y Vacío, Musashi trata sobre "
+					+ "Miyamoto Musashi (1584-1645) en las batallas cotidianas. Espadachï¿½n "
+					+ "imbatible desde los 13 aï¿½os, el autor resumiï¿½ en esta obra clï¿½sica la experiencia de quienes representaron "
+					+ "el apogeo del Bushido, o ï¿½camino del guerreroï¿½, el cï¿½digo de conducta y modo de vida de los samurï¿½is que incluye el equilibrio,"
+					+ " la sabidurï¿½a y honor En los cinco capï¿½tulos o tomos del libro Tierra, Agua, Fuego, Viento y Vacï¿½o, Musashi trata sobre "
 					+ "el liderazgo y los principios vinculados a los conflictos de la existencia humana para convertir al lector en un vencedor."
-					+ " Esta edición de Jardim dos Livros cuenta con una exquisita traducción, directa del japonés, del profesor Dr. Wataru Kikuchi, "
+					+ " Esta ediciï¿½n de Jardim dos Livros cuenta con una exquisita traducciï¿½n, directa del japonï¿½s, del profesor Dr. Wataru Kikuchi, "
 					+ "director del Centro de Estudios Japoneses de la USP. Un libro de fotos, pinturas del autor y mapas de batallas del antiguo "
-					+ "Japón hacen del libro, además de todo, una obra de arte exquisita, también incluye páginas para apuntes del lector.");
+					+ "Japï¿½n hacen del libro, ademï¿½s de todo, una obra de arte exquisita, tambiï¿½n incluye pï¿½ginas para apuntes del lector.");
 					loja();
 		}
 		else if(escolha == 5) {
 			System.out.println("Sinopsis: ");
 			System.out.println("Un viaje desde el origen del universo hasta el fin del mundo.\r\n"
 					+ "\r\n"
-					+ "¿Quién, además de Neil Gaiman, podría convertirse en cómplice de los dioses y usar su habilidad con las palabras para volver a "
-					+ "contar las historias de los mitos nórdicos? Los fanáticos y lectores saben que la mitología nórdica siempre ha tenido una gran "
-					+ "influencia en el trabajo del autor. Tras servir de inspiración a clásicos como American Gods y Sandman, Gaiman se adentra ahora "
-					+ "en el universo de los mitos nórdicos. En la Mitología nórdica acude al origen de los mitos para crear su propia versión, con el "
+					+ "ï¿½Quiï¿½n, ademï¿½s de Neil Gaiman, podrï¿½a convertirse en cï¿½mplice de los dioses y usar su habilidad con las palabras para volver a "
+					+ "contar las historias de los mitos nï¿½rdicos? Los fanï¿½ticos y lectores saben que la mitologï¿½a nï¿½rdica siempre ha tenido una gran "
+					+ "influencia en el trabajo del autor. Tras servir de inspiraciï¿½n a clï¿½sicos como American Gods y Sandman, Gaiman se adentra ahora "
+					+ "en el universo de los mitos nï¿½rdicos. En la Mitologï¿½a nï¿½rdica acude al origen de los mitos para crear su propia versiï¿½n, con el "
 					+ "inconfundible estilo sagaz e inteligente que impregna toda su obra.\r\n"
 					+ "\r\n"
-					+ "Fascinado por esta mitología desde niño, el autor compuso una colección de quince cuentos que comienza con "
-					+ "la narración del origen del mundo y muestra la conflictiva relación entre dioses, gigantes y enanos, llegando al Ragnarök, "
-					+ "el aterrador escenario del apocalipsis que tomará en el fin del mundo. A veces intensas y oscuras, a veces divertidas y heroicas, "
-					+ "las historias describen tiempos lejanos en los que las hazañas de los dioses se contaban alrededor de la fogata en noches frías y "
+					+ "Fascinado por esta mitologï¿½a desde niï¿½o, el autor compuso una colecciï¿½n de quince cuentos que comienza con "
+					+ "la narraciï¿½n del origen del mundo y muestra la conflictiva relaciï¿½n entre dioses, gigantes y enanos, llegando al Ragnarï¿½k, "
+					+ "el aterrador escenario del apocalipsis que tomarï¿½ en el fin del mundo. A veces intensas y oscuras, a veces divertidas y heroicas, "
+					+ "las historias describen tiempos lejanos en los que las hazaï¿½as de los dioses se contaban alrededor de la fogata en noches frï¿½as y "
 					+ "estrelladas.\r\n"
 					+ "\r\n"
-					+ "Mitología nórdica es el libro perfecto para cualquiera que quiera descubrir más sobre la mitología escandinava y "
-					+ "también para aquellos que quieran descubrir nuevas facetas de estas historias.\r\n"
+					+ "Mitologï¿½a nï¿½rdica es el libro perfecto para cualquiera que quiera descubrir mï¿½s sobre la mitologï¿½a escandinava y "
+					+ "tambiï¿½n para aquellos que quieran descubrir nuevas facetas de estas historias.\r\n"
 					+ "\r\n"
-					+ "La mitología nórdica es una obra histórica, un valioso registro nuevo de mitos escandinavos poco conocidos.\r\n"
-					+ "Los mitos nórdicos se encuentran en obras que se han vuelto bastante populares, como los libros de J.R.R. Tolkien, "
-					+ "la serie de televisión Game of Thrones, en los cómics y películas de Marvel. "
-					+ "Y, en abril, se estrena la adaptación de American Gods para televisión.");
+					+ "La mitologï¿½a nï¿½rdica es una obra histï¿½rica, un valioso registro nuevo de mitos escandinavos poco conocidos.\r\n"
+					+ "Los mitos nï¿½rdicos se encuentran en obras que se han vuelto bastante populares, como los libros de J.R.R. Tolkien, "
+					+ "la serie de televisiï¿½n Game of Thrones, en los cï¿½mics y pelï¿½culas de Marvel. "
+					+ "Y, en abril, se estrena la adaptaciï¿½n de American Gods para televisiï¿½n.");
 					loja();
 		}
 		else if (escolha == 6) {
@@ -274,7 +273,7 @@ public class Espanol {
 			loja();
 		}
 		break;
-			case 3: System.out.println(" Elige una opción: ");
+			case 3: System.out.println(" Elige una opciï¿½n: ");
 			System.out.println("Terror: ");
 			System.out.println("(1):Miedo - Edgar Allan Poe: ");
 			System.out.println("(2)Carrie - Stepen King: ");
@@ -289,49 +288,49 @@ public class Espanol {
 				System.out.println("Las alas de un cuervo se mezclan con la oscuridad."
 						+ " La vieja casa en ruinas se asoma con ventanas que parecen ojos. "
 						+ "Juras escuchar la voz de alguien que ya se fue para el otro lado, "
-						+ "así como un gato negro se cruza en tu camino. "
-						+ "Todo lo que ahora conocemos como terror empezó a ganar "
+						+ "asï¿½ como un gato negro se cruza en tu camino. "
+						+ "Todo lo que ahora conocemos como terror empezï¿½ a ganar "
 						+ "forma en la obra de Edgar Allan Poe.");
 				loja();
 			}else if (escolha == 2) {
 				System.out.println("Sinopsis: ");
-				System.out.println("Carrie es una adolescente tímida y solitaria. A los 16 años, está completamente dominada por su madre, "
-						+ "una fanática religiosa que reprime todos los deseos y descubrimientos normales de los jóvenes de su edad. "
-						+ "Para Carrie, todo es pecado. Vivir es enfrentarse cada día al terrible peso de la culpa.");
+				System.out.println("Carrie es una adolescente tï¿½mida y solitaria. A los 16 aï¿½os, estï¿½ completamente dominada por su madre, "
+						+ "una fanï¿½tica religiosa que reprime todos los deseos y descubrimientos normales de los jï¿½venes de su edad. "
+						+ "Para Carrie, todo es pecado. Vivir es enfrentarse cada dï¿½a al terrible peso de la culpa.");
 				loja();
 			}else if (escolha == 3) {
 				System.out.println("Sinopsis: ");
 				System.out.println("El brillante y poco ortodoxo doctor Victor Frankenstein trabaja en la "
-						+ "creación de un monstruo con diferentes partes del cuerpo humano. "
+						+ "creaciï¿½n de un monstruo con diferentes partes del cuerpo humano. "
 						+ "Tras ser rechazada por el creador, la criatura escapa y comienza a actuar con una violenta sed de venganza.");
 				loja();
 			}else if (escolha == 4) {
 				System.out.println("Sinopsis: ");
-				System.out.println("Ese verano, se enfrentaron por primera vez a The Thing, un ser sobrenatural malvado que dejó terribles "
+				System.out.println("Ese verano, se enfrentaron por primera vez a The Thing, un ser sobrenatural malvado que dejï¿½ terribles "
 						+ "manchas de sangre en Derry. "
-						+ "Casi treinta años después, los amigos se reencuentran. "
-						+ "Una nueva ola de terror se ha apoderado del pequeño pueblo, y solo ellos podrán enfrentarse a la Cosa. El tiempo es corto.");
+						+ "Casi treinta aï¿½os despuï¿½s, los amigos se reencuentran. "
+						+ "Una nueva ola de terror se ha apoderado del pequeï¿½o pueblo, y solo ellos podrï¿½n enfrentarse a la Cosa. El tiempo es corto.");
 				loja();
 			}else if (escolha == 5) {
 				System.out.println("Sinopsis: ");
-				System.out.println("Jack Campbell, profesor de natación, y su pequeña hija Emily deciden pasar un tiempo juntos en una casa del "
-						+ "lago para superar la muerte de Hannah, la ex mujer de Jack y madre de Emily. Pero poco después de llegar a la propiedad, "
-						+ "Emily afirma haber visto a una chica misteriosa en el bosque, y en el sótano de la casa, Jack encuentra dibujos "
-						+ "antiguos que parecen haber sido hechos por un niño. Los dibujos parecen representar a una pequeña familia feliz que "
-						+ "ha sufrido una gran tragedia. ¿Qué pasó con esta familia? ¿La chica del bosque es real? Jack y\r\n"
-						+ "¿Emily vinculándose a sí misma con las desapariciones que tuvieron lugar en esa propiedad hace muchos años?\r\n"
+				System.out.println("Jack Campbell, profesor de nataciï¿½n, y su pequeï¿½a hija Emily deciden pasar un tiempo juntos en una casa del "
+						+ "lago para superar la muerte de Hannah, la ex mujer de Jack y madre de Emily. Pero poco despuï¿½s de llegar a la propiedad, "
+						+ "Emily afirma haber visto a una chica misteriosa en el bosque, y en el sï¿½tano de la casa, Jack encuentra dibujos "
+						+ "antiguos que parecen haber sido hechos por un niï¿½o. Los dibujos parecen representar a una pequeï¿½a familia feliz que "
+						+ "ha sufrido una gran tragedia. ï¿½Quï¿½ pasï¿½ con esta familia? ï¿½La chica del bosque es real? Jack y\r\n"
+						+ "ï¿½Emily vinculï¿½ndose a sï¿½ misma con las desapariciones que tuvieron lugar en esa propiedad hace muchos aï¿½os?\r\n"
 						+ "Mientras trata de encontrar respuestas, Jack debe salvar a su hija de un mundo helado y "
 						+ "oscuro y de los peligros inimaginables que debe enfrentar.");
 				loja();
 			}else if (escolha == 6) {
 				System.out.println("Sinopsis: ");
 				System.out.println("Emmy siempre supo que el bosque alrededor de su casa estaba lleno de fantasmas y monstruos. "
-						+ "Sin embargo, en la víspera de su decimoctavo cumpleaños, descubre que está conectada con estas criaturas, "
-						+ "y con la tierra misma, de maneras que nunca pensó que fueran posibles. Espera a la sombra del roble retorcido y "
-						+ "escucha los balidos de las cabras. Cursed County: Witches & Hauntings es el primero de una serie de ocho volúmenes que "
-						+ "DarkSide Books publicará en asociación con Macabra Filmes durante los próximos meses, "
-						+ "y llega a los lectores en una edición sorprendente y con un tratamiento especial alucinante. aliento. "
-						+ "¿Estás listo para ver a los corderos convertirse en lobos?");
+						+ "Sin embargo, en la vï¿½spera de su decimoctavo cumpleaï¿½os, descubre que estï¿½ conectada con estas criaturas, "
+						+ "y con la tierra misma, de maneras que nunca pensï¿½ que fueran posibles. Espera a la sombra del roble retorcido y "
+						+ "escucha los balidos de las cabras. Cursed County: Witches & Hauntings es el primero de una serie de ocho volï¿½menes que "
+						+ "DarkSide Books publicarï¿½ en asociaciï¿½n con Macabra Filmes durante los prï¿½ximos meses, "
+						+ "y llega a los lectores en una ediciï¿½n sorprendente y con un tratamiento especial alucinante. aliento. "
+						+ "ï¿½Estï¿½s listo para ver a los corderos convertirse en lobos?");
 				loja();
 			}
 			break;
@@ -342,10 +341,10 @@ public class Espanol {
 			public void deposito(double depTotal) {
 				int op = 0;
 				System.out.println("Bienvenido a la secciï¿½n de compras!");
-				System.out.println("¿Desea continuar con el depósito? (1)Sí (2)Volvel al menú");
+				System.out.println("ï¿½Desea continuar con el depï¿½sito? (1)Sï¿½ (2)Volvel al menï¿½");
 				op = input.nextInt();
 				if (op == 1){
-					System.out.println("Haga un depósito: ");
+					System.out.println("Haga un depï¿½sito: ");
 					depTotal = input.nextDouble();
 					this.saldo += depTotal;
 					loja();
@@ -365,7 +364,7 @@ public class Espanol {
 					
 					System.out.println("Saldo disponible: "+saldo);
 					System.out.println("El libro cuesta R$"+precoLivro.get(escolha - 1));
-					System.out.println("¿Desea continuar con la compra? (1)Sí (2)No");
+					System.out.println("ï¿½Desea continuar con la compra? (1)Sï¿½ (2)No");
 					
 					int decida = input.nextInt();
 					if(decida == 1) {
@@ -382,12 +381,12 @@ public class Espanol {
 								e.printStackTrace();
 							}
 							System.out.println("\t********************************************");
-							System.out.println("\t*   Compra realizada con éxito!!!");
+							System.out.println("\t*   Compra realizada con ï¿½xito!!!");
 							System.out.println("\t********************************************");
 							
 							System.out.println("                                              ");
 							System.out.println("   Nuevo saldo: R$"+this.saldo);
-							System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
+							System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 							System.out.println("                             ");
 							try {
 								Thread.sleep(2000);
@@ -404,7 +403,7 @@ public class Espanol {
 						
 			else if(op == 2) {
 				int decida = 0;
-				System.out.println("¿Estás seguro de continuar con la operación? (1)SÍ (2)NO");
+				System.out.println("ï¿½Estï¿½s seguro de continuar con la operaciï¿½n? (1)Sï¿½ (2)NO");
 				System.out.println("\nSaldo disponible: "+saldo);
 				decida = input.nextInt();
 				if(decida==1 ){int aluguel = 5;
@@ -418,10 +417,10 @@ public class Espanol {
 					saldo -=aluguel;
 					System.out.println("\nEl alquiler del libro cuesta: "+aluguel);
 					System.out.println("\t************************************");
-					System.out.println("\t* Operación realizada com éxito!!! *");
+					System.out.println("\t* Operaciï¿½n realizada com ï¿½xito!!! *");
 					System.out.println("\t************************************");
 					System.out.println("\nSu nuevo saldo es: "+saldo+"\n");
-					System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
+					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 					System.out.println("                             ");
 					try {
 						Thread.sleep(500);
@@ -447,45 +446,45 @@ public class Espanol {
 				this.nome = input.nextLine();
 				System.out.println("\nElija un nombre de usuario: ");
 				user = input.nextLine();
-				System.out.println("\nElina una contraseña: ");
+				System.out.println("\nElina una contraseï¿½a: ");
 				password = input.nextLine();
-				System.out.println("\n¿Cuántos años tiene usted?: ");
+				System.out.println("\nï¿½Cuï¿½ntos aï¿½os tiene usted?: ");
 				this.idade = input.nextInt();
-				System.out.println("\nInforma su género (1) Masculino || (2)Femenino || (3) Otres: ");
+				System.out.println("\nInforma su gï¿½nero (1) Masculino || (2)Femenino || (3) Otres: ");
 				this.genero = input.nextInt();
-				System.out.println("\nHaga un depósito inicial: ");
+				System.out.println("\nHaga un depï¿½sito inicial: ");
 				this.saldo += input.nextInt();
-				System.out.println("¡REGISTRO COMPLETADO CON ÉXITO! ¡POR FAVOR INICIE SESIÓN PARA CONTINUAR!");
+				System.out.println("ï¿½REGISTRO COMPLETADO CON ï¿½XITO! ï¿½POR FAVOR INICIE SESIï¿½N PARA CONTINUAR!");
 				login();
 				}
 				public void visualizar(){
 
 				System.out.println("*************************************************************");
 				System.out.println("\t           BIENVENIDO "+nome);
-				System.out.println("\n\t          ¡Es un placer tenerlo aquí!");
-				System.out.println("\n\t     Usted posue: "+saldo+" de Saldo. ¡Disfrutalo! ");
+				System.out.println("\n\t          ï¿½Es un placer tenerlo aquï¿½!");
+				System.out.println("\n\t     Usted posue: "+saldo+" de Saldo. ï¿½Disfrutalo! ");
 				System.out.println("*************************************************************");
 			}
 			
 			 public void visualizar2(){
-				System.out.println("                           MENÚ                              ");
-				System.out.println("                          ¨¨¨¨¨¨                            ");
-				System.out.println("  ¡El 30% de nuestras ganancias van a organizaciones benéficas!");
-				System.out.println("\t Además de alimentar tus conocimientos, ¡alimenta vidas! \n ");
+				System.out.println("                           MENï¿½                              ");
+				System.out.println("                          ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½                            ");
+				System.out.println("  ï¿½El 30% de nuestras ganancias van a organizaciones benï¿½ficas!");
+				System.out.println("\t Ademï¿½s de alimentar tus conocimientos, ï¿½alimenta vidas! \n ");
 				System.out.println("                        __________         ");
-				System.out.println("                       | CATÁLOGO |        ");
-				System.out.println("                        ¨¨¨¨¨¨¨¨¨¨         ");
+				System.out.println("                       | CATï¿½LOGO |        ");
+				System.out.println("                        ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½         ");
 			}
 				public void visualizar3(){
 
 
 				}
 				public void deposito1(double depTotal) {
-					System.out.println("¡Bienvenido a la sesión de compras!");
-					System.out.println("Haga un depósito: ");
+					System.out.println("ï¿½Bienvenido a la sesiï¿½n de compras!");
+					System.out.println("Haga un depï¿½sito: ");
 					depTotal = input.nextDouble();
 					this.saldo += depTotal;
-					System.out.println("Depósito de R$"+saldo+" realizado con éxito!");
+					System.out.println("Depï¿½sito de R$"+saldo+" realizado con ï¿½xito!");
 					try {
 						Thread.sleep(2000);
 					} catch (InterruptedException e) {

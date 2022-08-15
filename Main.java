@@ -29,7 +29,7 @@ public class Main {
             c1.cadastro();
         }
         else if(a == 2){
-            c2.login();
+            c2.cadastro();
         }
         else if(a == 3) {
         	c3.cadastro();
