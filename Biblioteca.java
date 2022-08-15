@@ -308,19 +308,28 @@ else if(escolha==6) {
 		}
 	public void deposito(double depTotal) {
 		int op = 0;
-		System.out.println("Bem vindo a sessão de compras!");
+		System.out.println("\n      Bem vindo a sessao de compras!"   );
+		System.out.println("     ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨  ");
 		System.out.println("Deseja prosseguir com o depósito ? (1)SIM (2)RETORNAR AO MENU");
 		op = input.nextInt();
 		if (op == 1){
-		System.out.println("Faça um depósito: ");
+		System.out.println("\nDigite o valor que deseja depositar:   ");
 		depTotal = input.nextDouble();
 		this.saldo += depTotal;
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("\n     DEPÓSITO DE R$"+depTotal+" REALIZADO COM SUCESSO!");
+		System.out.println("*************************************************");
+		System.out.println("\nSeu novo saldo é de: "+saldo+"\n");
 		loja();
-	}
-		else menu();
-	}
+		
+		}
 
-	
+	}	
 	public void loja() {
 		int op = 0;
 		
@@ -378,8 +387,9 @@ else if(escolha==6) {
 	}		
 		else if(op == 2) {
 			int decida = 0;
-			System.out.println("\nTem certeza que deseja prosseguir com a operação ? (1) SIM (2) NÃO,QUERO RETORNAR AO MENU.");
+			System.out.println("\nO aluguel do livro custa: R$ 5.00");
 			System.out.println("\nSaldo disponível: "+saldo);
+			System.out.println("\nTem certeza que deseja prosseguir com a operação ? (1) SIM (2) NÃO,QUERO RETORNAR AO MENU.");
 			decida = input.nextInt();
 			if(decida==1 ){int aluguel = 5;
 				if(saldo - aluguel <0){
@@ -476,7 +486,7 @@ else if(escolha==6) {
 		int op = 0;
 		System.out.println("\n      Bem vindo a sessao de compras!"   );
 		System.out.println("     ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨  ");
-		System.out.println("Deseja prosseguir com o depósito ? (1)SIM (2)RETORNAR AO MENU");
+		System.out.println("Deseja fazer um depósito ? (1)SIM (2)RETORNAR AO MENU");
 		op = input.nextInt();
 		if (op == 1){
 		System.out.println("\nDigite o valor que deseja depositar:   ");
@@ -491,7 +501,7 @@ else if(escolha==6) {
 		System.out.println("\n     DEPÓSITO DE R$"+depTotal+" REALIZADO COM SUCESSO!");
 		System.out.println("*************************************************");
 		System.out.println("\nSeu novo saldo é de: "+saldo+"\n");
-		loja();
+		menu();
 		
 		}
 		}
