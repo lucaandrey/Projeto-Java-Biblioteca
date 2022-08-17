@@ -32,10 +32,10 @@ public class Adulto extends Biblioteca{
 		System.out.println("\n (5) Auto-Ajuda");
 		System.out.println("\n (6) Aventura");
 		System.out.println("\n (7) Infantil");
-        System.out.println("\n (9) Adultos");
+        System.out.println("\n (8) Adultos");
 
 		System.out.println("\n (0) Faça um depósito");
-		System.out.println("\n (8) Sair");
+		System.out.println("\n (9) Sair");
 
 		op = input.nextInt();
 		switch(op) {
@@ -183,7 +183,9 @@ public class Adulto extends Biblioteca{
 		}
 		break;
 		case 3: System.out.println("Escolha uma opcao: ");
-        System.out.println("TERROR: ");
+       
+		System.out.println("\t\n          TERROR ");
+		System.out.println("\t¨¨¨¨¨¨¨¨¨¨ ");
         System.out.println("(1)Medo - Edgar Allan Poe: ");
         System.out.println("(2)Carrie - Stephen King: ");
         System.out.println("(3)Frankenstrein - Mary Shelley: ");
@@ -256,7 +258,8 @@ else if(escolha==6) {
         }
         break;
 		case 4: System.out.println("Escolha uma opcao: ");
-        System.out.println("Comedia: ");
+		System.out.println("\t\n          COMÉDIA ");
+		System.out.println("\t¨¨¨¨¨¨¨¨¨¨ ");
         System.out.println("(1)O Diabo Veste Prada - Lauren Weisberger : ");
         System.out.println("(2)Cadê você Bernadette - Maria Semple: ");
         System.out.println("(3)A Comedia Divina: Purgatorio - Dante Alighieri: ");
@@ -266,7 +269,8 @@ else if(escolha==6) {
         escolha=input.nextInt();
 
 		if(escolha==1) {
-            System.out.println("\nLauren Weisberger trabalhou como assistente da todo poderosa amada e odiada editora da revista Vogue,"
+            System.out.println("\t\t\tSINOPSE");
+			System.out.println("\nLauren Weisberger trabalhou como assistente da todo poderosa amada e odiada editora da revista Vogue,"
 			+"\r\nAnna Wintour. Assim, qualquer semelhança de O diabo veste Prada com a realidade não é mera coincidência."
 			+"\r\nNeste irresistível romance, o leitor irá conhecer Andrea Sachs," 
 			+"\r\numa jovem recém-formada que conquista um emprego que deveria deixar roxas de inveja milhares de garotas:"
@@ -279,7 +283,8 @@ else if(escolha==6) {
         }
 		 
 		if(escolha==2) {
-            System.out.println("\nBernadette Fox é notável. Aos olhos de seu marido,"
+            System.out.println("\t\t\tSINOPSE");
+			System.out.println("\nBernadette Fox é notável. Aos olhos de seu marido,"
 			+"\r\nguru tecnológico da Microsoft e rock star do mundo nerd, ela se torna mais maníaca a cada dia;"
 			+"\r\npara as demais mães da Galer Street, escola liberal frequentada pela elite de Seattle,"
 			+"\r\nela só causa desgosto; os especialistas em design ainda a consideram uma gênia da arquitetura sustentável,"
@@ -295,7 +300,8 @@ else if(escolha==6) {
 
 		
 		if(escolha==3) {
-            System.out.println("\nNo século XIV período renascentista e dividido em três partes: o Inferno," 
+            System.out.println("\t\t\tSINOPSE");
+			System.out.println("\nNo século XIV período renascentista e dividido em três partes: o Inferno," 
 			+"\r\no Purgatório e o Paraíso. São cem cantos protagonizados pelo próprio Dante em companhia do poeta romano Virgílio,"
 			+"\r\nque percorreu uma jornada espiritual pelos três reinos além-túmulo."
 			+"\r\nO Purgatório é descrito em 33 cantos." 
@@ -308,7 +314,8 @@ else if(escolha==6) {
 
 		
 		if(escolha==4) {
-            System.out.println("\nDiz a crença popular que a vingança é um prato que se come frio."
+            System.out.println("\t\t\tSINOPSE");
+			System.out.println("\nDiz a crença popular que a vingança é um prato que se come frio."
 			+"\r\nEm O pau, Fernanda Young fala do tema ao contar a história de Adriana," 
 			+"\r\numa bela designer de jóias que descobre sinais da traição do namorado, 14 anos mais novo."
 			+"\r\nAo longo das páginas, a escritora usa o humor ácido que a consagrou como redatora de sucessos," 
@@ -318,7 +325,8 @@ else if(escolha==6) {
 		}
 		
 		if(escolha==5) {
-            System.out.println("\nA obra é um mergulho no divertido universo que Bolaños desenvolveu para o programa mexicano," 
+            System.out.println("\t\t\tSINOPSE");
+			System.out.println("\nA obra é um mergulho no divertido universo que Bolaños desenvolveu para o programa mexicano," 
 			+"\r\ncujas exibições tiveram início em 1972 e se estenderam até meados dos anos 1990," 
 			+"\r\ncom direito à participação de Chiquinha, Quico, Seu Madruga, Dona Florinda, Professor Girafales," 
 			+"\r\nSenhor Barriga, Dona Clotilde e demais personagens," 
@@ -330,7 +338,8 @@ else if(escolha==6) {
 		}
 		
 		if(escolha==6) {
-            System.out.println("\nElas vão ajudar a solidificar os conhecimentos," 
+            System.out.println("\t\t\tSINOPSE");
+			System.out.println("\nElas vão ajudar a solidificar os conhecimentos," 
 			+"\r\ne ao mesmo tempo liquefazer o preconceito e evaporar a dificuldade de muitos alunos." 
 			+"\r\nEste condensado de piadas de cosmologia, cinemática, eletrônica, termodinâmica e outros termos assustadores," 
 			+"\r\nvai dilatar muitas cabeças e fazê-las encarar a disciplina por uma nova óptica." 
@@ -405,7 +414,8 @@ else if(escolha==6) {
 		break;
 		case 6: System.out.println("Escolha uma opcao: ");													
 		escolha=input.nextInt();
-		System.out.println("Aventura : ");
+		System.out.println("\t\n          AVENTURA ");
+		System.out.println("\t¨¨¨¨¨¨¨¨¨¨ ");
 		System.out.println("(1)A torre negra: ");
 		System.out.println("(2)A guerra dos mundos: ");
 		System.out.println("(3)O mundo perdido: ");
@@ -414,27 +424,32 @@ else if(escolha==6) {
 		System.out.println("(6)A batalha do apocalipse: ");
 		
 		if( escolha ==1) {
-		System.out.println("Continuação memorável das fantasias de C. S. Lewis, estas seis histórias revelam mais uma vez o poder e a visão deste importante contador de histórias, um dos nomes centrais da literatura de fantasia universal.\r\n"
+			System.out.println("\t\t\tSINOPSE");
+			System.out.println("Continuação memorável das fantasias de C. S. Lewis, estas seis histórias revelam mais uma vez o poder e a visão deste importante contador de histórias, um dos nomes centrais da literatura de fantasia universal.\r\n"
 		+ " A Torre Negra é um esboço de um quarto volume que daria continuidade à aclamada série de ficção científica de Lewis conhecida como Trilogia cósmica. Uma história cativante que continua as aventuras de personagens como \r\n"
 		+ " Dr. Elwin Ransom e MacPhee. Na trama, cinco homens se reúnem no escritório de Orfeu, na Universidade de Cambridge, para testemunhar a violação do espaço-tempo por meio do cronoscópio, um telescópio que não olha apenas \r\n"
 		+ " para um outro mundo, mas para outras dimensões. Ao longo das narrativas, seus personagens travam debates brilhantes sobre a matéria, no tempo e no espaço. Para os fãs de Crônicas de Nárnia e da Trilogia cósmica, este é um livro imprescindível.");
 }
 		else if (escolha ==2 ) {
-		System.out.println("Eles vieram do espaço. Eles vieram de Marte. Com tripés biomecânicos gigantes, querem conquistar a Terra e manter os humanos como escravos. Nenhuma tecnologia terrestre parece ser capaz de conter a expansão do terror pelo planeta.\r\n"
+			System.out.println("\t\t\tSINOPSE");
+			System.out.println("Eles vieram do espaço. Eles vieram de Marte. Com tripés biomecânicos gigantes, querem conquistar a Terra e manter os humanos como escravos. Nenhuma tecnologia terrestre parece ser capaz de conter a expansão do terror pelo planeta.\r\n"
 		+ " É o começo da guerra mais importante da história. Como a humanidade poderá resistir à investida de um potencial bélico tão superior? Publicado pela primeira vez em 1898, A guerra dos mundos aterrorizou e divertiu muitas gerações de leitores.\r\n"
 		+ " Esta edição especial contém as ilustrações originais criadas em 1906 por Henrique Alvim Corrêa, brasileiro radicado na Bélgica. Conta também com um prefácio escrito por Braulio Tavares, uma introdução de Brian Aldiss, membro da H. G. Wells Society,\n\r"
 		+ " e uma entrevista com H. G. Wells e o famoso cineasta Orson Welles - responsável pelo sucesso radiofônico de A guerra dos mundos em 1938 -, que fazem desta a edição definitiva para fãs de Wells.");
 }
 		else if (escolha == 3) {
-		System.out.println("O jovem jornalista Ed Malone não tem ideia do que encontrará nesta viagem exploratória a qual acaba de se candidatar: ir até os confins da América do Sul, junto com um estudioso e um caçador para comprovar a veracidade da teoria do excêntrico professor Challenger - que afirma ter encontrado\r\n"
+			System.out.println("\t\t\tSINOPSE");
+			System.out.println("O jovem jornalista Ed Malone não tem ideia do que encontrará nesta viagem exploratória a qual acaba de se candidatar: ir até os confins da América do Sul, junto com um estudioso e um caçador para comprovar a veracidade da teoria do excêntrico professor Challenger - que afirma ter encontrado\r\n"
 		+ " criaturas pré-históricas criaturas nessas terras longínquas. Será?");
 	
 } 
 		else if (escolha ==4 ) {
-		System.out.println("A vida de Jim Hawkins nunca mais será a mesma depois de conhecer Billy Jones. O velho lobo do mar possui um mapa que mostra o local onde está escondido um tesouro de pirata. Agora o mapa está com Jim e ele parte em uma expedição sem imaginar o que o aguarda – seja navegando pelo mar ou em terra firme.");
+			System.out.println("\t\t\tSINOPSE");
+			System.out.println("A vida de Jim Hawkins nunca mais será a mesma depois de conhecer Billy Jones. O velho lobo do mar possui um mapa que mostra o local onde está escondido um tesouro de pirata. Agora o mapa está com Jim e ele parte em uma expedição sem imaginar o que o aguarda – seja navegando pelo mar ou em terra firme.");
 }
 		else if (escolha == 5) {
-		System.out.println("Publicado em 1895, A Máquina do Tempo é considerado um dos primeiros romances a tratar do conceito de viagem no tempo.\r\n"
+			System.out.println("\t\t\tSINOPSE");
+			System.out.println("Publicado em 1895, A Máquina do Tempo é considerado um dos primeiros romances a tratar do conceito de viagem no tempo.\r\n"
 		+ "\r\n"
 		+ "O personagem central, um cientista apresentado na trama apenas como o Viajante do Tempo, constrói uma máquina capaz de viajar pela quarta dimensão.\r\n"
 		+ "\r\n"
@@ -443,7 +458,8 @@ else if(escolha==6) {
 		+ "Mas os elóis não são os únicos habitantes dessa nova Terra, e o Viajante do Tempo terá de enfrentar os morlocks, seres que vivem nos subterrâneos e guardam um importante segredo sobre o destino da humanidade.");
 }
     	else if (escolha == 6) {
-		System.out.println("Tudo começou há muitos e muitos anos, há tantos anos quanto o número de estrelas no céu, o Paraíso Celeste foi palco de um terrível levante. Um grupo de anjos guerreiros, amantes da justiça e da liberdade, desafiou a tirania dos poderosos arcanjos, levantando armas contra seus opressores.\r\n"
+			System.out.println("\t\t\tSINOPSE");
+			System.out.println("Tudo começou há muitos e muitos anos, há tantos anos quanto o número de estrelas no céu, o Paraíso Celeste foi palco de um terrível levante. Um grupo de anjos guerreiros, amantes da justiça e da liberdade, desafiou a tirania dos poderosos arcanjos, levantando armas contra seus opressores.\r\n"
 			+ " Expulsos, os renegados foram forçados ao exílio, e condenados a vagar pelo mundo dos homens até o dia do Juízo Final.\r\n"
 			+ "\r\n"
 			+ "Mas eis que chega o momento do Apocalipse, o tempo do ajuste de contas, o dia do despertar do Altíssimo. Único sobrevivente do expurgo, o líder dos renegados é convidado por Lúcifer, o Arcanjo Negro, a se juntar às suas legiões na batalha do Armagedon, o embate final entre o Céu e o Inferno, a guerra que decidirá não só o destino do mundo, mas o futuro do universo.\r\n"
@@ -454,7 +470,8 @@ else if(escolha==6) {
 }
         break;
 		case 7: 
-        System.out.println("Infantil: ");
+		System.out.println("\t\n          INFANTIL ");
+		System.out.println("\t¨¨¨¨¨¨¨¨¨¨ ");
         System.out.println("(1)O Menino Maluquinho - Ziraldo: ");
         System.out.println("(2)Muito cansado e bem acordado - Susanne Straber: ");
         System.out.println("(3)O muro no meio do livro  - Jon Agee: ");
@@ -464,7 +481,8 @@ else if(escolha==6) {
         escolha=input.nextInt();
 
 		if(escolha==1) {
-            System.out.println("Um menininho traquinas, diziam. Tinha macaquinhos no sótão," 
+            System.out.println("\t\t\tSINOPSE");
+			System.out.println("Um menininho traquinas, diziam. Tinha macaquinhos no sótão," 
 			+" deitava e rolava, fazendo confusão. Um anjinho, um saci? Alegria da casa, liderava a garotada." 
 			+" Namorador, fazia versinhos, compunha canções, inventava brincadeiras. Era sabido, um amigão." 
 			+"“Menino Maluquinho”, diziam sorrindo as pessoas. Não era, não!"
@@ -473,6 +491,7 @@ else if(escolha==6) {
         }
 
 		if(escolha==2) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("O porco-espinho, a raposa, o burrico, o pelicano e o jacaré estão todos dormindo,"
 			+"muito cansados… Mas a foca está bem acordada. E ela não quer saber de ficar na cama! E agora?" 
 			+"O que os outros dorminhocos vão fazer? Este livro, para leitores bem pequenos,"
@@ -482,6 +501,7 @@ else if(escolha==6) {
 		}
 		
 		if(escolha==3) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("À beira de uma floresta encantada, um monstro assustador encontra um estranho objeto,"
 			+"que ele cheira e lambe. Não tem gosto de nada! Com raiva, joga-o no chão. No entanto,"
 			+"esse objeto admirável vai mudar completamente sua vida e seu humor."
@@ -491,6 +511,7 @@ else if(escolha==6) {
 		}
 
 		if(escolha==4) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("Uma linda menina negra desperta a admiração de um coelho branco,"
 			+"que deseja ter uma filha tão pretinha quanto ela."
 			+"Cada vez que ele lhe pergunta qual o segredo de sua cor, ela inventa uma história."
@@ -500,6 +521,7 @@ else if(escolha==6) {
 		}
 		
 		if(escolha==5) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("Uma linda menina negra desperta a admiração de um coelho branco,"
 			+"que deseja ter uma filha tão pretinha quanto ela."
 			+"Cada vez que ele lhe pergunta qual o segredo de sua cor, ela inventa uma história."
@@ -509,6 +531,7 @@ else if(escolha==6) {
 		}
 
 		if(escolha==6) {
+			System.out.println("\t\t\tSINOPSE");
 			System.out.println("Usando de astúcia e imaginação, um ratinho vai criando um monstro terrível e assustador,"
 			+"o Grúfalo, e diverte-se espantando seus predadores."
 			+" Mas qual não é o seu espanto ao ver sua imaginação personificada à sua frente." 
@@ -520,23 +543,29 @@ else if(escolha==6) {
 		}
 		break;
 
-		case 8: login();
+		case 9: login();
 		break;
-        case 9: System.out.println("\nAdulto: ");
+        case 8: 
+		
+				System.out.println("\t\n          ADULTO ");
+				System.out.println("\t¨¨¨¨¨¨¨¨¨¨ ");
                 System.out.println("\n(1) Peça-me o que quiser");
                 System.out.println("\n(2) Entre quatro paredes");
                 System.out.println("\n(3) Quando Ninguém Está Olhando");
 				escolha = input.nextInt();
                 if(escolha == 1){
-                    System.out.println("\nCom tempero latino e uma abordagem excitante, a autora conta a história da \nsecretária espanhola Judith Flores e seu chefe, o alemão Eric Zimmerman, também conhecido como \nIceman: um homem muito sério e com os olhos azuis mais intensos e sexies que ela já viu. \nRecém-chegado ao comando da empresa Muller, antes dirigida por seu pai, Eric tem uma atração \ninstantânea pelo jeito divertido de Judith e exigirá que ela o acompanhe nas viagens de trabalho \npela Espanha. Mesmo sabendo que está se metendo numa situação arriscada, a ideia de estar ao lado de \nIceman é irresistível. Com ele, a jovem viverá experiências sexuais até então inimagináveis, em um \nuniverso de fantasias eróticas pouco convencionais. Conciliando sexo e romantismo na medida exata, \nPeça-me o que quiser é uma história de amor cheia de encontros e desencontros, na qual os jogos \neróticos, o voyeurismo e o desejo de ultrapassar todos os limites do prazer são os grandes \nprotagonistas.");
+                    System.out.println("\t\t\tSINOPSE");
+					System.out.println("\nCom tempero latino e uma abordagem excitante, a autora conta a história da \nsecretária espanhola Judith Flores e seu chefe, o alemão Eric Zimmerman, também conhecido como \nIceman: um homem muito sério e com os olhos azuis mais intensos e sexies que ela já viu. \nRecém-chegado ao comando da empresa Muller, antes dirigida por seu pai, Eric tem uma atração \ninstantânea pelo jeito divertido de Judith e exigirá que ela o acompanhe nas viagens de trabalho \npela Espanha. Mesmo sabendo que está se metendo numa situação arriscada, a ideia de estar ao lado de \nIceman é irresistível. Com ele, a jovem viverá experiências sexuais até então inimagináveis, em um \nuniverso de fantasias eróticas pouco convencionais. Conciliando sexo e romantismo na medida exata, \nPeça-me o que quiser é uma história de amor cheia de encontros e desencontros, na qual os jogos \neróticos, o voyeurismo e o desejo de ultrapassar todos os limites do prazer são os grandes \nprotagonistas.");
 					loja();
                 }
                 else if(escolha == 2){
-                    System.out.println("\nGrace é a esposa perfeita. Ela abriu mão do emprego para se dedicar ao marido \ne à casa. Agora prepara jantares maravilhosos, cuida do jardim, costura e pinta quadros fantásticos. \nGrace mal tem tempo de sentir falta de sua antiga vida. Ela é casada com Jack, o marido perfeito. \nEle é um advogado especializado em casos de mulheres vítimas de violência e nunca perdeu uma ação no \ntribunal. Rico, charmoso e bonito, todos se perguntavam por que havia demorado tanto a se casar. Os \ndois formam um casal perfeito. Eles estão sempre juntos. Grace não comparece a um almoço sem que \nJack a acompanhe. Também não tem celular, que ela diz ser uma perda de tempo. E seu e-mail é \ncompartilhado com Jack, afinal, os dois não guardam segredos um do outro. Parece ser o casamento \nperfeito. Mas por que Grace não abre a porta quando a campainha toca e não atende o telefone de \ncasa? E por que há grades na janela do seu quarto? Às vezes o casamento perfeito é a mentira \nperfeita.");
+                    System.out.println("\t\t\tSINOPSE");
+					System.out.println("\nGrace é a esposa perfeita. Ela abriu mão do emprego para se dedicar ao marido \ne à casa. Agora prepara jantares maravilhosos, cuida do jardim, costura e pinta quadros fantásticos. \nGrace mal tem tempo de sentir falta de sua antiga vida. Ela é casada com Jack, o marido perfeito. \nEle é um advogado especializado em casos de mulheres vítimas de violência e nunca perdeu uma ação no \ntribunal. Rico, charmoso e bonito, todos se perguntavam por que havia demorado tanto a se casar. Os \ndois formam um casal perfeito. Eles estão sempre juntos. Grace não comparece a um almoço sem que \nJack a acompanhe. Também não tem celular, que ela diz ser uma perda de tempo. E seu e-mail é \ncompartilhado com Jack, afinal, os dois não guardam segredos um do outro. Parece ser o casamento \nperfeito. Mas por que Grace não abre a porta quando a campainha toca e não atende o telefone de \ncasa? E por que há grades na janela do seu quarto? Às vezes o casamento perfeito é a mentira \nperfeita.");
 					loja();
                 }
                 else if(escolha == 3){
-                    System.out.println("\nSydney Green nasceu e foi criada no Brooklyn, em Nova York, mas cada vez \nque ela pisca os olhos seu amado bairro parece mudar. Condomínios se espalham como erva daninha, \nplacas de “vende-se” surgem da noite para o dia e os vizinhos que ela conhece a vida toda estão \n\nsumindo.");
+                    System.out.println("\t\t\tSINOPSE");
+					System.out.println("\nSydney Green nasceu e foi criada no Brooklyn, em Nova York, mas cada vez \nque ela pisca os olhos seu amado bairro parece mudar. Condomínios se espalham como erva daninha, \nplacas de “vende-se” surgem da noite para o dia e os vizinhos que ela conhece a vida toda estão \n\nsumindo.");
 					loja();
                 }
 				break;

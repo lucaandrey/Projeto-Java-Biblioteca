@@ -289,7 +289,13 @@ break;
 			System.out.println("Make a deposit: ");
 			depTotal = input.nextDouble();
 			this.saldo += depTotal;
+			
+			System.out.println("\t************************************");
+			System.out.println("\t*  Purchase made successfully!!  *");
+			System.out.println("\t************************************");
+			System.out.println("\t\nYour new balance is: "+saldo);
 			loja();
+
 		}else menu();
 		
 	}
@@ -418,7 +424,7 @@ if(op == 1) {
 			System.out.println("Make a deposit: ");
 			depTotal = input.nextDouble();
 			this.saldo += depTotal;
-			System.out.println("Deposit of R$"+saldo+" made successfully!");
+			System.out.println("Deposit of R$"+depTotal+" made successfully!");
 			try {
 				Thread.sleep(2000);
 			} catch (InterruptedException e) {
