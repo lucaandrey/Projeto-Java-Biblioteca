@@ -1,63 +1,16 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public class Biblioteca implements Livraria{
-	private String nome;
-	private String login;
-	private String senha;
-	private double saldo;
-	private int idade;
-	private int genero;
-	Scanner input = new Scanner(System.in);
-	public Biblioteca(String nome, String login, String senha, double saldo, int idade, int genero) {
-		this.nome = nome;
-		this.login = login;
-		this.senha = senha;
-		this.saldo = saldo;
-		this.idade = idade;
-		this.genero = genero;
-	}
-	
-	String user = "asd";
-	String password = "asd";
+public class Adulto extends Biblioteca{
+
+    public Adulto(String nome, String login, String senha, double saldo, int idade, int genero) {
+        super(nome, login, senha, saldo, idade, genero);
+        //TODO Auto-generated constructor stub
+    }
 
 
-	private ArrayList<Double> precoLivro = new ArrayList<Double>();
-	
-	@Override
-	 public void addItems(){
-	precoLivro.add(23.90);
-	precoLivro.add(34.90);
-	precoLivro.add(29.90);
-	precoLivro.add(59.90);
-	precoLivro.add(49.90);
-	precoLivro.add(19.90);
 
-	 }
-	 int escolha = 0;
-	
-	 @Override
-	public void login() {
-
-
-		System.out.println("\nLogin: ");
-		this.login = input.next();
-		System.out.println("\nSenha: ");
-		this.senha =input.next();
-		
-		if(user.equals(this.login)&& password.equals(this.senha)) {
-			visualizar();
-			menu();
-		}else {
-
-			System.out.println("\nLogin ou senha incorretos!");
-			System.out.println("\nTente novamente.\n");
-
-			login();
-		}
-
-	}	@Override
-	public void menu() {
+    @Override
+    public void menu() {
 		
 		addItems();
 		int op =0;
@@ -79,6 +32,7 @@ public class Biblioteca implements Livraria{
 		System.out.println("\n (5) Auto-Ajuda");
 		System.out.println("\n (6) Aventura");
 		System.out.println("\n (7) Infantil");
+        System.out.println("\n (9) Adultos");
 
 		System.out.println("\n (0) Faça um depósito");
 		System.out.println("\n (8) Sair");
@@ -568,204 +522,36 @@ else if(escolha==6) {
 
 		case 8: login();
 		break;
+        case 9: System.out.println("\nAdulto: ");
+                System.out.println("\n(1) Peça-me o que quiser");
+                System.out.println("\n(2) Entre quatro paredes");
+                System.out.println("\n(3) Quando Ninguém Está Olhando");
+				escolha = input.nextInt();
+                if(escolha == 1){
+                    System.out.println("\nCom tempero latino e uma abordagem excitante, a autora conta a história da \nsecretária espanhola Judith Flores e seu chefe, o alemão Eric Zimmerman, também conhecido como \nIceman: um homem muito sério e com os olhos azuis mais intensos e sexies que ela já viu. \nRecém-chegado ao comando da empresa Muller, antes dirigida por seu pai, Eric tem uma atração \ninstantânea pelo jeito divertido de Judith e exigirá que ela o acompanhe nas viagens de trabalho \npela Espanha. Mesmo sabendo que está se metendo numa situação arriscada, a ideia de estar ao lado de \nIceman é irresistível. Com ele, a jovem viverá experiências sexuais até então inimagináveis, em um \nuniverso de fantasias eróticas pouco convencionais. Conciliando sexo e romantismo na medida exata, \nPeça-me o que quiser é uma história de amor cheia de encontros e desencontros, na qual os jogos \neróticos, o voyeurismo e o desejo de ultrapassar todos os limites do prazer são os grandes \nprotagonistas.");
+					loja();
+                }
+                else if(escolha == 2){
+                    System.out.println("\nGrace é a esposa perfeita. Ela abriu mão do emprego para se dedicar ao marido \ne à casa. Agora prepara jantares maravilhosos, cuida do jardim, costura e pinta quadros fantásticos. \nGrace mal tem tempo de sentir falta de sua antiga vida. Ela é casada com Jack, o marido perfeito. \nEle é um advogado especializado em casos de mulheres vítimas de violência e nunca perdeu uma ação no \ntribunal. Rico, charmoso e bonito, todos se perguntavam por que havia demorado tanto a se casar. Os \ndois formam um casal perfeito. Eles estão sempre juntos. Grace não comparece a um almoço sem que \nJack a acompanhe. Também não tem celular, que ela diz ser uma perda de tempo. E seu e-mail é \ncompartilhado com Jack, afinal, os dois não guardam segredos um do outro. Parece ser o casamento \nperfeito. Mas por que Grace não abre a porta quando a campainha toca e não atende o telefone de \ncasa? E por que há grades na janela do seu quarto? Às vezes o casamento perfeito é a mentira \nperfeita.");
+					loja();
+                }
+                else if(escolha == 3){
+                    System.out.println("\nSydney Green nasceu e foi criada no Brooklyn, em Nova York, mas cada vez \nque ela pisca os olhos seu amado bairro parece mudar. Condomínios se espalham como erva daninha, \nplacas de “vende-se” surgem da noite para o dia e os vizinhos que ela conhece a vida toda estão \n\nsumindo.");
+					loja();
+                }
+				break;
+                }
         }
 
-		 
-		}	@Override
-	public void deposito(double depTotal) {
-		int op = 0;
-		System.out.println("\n      Bem vindo a sessao de compras!"   );
-		System.out.println("     ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨  ");
-		System.out.println("Deseja prosseguir com o depósito ? (1)SIM (2)RETORNAR AO MENU");
-		op = input.nextInt();
-		if (op == 1){
-		System.out.println("\nDigite o valor que deseja depositar:   ");
-		depTotal = input.nextDouble();
-		this.saldo += depTotal;
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		System.out.println("\n     DEPÓSITO DE R$"+depTotal+" REALIZADO COM SUCESSO!");
-		System.out.println("*************************************************");
-		System.out.println("\nSeu novo saldo é de: "+saldo+"\n");
-		loja();
-		
-		}
-
-	}	@Override
-	public void loja() {
-		int op = 0;
-		
-		System.out.println("Escolha a opcao desejada: ");
-		System.out.println("(1) COMPRAR");
-		System.out.println("(2) ALUGAR");
-		System.out.println("(3) RETORNAR AO MENU");
-		op = input.nextInt();
-		if(op == 1) {
-			
-			System.out.println("\nSaldo disponível: "+saldo);
-			System.out.println("\nO livro custa R$"+precoLivro.get(escolha - 1));
-			System.out.println("\nDeseja prosseguir com a compra? (1) SIM (2) NÃO,QUERO VOLTAR AO MENU.");
-
-			
-
-			int decida = input.nextInt();
-			if(decida == 1){
-				if(this.saldo - precoLivro.get(escolha -1) <0) {
-					System.out.println("\nSaldo insuficiente!");
-					System.out.println("\nVocê foi redirecionado para nossa loja.");
-					System.err.println("                                          ");
-					deposito1(0);
-				}else if(this.saldo >= precoLivro.get(escolha-1)) {
-				this.saldo -= precoLivro.get(escolha-1);
-				
-				try {
-					Thread.sleep(2000);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				
-				
-				System.out.println("\t************************************");
-				System.out.println("\t*  Compra realizada com sucesso!!  *");
-				System.out.println("\t************************************");
-
-				System.out.println("                                    ");
-				System.out.println("   Novo saldo: R$"+this.saldo);
-				System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
-				System.out.println("                             ");
-				try {
-					Thread.sleep(2000);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				menu();
-			}
-			else if (decida == 2 ){
-				menu();
-			}
-		}	menu();	
-	}		
-		else if(op == 2) {
-			int decida = 0;
-			System.out.println("\nO aluguel do livro custa: R$ 5.00");
-			System.out.println("\nSaldo disponível: "+saldo);
-			System.out.println("\nTem certeza que deseja prosseguir com a operação ? (1) SIM (2) NÃO,QUERO RETORNAR AO MENU.");
-			decida = input.nextInt();
-			if(decida==1 ){int aluguel = 5;
-				if(saldo - aluguel <0){
-					System.out.println("\nSaldo insuficiente!");
-					System.out.println("\nVocê foi redirecionado para nossa loja.");
-					System.err.println("                                          ");
-					deposito(0);
-				}
-				else if (saldo >= aluguel){
-				saldo -=aluguel;
-				System.out.println("\nO aluguel do livro custa: "+aluguel);
-				System.out.println("                                         ");
-				System.out.println("\t************************************");
-				System.out.println("\t* Operação realizada com sucesso!! *");
-				System.out.println("\t************************************");
-				System.out.println("\nSeu novo saldo ficou em: "+saldo+"\n");
-				System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
-				System.out.println("                             ");
-				try {
-					Thread.sleep(500);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-
-				
-				
-				
-	
 
 
-				menu();
-				}
-				else{
-					menu();
-				}
-			}
-	
-		else {
-			menu();
-		}
-	}menu();
+
+
+
+
+
+
+
+
+
 }
-	@Override
-	public void cadastro() {
-		
-		System.out.println("\nInsira seu nome: ");
-		this.nome = input.nextLine();
-		System.out.println("\nEscolha um nome de usuario: ");
-		user = input.nextLine();
-		System.out.println("\nEscolha uma senha: ");
-		password = input.nextLine();
-		System.out.println("\nQual a sua idade?: ");
-		this.idade = input.nextInt();
-		System.out.println("\nInforme seu genero (1) Masculino || (2)Feminino || (3) Outres: ");
-		this.genero = input.nextInt();
-		System.out.println("\nFaca um deposito inicial: ");
-		this.saldo += input.nextInt();
-		System.out.println("CADASTRO REALIZADO COM SUCESSO!! EFETUE O LOGIN PARA CONTNUAR!");
-		login();
-		}
-		public void visualizar(){
-
-		System.out.println("*************************************************************");
-		System.out.println("\t           SEJA BEM-VINDO "+nome);
-		System.out.println("\n\t          É um prazer tê-lo aqui!");
-		System.out.println("\n\t     Você possui: "+saldo+" de Saldo. Aproveite! ");
-		System.out.println("*************************************************************");
-	}
-	
-	 public void visualizar2(){
-		System.out.println("                           MENU                              ");
-		System.out.println("                          ¨¨¨¨¨¨                            ");
-		System.out.println("   30% de nossos lucros são enviados para Instituições de caridade.");
-		System.out.println("\t Além de alimentar seu conhecimento, alimente vidas! \n ");
-		System.out.println("                        __________         ");
-		System.out.println("                       | CATÁLOGO |        ");
-		System.out.println("                        ¨¨¨¨¨¨¨¨¨¨         ");
-		System.out.printf("Saldo:  %.2f",saldo,"");
-		System.out.println("                            ");
-	}
-		public void visualizar3(){
-
-
-		}
-
-		@Override
-		public void deposito1(double depTotal) {
-		int op = 0;
-		System.out.println("\n      Bem vindo a sessao de compras!"   );
-		System.out.println("     ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨  ");
-		System.out.println("Deseja fazer um depósito ? (1)SIM (2)RETORNAR AO MENU");
-		op = input.nextInt();
-		if (op == 1){
-		System.out.println("\nDigite o valor que deseja depositar:   ");
-		depTotal = input.nextDouble();
-		this.saldo += depTotal;
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		System.out.println("\n     DEPÓSITO DE R$"+depTotal+" REALIZADO COM SUCESSO!");
-		System.out.println("*************************************************");
-		System.out.println("\nSeu novo saldo é de: "+saldo+"\n");
-		menu();
-		
-		}
-		}
-		
-}
-

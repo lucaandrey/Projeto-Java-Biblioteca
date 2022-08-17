@@ -5,12 +5,13 @@ public class Main {
         int a = 0;
         Scanner input = new Scanner(System.in);
         English c1 = new English("asd","asd","asd",0,0,0);
-
-
-        Biblioteca c2 = new Biblioteca("asd","asd","asd",4,0,0);
-
-
-        Espanol c3 = new Espanol("asd","asd","asd",0,0,1);
+        
+        
+        Biblioteca c2 = new Biblioteca("asd","asd","asd",0,0,0);
+        
+        Espanol c3 = new Espanol("asd","asd","asd",0,0,0);
+       
+        Adulto c4 = new Adulto("asd","asd","asd",0,0,0);
         
         System.out.println("_________________________________________________________");
         System.out.println("                      | CADASTRO |                       ");
@@ -24,14 +25,22 @@ public class Main {
 
         a = input.nextInt();
         if(a  == 1){
-            c1.login();
+            
+            c1.cadastro();
         }
         else if(a == 2){
-            c2.login();
+            int age =0;
+            System.out.println("Voce eh maior de 18 anos? (1) SIM (2) NAO");
+            age = input.nextInt();
+            if(age == 1){
+                c4.cadastro();
+            }else
+            c2.cadastro();
         }
         else if(a == 3) {
-        	c3.login();
+        	c3.cadastro();
         }
 
-    }
+    
+}
 }
